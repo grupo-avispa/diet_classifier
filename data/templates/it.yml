@@ -1,0 +1,220 @@
+# Modelli di esempi. I segnaposto [{sala}](sala), [{dispositivo}](dispositivo) e
+# [{modo}](modo) vengono riempiti con i nomi di data/names.json (scripts/generate_data.py).
+# "nlu" -> addestramento, "validation" -> validazione (formulazioni diverse).
+version: "3.1"
+
+nlu:
+
+- intent: encender_luz
+  examples: |
+    - accendi la luce di [{sala}](sala)
+    - accendi la luce in [{sala}](sala)
+    - per favore accendi la luce di [{sala}](sala)
+    - attiva la luce di [{sala}](sala)
+    - ho bisogno di luce in [{sala}](sala)
+    - illumina [{sala}](sala)
+    - metti la luce di [{sala}](sala)
+    - puoi accendere la luce di [{sala}](sala)
+    - voglio la luce in [{sala}](sala)
+    - accendi le luci di [{sala}](sala)
+    - ehi accendi la luce di [{sala}](sala)
+    - luce accesa in [{sala}](sala)
+    - fai luce in [{sala}](sala)
+    - dammi luce in [{sala}](sala)
+
+- intent: apagar_luz
+  examples: |
+    - spegni la luce di [{sala}](sala)
+    - spegni la luce in [{sala}](sala)
+    - per favore spegni la luce di [{sala}](sala)
+    - disattiva la luce di [{sala}](sala)
+    - non ho più bisogno di luce in [{sala}](sala)
+    - togli la luce di [{sala}](sala)
+    - puoi spegnere la luce di [{sala}](sala)
+    - voglio la luce spenta in [{sala}](sala)
+    - spegni le luci di [{sala}](sala)
+    - ehi spegni la luce di [{sala}](sala)
+    - luce spenta in [{sala}](sala)
+    - basta luce in [{sala}](sala)
+    - fai buio in [{sala}](sala)
+    - chiudi la luce di [{sala}](sala)
+
+- intent: activar_enchufe
+  examples: |
+    - attiva la presa di [{dispositivo}](dispositivo)
+    - per favore attiva la presa di [{dispositivo}](dispositivo)
+    - accendi la presa di [{dispositivo}](dispositivo)
+    - accendi [{dispositivo}](dispositivo)
+    - attiva [{dispositivo}](dispositivo)
+    - metti in funzione [{dispositivo}](dispositivo)
+    - voglio che [{dispositivo}](dispositivo) sia acceso
+    - avvia [{dispositivo}](dispositivo)
+    - per favore accendi [{dispositivo}](dispositivo)
+    - puoi accendere [{dispositivo}](dispositivo)
+    - ehi attiva la presa di [{dispositivo}](dispositivo)
+    - dai corrente a [{dispositivo}](dispositivo)
+    - fai partire [{dispositivo}](dispositivo)
+
+- intent: apagar_enchufe
+  examples: |
+    - disattiva la presa di [{dispositivo}](dispositivo)
+    - per favore disattiva la presa di [{dispositivo}](dispositivo)
+    - spegni la presa di [{dispositivo}](dispositivo)
+    - spegni [{dispositivo}](dispositivo)
+    - disattiva [{dispositivo}](dispositivo)
+    - ferma [{dispositivo}](dispositivo)
+    - voglio che [{dispositivo}](dispositivo) sia spento
+    - stacca [{dispositivo}](dispositivo)
+    - per favore spegni [{dispositivo}](dispositivo)
+    - puoi spegnere [{dispositivo}](dispositivo)
+    - ehi disattiva la presa di [{dispositivo}](dispositivo)
+    - togli corrente a [{dispositivo}](dispositivo)
+    - metti [{dispositivo}](dispositivo) a riposo
+
+- intent: subir_persiana
+  examples: |
+    - alza la tapparella di [{sala}](sala)
+    - alza le tapparelle di [{sala}](sala)
+    - per favore alza la tapparella di [{sala}](sala)
+    - apri la tapparella di [{sala}](sala)
+    - apri le tapparelle in [{sala}](sala)
+    - solleva la tapparella di [{sala}](sala)
+    - tira su la tapparella di [{sala}](sala)
+    - voglio la tapparella aperta in [{sala}](sala)
+    - puoi aprire la tapparella di [{sala}](sala)
+    - ehi alza la persiana di [{sala}](sala)
+    - fai salire la tapparella di [{sala}](sala)
+    - tapparella su in [{sala}](sala)
+    - tapparelle aperte in [{sala}](sala)
+
+- intent: bajar_persiana
+  examples: |
+    - abbassa la tapparella di [{sala}](sala)
+    - abbassa le tapparelle di [{sala}](sala)
+    - per favore abbassa la tapparella di [{sala}](sala)
+    - chiudi la tapparella di [{sala}](sala)
+    - chiudi le tapparelle in [{sala}](sala)
+    - fai scendere la tapparella di [{sala}](sala)
+    - tira giù la tapparella di [{sala}](sala)
+    - voglio la tapparella chiusa in [{sala}](sala)
+    - puoi chiudere la tapparella di [{sala}](sala)
+    - ehi abbassa la persiana di [{sala}](sala)
+    - cala la tapparella di [{sala}](sala)
+    - tapparella giù in [{sala}](sala)
+    - tapparelle chiuse in [{sala}](sala)
+
+- intent: parar_persiana
+  examples: |
+    - fermati
+    - ferma
+    - ferma la tapparella
+    - blocca la tapparella
+    - ferma le tapparelle
+    - per favore ferma la tapparella
+    - basta ferma la tapparella
+    - ehi ferma la persiana
+    - puoi fermare la tapparella
+    - non muoverti più
+    - ferma tutto
+    - stop tapparella
+    - stop
+
+- intent: activar_modo
+  examples: |
+    - attiva la modalità [{modo}](modo)
+    - per favore attiva la modalità [{modo}](modo)
+    - metti la modalità [{modo}](modo)
+    - passa alla modalità [{modo}](modo)
+    - avvia la modalità [{modo}](modo)
+    - voglio la modalità [{modo}](modo)
+    - imposta la modalità [{modo}](modo)
+    - puoi attivare la modalità [{modo}](modo)
+    - ehi attiva la modalità [{modo}](modo)
+    - metti la casa in modalità [{modo}](modo)
+    - accendi la modalità [{modo}](modo)
+    - modalità [{modo}](modo) attiva
+
+- intent: desactivar_modo
+  examples: |
+    - disattiva la modalità [{modo}](modo)
+    - per favore disattiva la modalità [{modo}](modo)
+    - spegni la modalità [{modo}](modo)
+    - termina la modalità [{modo}](modo)
+    - esci dalla modalità [{modo}](modo)
+    - non voglio più la modalità [{modo}](modo)
+    - ferma la modalità [{modo}](modo)
+    - puoi disattivare la modalità [{modo}](modo)
+    - ehi disattiva la modalità [{modo}](modo)
+    - annulla la modalità [{modo}](modo)
+    - togli la modalità [{modo}](modo)
+    - modalità [{modo}](modo) disattivata
+
+validation:
+
+- intent: encender_luz
+  examples: |
+    - dammi la luce in [{sala}](sala)
+    - potresti accendere la luce di [{sala}](sala) per favore
+    - mi serve la luce in [{sala}](sala)
+    - lascia la luce accesa in [{sala}](sala)
+    - luce di [{sala}](sala) accesa
+    - rendi luminosa [{sala}](sala)
+
+- intent: apagar_luz
+  examples: |
+    - niente luce in [{sala}](sala)
+    - potresti spegnere la luce di [{sala}](sala) per favore
+    - mi serve la luce spenta in [{sala}](sala)
+    - lascia la luce spenta in [{sala}](sala)
+    - luce di [{sala}](sala) spenta
+    - rendi buia [{sala}](sala)
+
+- intent: activar_enchufe
+  examples: |
+    - metti [{dispositivo}](dispositivo) sotto tensione
+    - potresti accendere [{dispositivo}](dispositivo) per favore
+    - mi serve [{dispositivo}](dispositivo) acceso
+    - fai funzionare [{dispositivo}](dispositivo)
+
+- intent: apagar_enchufe
+  examples: |
+    - metti [{dispositivo}](dispositivo) fuori tensione
+    - potresti spegnere [{dispositivo}](dispositivo) per favore
+    - non mi serve più [{dispositivo}](dispositivo)
+    - taglia la corrente a [{dispositivo}](dispositivo)
+
+- intent: subir_persiana
+  examples: |
+    - sposta su la tapparella di [{sala}](sala)
+    - potresti alzare la tapparella di [{sala}](sala) per favore
+    - mi serve la tapparella aperta in [{sala}](sala)
+    - tapparelle in alto in [{sala}](sala)
+
+- intent: bajar_persiana
+  examples: |
+    - sposta giù la tapparella di [{sala}](sala)
+    - potresti abbassare la tapparella di [{sala}](sala) per favore
+    - mi serve la tapparella chiusa in [{sala}](sala)
+    - tapparelle in basso in [{sala}](sala)
+
+- intent: parar_persiana
+  examples: |
+    - fermo là
+    - potresti fermare la tapparella per favore
+    - alt
+    - basta ferma le tapparelle
+    - ferma tutto adesso
+
+- intent: activar_modo
+  examples: |
+    - andiamo in modalità [{modo}](modo)
+    - attiva per favore la modalità [{modo}](modo)
+    - vorrei la modalità [{modo}](modo)
+    - esegui la modalità [{modo}](modo)
+
+- intent: desactivar_modo
+  examples: |
+    - usciamo dalla modalità [{modo}](modo)
+    - disattiva per favore la modalità [{modo}](modo)
+    - ho finito con la modalità [{modo}](modo)
+    - termina adesso la modalità [{modo}](modo)

@@ -1,0 +1,399 @@
+version: "3.1"
+
+nlu:
+
+- intent: encender_luz
+  examples: |
+    - gib mir licht in [toilette](sala)
+    - gib mir licht in [garage](sala)
+    - gib mir licht in [flur](sala)
+    - gib mir licht in [gästezimmer](sala)
+    - gib mir licht in [terrasse](sala)
+    - gib mir licht in [arbeitszimmer](sala)
+    - gib mir licht in [keller](sala)
+    - gib mir licht in [speisekammer](sala)
+    - gib mir licht in [korridor](sala)
+    - könntest du bitte das licht in [aufenthaltsraum](sala) anmachen
+    - könntest du bitte das licht in [gästezimmer](sala) anmachen
+    - könntest du bitte das licht in [bad](sala) anmachen
+    - könntest du bitte das licht in [innenhof](sala) anmachen
+    - könntest du bitte das licht in [dachboden](sala) anmachen
+    - könntest du bitte das licht in [küche](sala) anmachen
+    - könntest du bitte das licht in [wohnzimmer](sala) anmachen
+    - könntest du bitte das licht in [büro](sala) anmachen
+    - ich brauche das licht in [schlafzimmer](sala) an
+    - ich brauche das licht in [garten](sala) an
+    - ich brauche das licht in [korridor](sala) an
+    - ich brauche das licht in [garage](sala) an
+    - ich brauche das licht in [elternschlafzimmer](sala) an
+    - ich brauche das licht in [toilette](sala) an
+    - ich brauche das licht in [eingang](sala) an
+    - ich brauche das licht in [aufenthaltsraum](sala) an
+    - ich brauche das licht in [fitnessraum](sala) an
+    - lass das licht in [keller](sala) an
+    - lass das licht in [garten](sala) an
+    - lass das licht in [wohnzimmer](sala) an
+    - lass das licht in [balkon](sala) an
+    - lass das licht in [bad](sala) an
+    - lass das licht in [flur](sala) an
+    - lass das licht in [bibliothek](sala) an
+    - lass das licht in [eingang](sala) an
+    - [flur](sala) licht an
+    - [eingang](sala) licht an
+    - [badezimmer](sala) licht an
+    - [küche](sala) licht an
+    - [esszimmer](sala) licht an
+    - [innenhof](sala) licht an
+    - [gäste-wc](sala) licht an
+    - [abstellraum](sala) licht an
+    - [toilette](sala) licht an
+    - mach es hell in [spielzimmer](sala)
+    - mach es hell in [fitnessraum](sala)
+    - mach es hell in [garten](sala)
+    - mach es hell in [arbeitszimmer](sala)
+    - mach es hell in [küche](sala)
+    - mach es hell in [kinderzimmer](sala)
+    - mach es hell in [wohnzimmer](sala)
+    - mach es hell in [büro](sala)
+    - mach es hell in [terrasse](sala)
+
+- intent: apagar_luz
+  examples: |
+    - kein licht mehr in [ankleidezimmer](sala)
+    - kein licht mehr in [dachboden](sala)
+    - kein licht mehr in [badezimmer](sala)
+    - kein licht mehr in [garage](sala)
+    - kein licht mehr in [wohnzimmer](sala)
+    - kein licht mehr in [eingang](sala)
+    - kein licht mehr in [garten](sala)
+    - kein licht mehr in [bibliothek](sala)
+    - könntest du bitte das licht in [balkon](sala) ausmachen
+    - könntest du bitte das licht in [badezimmer](sala) ausmachen
+    - könntest du bitte das licht in [gästezimmer](sala) ausmachen
+    - könntest du bitte das licht in [toilette](sala) ausmachen
+    - könntest du bitte das licht in [flur](sala) ausmachen
+    - könntest du bitte das licht in [garten](sala) ausmachen
+    - könntest du bitte das licht in [küche](sala) ausmachen
+    - könntest du bitte das licht in [aufenthaltsraum](sala) ausmachen
+    - könntest du bitte das licht in [fitnessraum](sala) ausmachen
+    - ich brauche das licht in [esszimmer](sala) aus
+    - ich brauche das licht in [veranda](sala) aus
+    - ich brauche das licht in [schlafzimmer](sala) aus
+    - ich brauche das licht in [innenhof](sala) aus
+    - ich brauche das licht in [balkon](sala) aus
+    - ich brauche das licht in [aufenthaltsraum](sala) aus
+    - ich brauche das licht in [flur](sala) aus
+    - ich brauche das licht in [büro](sala) aus
+    - lass das licht in [büro](sala) aus
+    - lass das licht in [arbeitszimmer](sala) aus
+    - lass das licht in [gäste-wc](sala) aus
+    - lass das licht in [aufenthaltsraum](sala) aus
+    - lass das licht in [fitnessraum](sala) aus
+    - lass das licht in [garage](sala) aus
+    - lass das licht in [bad](sala) aus
+    - lass das licht in [balkon](sala) aus
+    - [abstellraum](sala) licht aus
+    - [wohnzimmer](sala) licht aus
+    - [badezimmer](sala) licht aus
+    - [keller](sala) licht aus
+    - [garage](sala) licht aus
+    - [eingang](sala) licht aus
+    - [korridor](sala) licht aus
+    - [gäste-wc](sala) licht aus
+    - mach es dunkel in [balkon](sala)
+    - mach es dunkel in [waschküche](sala)
+    - mach es dunkel in [badezimmer](sala)
+    - mach es dunkel in [terrasse](sala)
+    - mach es dunkel in [bad](sala)
+    - mach es dunkel in [arbeitszimmer](sala)
+    - mach es dunkel in [veranda](sala)
+    - mach es dunkel in [esszimmer](sala)
+
+- intent: activar_enchufe
+  examples: |
+    - setze [dunstabzugshaube](dispositivo) unter strom
+    - setze [toaster](dispositivo) unter strom
+    - setze [router](dispositivo) unter strom
+    - setze [ladegerät](dispositivo) unter strom
+    - setze [spielkonsole](dispositivo) unter strom
+    - setze [ventilator](dispositivo) unter strom
+    - setze [geschirrspüler](dispositivo) unter strom
+    - setze [mikrowelle](dispositivo) unter strom
+    - setze [heizlüfter](dispositivo) unter strom
+    - setze [kaffeemaschine](dispositivo) unter strom
+    - setze [konsole](dispositivo) unter strom
+    - setze [beamer](dispositivo) unter strom
+    - setze [heizung](dispositivo) unter strom
+    - könntest du bitte [warmwasserbereiter](dispositivo) einschalten
+    - könntest du bitte [backofen](dispositivo) einschalten
+    - könntest du bitte [ofen](dispositivo) einschalten
+    - könntest du bitte [staubsauger](dispositivo) einschalten
+    - könntest du bitte [mikrowelle](dispositivo) einschalten
+    - könntest du bitte [lautsprecher](dispositivo) einschalten
+    - könntest du bitte [bildschirm](dispositivo) einschalten
+    - könntest du bitte [dunstabzugshaube](dispositivo) einschalten
+    - könntest du bitte [stereoanlage](dispositivo) einschalten
+    - könntest du bitte [waschmaschine](dispositivo) einschalten
+    - könntest du bitte [lampe](dispositivo) einschalten
+    - könntest du bitte [konsole](dispositivo) einschalten
+    - ich brauche [rechner](dispositivo) an
+    - ich brauche [fernseher](dispositivo) an
+    - ich brauche [heißluftfritteuse](dispositivo) an
+    - ich brauche [toaster](dispositivo) an
+    - ich brauche [boiler](dispositivo) an
+    - ich brauche [router](dispositivo) an
+    - ich brauche [ladegerät](dispositivo) an
+    - ich brauche [luftreiniger](dispositivo) an
+    - ich brauche [saugroboter](dispositivo) an
+    - ich brauche [beamer](dispositivo) an
+    - ich brauche [warmwasserbereiter](dispositivo) an
+    - ich brauche [kaffeemaschine](dispositivo) an
+    - ich brauche [konsole](dispositivo) an
+    - ich brauche [mixer](dispositivo) an
+    - lass [rechner](dispositivo) laufen
+    - lass [luftentfeuchter](dispositivo) laufen
+    - lass [lampe](dispositivo) laufen
+    - lass [waschmaschine](dispositivo) laufen
+    - lass [heizung](dispositivo) laufen
+    - lass [konsole](dispositivo) laufen
+    - lass [ladegerät](dispositivo) laufen
+    - lass [ofen](dispositivo) laufen
+    - lass [staubsauger](dispositivo) laufen
+    - lass [heizlüfter](dispositivo) laufen
+    - lass [backofen](dispositivo) laufen
+    - lass [lautsprecher](dispositivo) laufen
+
+- intent: apagar_enchufe
+  examples: |
+    - nimm [projektor](dispositivo) vom strom
+    - nimm [lampe](dispositivo) vom strom
+    - nimm [konsole](dispositivo) vom strom
+    - nimm [heizlüfter](dispositivo) vom strom
+    - nimm [saugroboter](dispositivo) vom strom
+    - nimm [lautsprecher](dispositivo) vom strom
+    - nimm [router](dispositivo) vom strom
+    - nimm [boiler](dispositivo) vom strom
+    - nimm [kühlschrank](dispositivo) vom strom
+    - nimm [bildschirm](dispositivo) vom strom
+    - nimm [warmwasserbereiter](dispositivo) vom strom
+    - nimm [stereoanlage](dispositivo) vom strom
+    - nimm [heizung](dispositivo) vom strom
+    - könntest du bitte [kaffeemaschine](dispositivo) ausschalten
+    - könntest du bitte [luftbefeuchter](dispositivo) ausschalten
+    - könntest du bitte [klimaanlage](dispositivo) ausschalten
+    - könntest du bitte [heizung](dispositivo) ausschalten
+    - könntest du bitte [backofen](dispositivo) ausschalten
+    - könntest du bitte [heißluftfritteuse](dispositivo) ausschalten
+    - könntest du bitte [ladegerät](dispositivo) ausschalten
+    - könntest du bitte [waschmaschine](dispositivo) ausschalten
+    - könntest du bitte [router](dispositivo) ausschalten
+    - könntest du bitte [bildschirm](dispositivo) ausschalten
+    - könntest du bitte [toaster](dispositivo) ausschalten
+    - ich brauche [kühlschrank](dispositivo) nicht mehr
+    - ich brauche [ofen](dispositivo) nicht mehr
+    - ich brauche [stereoanlage](dispositivo) nicht mehr
+    - ich brauche [mikrowelle](dispositivo) nicht mehr
+    - ich brauche [fernseher](dispositivo) nicht mehr
+    - ich brauche [projektor](dispositivo) nicht mehr
+    - ich brauche [warmwasserbereiter](dispositivo) nicht mehr
+    - ich brauche [boiler](dispositivo) nicht mehr
+    - ich brauche [heizung](dispositivo) nicht mehr
+    - ich brauche [beamer](dispositivo) nicht mehr
+    - ich brauche [heißluftfritteuse](dispositivo) nicht mehr
+    - ich brauche [geschirrspüler](dispositivo) nicht mehr
+    - kappe den strom von [drucker](dispositivo)
+    - kappe den strom von [kühlschrank](dispositivo)
+    - kappe den strom von [warmwasserbereiter](dispositivo)
+    - kappe den strom von [heizung](dispositivo)
+    - kappe den strom von [fernseher](dispositivo)
+    - kappe den strom von [luftreiniger](dispositivo)
+    - kappe den strom von [saugroboter](dispositivo)
+    - kappe den strom von [ladegerät](dispositivo)
+    - kappe den strom von [waschmaschine](dispositivo)
+    - kappe den strom von [beamer](dispositivo)
+    - kappe den strom von [luftbefeuchter](dispositivo)
+    - kappe den strom von [toaster](dispositivo)
+    - kappe den strom von [stereoanlage](dispositivo)
+    - kappe den strom von [spielkonsole](dispositivo)
+
+- intent: subir_persiana
+  examples: |
+    - zieh die jalousie in [büro](sala) hoch
+    - zieh die jalousie in [dachboden](sala) hoch
+    - zieh die jalousie in [spielzimmer](sala) hoch
+    - zieh die jalousie in [eingang](sala) hoch
+    - zieh die jalousie in [garten](sala) hoch
+    - zieh die jalousie in [bibliothek](sala) hoch
+    - zieh die jalousie in [speisekammer](sala) hoch
+    - zieh die jalousie in [gästezimmer](sala) hoch
+    - zieh die jalousie in [esszimmer](sala) hoch
+    - zieh die jalousie in [arbeitszimmer](sala) hoch
+    - zieh die jalousie in [fitnessraum](sala) hoch
+    - könntest du bitte den rollladen in [waschküche](sala) hochfahren
+    - könntest du bitte den rollladen in [arbeitszimmer](sala) hochfahren
+    - könntest du bitte den rollladen in [korridor](sala) hochfahren
+    - könntest du bitte den rollladen in [schlafzimmer](sala) hochfahren
+    - könntest du bitte den rollladen in [wohnzimmer](sala) hochfahren
+    - könntest du bitte den rollladen in [büro](sala) hochfahren
+    - könntest du bitte den rollladen in [garage](sala) hochfahren
+    - könntest du bitte den rollladen in [eingang](sala) hochfahren
+    - könntest du bitte den rollladen in [esszimmer](sala) hochfahren
+    - könntest du bitte den rollladen in [gäste-wc](sala) hochfahren
+    - könntest du bitte den rollladen in [fitnessraum](sala) hochfahren
+    - ich brauche den rollladen in [aufenthaltsraum](sala) offen
+    - ich brauche den rollladen in [arbeitszimmer](sala) offen
+    - ich brauche den rollladen in [badezimmer](sala) offen
+    - ich brauche den rollladen in [bibliothek](sala) offen
+    - ich brauche den rollladen in [bad](sala) offen
+    - ich brauche den rollladen in [garage](sala) offen
+    - ich brauche den rollladen in [gästezimmer](sala) offen
+    - ich brauche den rollladen in [spielzimmer](sala) offen
+    - ich brauche den rollladen in [flur](sala) offen
+    - ich brauche den rollladen in [innenhof](sala) offen
+    - ich brauche den rollladen in [wohnzimmer](sala) offen
+    - rollläden nach oben in [wohnzimmer](sala)
+    - rollläden nach oben in [korridor](sala)
+    - rollläden nach oben in [bibliothek](sala)
+    - rollläden nach oben in [büro](sala)
+    - rollläden nach oben in [eingang](sala)
+    - rollläden nach oben in [schlafzimmer](sala)
+    - rollläden nach oben in [arbeitszimmer](sala)
+    - rollläden nach oben in [spielzimmer](sala)
+    - rollläden nach oben in [esszimmer](sala)
+    - rollläden nach oben in [kinderzimmer](sala)
+    - rollläden nach oben in [balkon](sala)
+    - rollläden nach oben in [badezimmer](sala)
+
+- intent: bajar_persiana
+  examples: |
+    - zieh die jalousie in [speisekammer](sala) runter
+    - zieh die jalousie in [arbeitszimmer](sala) runter
+    - zieh die jalousie in [büro](sala) runter
+    - zieh die jalousie in [schlafzimmer](sala) runter
+    - zieh die jalousie in [veranda](sala) runter
+    - zieh die jalousie in [bad](sala) runter
+    - zieh die jalousie in [balkon](sala) runter
+    - zieh die jalousie in [gästezimmer](sala) runter
+    - zieh die jalousie in [garage](sala) runter
+    - zieh die jalousie in [flur](sala) runter
+    - zieh die jalousie in [terrasse](sala) runter
+    - zieh die jalousie in [küche](sala) runter
+    - zieh die jalousie in [fitnessraum](sala) runter
+    - könntest du bitte den rollladen in [korridor](sala) runterfahren
+    - könntest du bitte den rollladen in [innenhof](sala) runterfahren
+    - könntest du bitte den rollladen in [elternschlafzimmer](sala) runterfahren
+    - könntest du bitte den rollladen in [esszimmer](sala) runterfahren
+    - könntest du bitte den rollladen in [garten](sala) runterfahren
+    - könntest du bitte den rollladen in [aufenthaltsraum](sala) runterfahren
+    - könntest du bitte den rollladen in [wohnzimmer](sala) runterfahren
+    - könntest du bitte den rollladen in [gästezimmer](sala) runterfahren
+    - könntest du bitte den rollladen in [ankleidezimmer](sala) runterfahren
+    - könntest du bitte den rollladen in [flur](sala) runterfahren
+    - könntest du bitte den rollladen in [büro](sala) runterfahren
+    - könntest du bitte den rollladen in [badezimmer](sala) runterfahren
+    - ich brauche den rollladen in [abstellraum](sala) zu
+    - ich brauche den rollladen in [innenhof](sala) zu
+    - ich brauche den rollladen in [küche](sala) zu
+    - ich brauche den rollladen in [spielzimmer](sala) zu
+    - ich brauche den rollladen in [gäste-wc](sala) zu
+    - ich brauche den rollladen in [balkon](sala) zu
+    - ich brauche den rollladen in [badezimmer](sala) zu
+    - ich brauche den rollladen in [gästezimmer](sala) zu
+    - ich brauche den rollladen in [arbeitszimmer](sala) zu
+    - ich brauche den rollladen in [flur](sala) zu
+    - ich brauche den rollladen in [waschküche](sala) zu
+    - ich brauche den rollladen in [bibliothek](sala) zu
+    - ich brauche den rollladen in [büro](sala) zu
+    - rollläden nach unten in [schlafzimmer](sala)
+    - rollläden nach unten in [keller](sala)
+    - rollläden nach unten in [eingang](sala)
+    - rollläden nach unten in [gästezimmer](sala)
+    - rollläden nach unten in [wohnzimmer](sala)
+    - rollläden nach unten in [spielzimmer](sala)
+    - rollläden nach unten in [balkon](sala)
+    - rollläden nach unten in [arbeitszimmer](sala)
+    - rollläden nach unten in [büro](sala)
+    - rollläden nach unten in [korridor](sala)
+
+- intent: parar_persiana
+  examples: |
+    - stopp hier
+    - könntest du bitte den rollladen stoppen
+    - anhalten
+    - genug stopp die rollläden
+    - alles stopp
+
+- intent: activar_modo
+  examples: |
+    - gehen wir in den modus [nacht](modo)
+    - gehen wir in den modus [gute nacht](modo)
+    - gehen wir in den modus [gaming](modo)
+    - gehen wir in den modus [nickerchen](modo)
+    - gehen wir in den modus [yoga](modo)
+    - gehen wir in den modus [entspannung](modo)
+    - gehen wir in den modus [sport](modo)
+    - gehen wir in den modus [sparmodus](modo)
+    - gehen wir in den modus [sicherheit](modo)
+    - aktiviere bitte den modus [kino](modo)
+    - aktiviere bitte den modus [guten morgen](modo)
+    - aktiviere bitte den modus [siesta](modo)
+    - aktiviere bitte den modus [yoga](modo)
+    - aktiviere bitte den modus [arbeit](modo)
+    - aktiviere bitte den modus [spiel](modo)
+    - aktiviere bitte den modus [tag](modo)
+    - aktiviere bitte den modus [gaming](modo)
+    - ich hätte gern den modus [urlaub](modo)
+    - ich hätte gern den modus [romantisch](modo)
+    - ich hätte gern den modus [lernen](modo)
+    - ich hätte gern den modus [lesen](modo)
+    - ich hätte gern den modus [kino](modo)
+    - ich hätte gern den modus [feier](modo)
+    - ich hätte gern den modus [nickerchen](modo)
+    - ich hätte gern den modus [ferien](modo)
+    - führe den modus [sonnenuntergang](modo) aus
+    - führe den modus [konzentration](modo) aus
+    - führe den modus [feier](modo) aus
+    - führe den modus [romantisch](modo) aus
+    - führe den modus [kino](modo) aus
+    - führe den modus [lernen](modo) aus
+    - führe den modus [schlafen](modo) aus
+
+- intent: desactivar_modo
+  examples: |
+    - verlassen wir den modus [nacht](modo)
+    - verlassen wir den modus [ferien](modo)
+    - verlassen wir den modus [entspannung](modo)
+    - verlassen wir den modus [urlaub](modo)
+    - verlassen wir den modus [tag](modo)
+    - verlassen wir den modus [sport](modo)
+    - verlassen wir den modus [guten morgen](modo)
+    - verlassen wir den modus [spiel](modo)
+    - verlassen wir den modus [romantisch](modo)
+    - deaktiviere bitte den modus [entspannung](modo)
+    - deaktiviere bitte den modus [weihnachten](modo)
+    - deaktiviere bitte den modus [nacht](modo)
+    - deaktiviere bitte den modus [gaming](modo)
+    - deaktiviere bitte den modus [meditation](modo)
+    - deaktiviere bitte den modus [nickerchen](modo)
+    - deaktiviere bitte den modus [feier](modo)
+    - deaktiviere bitte den modus [lernen](modo)
+    - deaktiviere bitte den modus [sport](modo)
+    - ich bin fertig mit dem modus [gaming](modo)
+    - ich bin fertig mit dem modus [nacht](modo)
+    - ich bin fertig mit dem modus [sonnenaufgang](modo)
+    - ich bin fertig mit dem modus [meditation](modo)
+    - ich bin fertig mit dem modus [siesta](modo)
+    - ich bin fertig mit dem modus [tag](modo)
+    - ich bin fertig mit dem modus [energiesparen](modo)
+    - ich bin fertig mit dem modus [kino](modo)
+    - ich bin fertig mit dem modus [schlafen](modo)
+    - beende jetzt den modus [weihnachten](modo)
+    - beende jetzt den modus [urlaub](modo)
+    - beende jetzt den modus [feier](modo)
+    - beende jetzt den modus [musik](modo)
+    - beende jetzt den modus [nickerchen](modo)
+    - beende jetzt den modus [romantisch](modo)
+    - beende jetzt den modus [tag](modo)
+    - beende jetzt den modus [kino](modo)
+    - beende jetzt den modus [gute nacht](modo)
+

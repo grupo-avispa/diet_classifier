@@ -1,0 +1,1828 @@
+{
+  "sala": {
+    "salon": {
+      "ha": true,
+      "names": {
+        "es": [
+          "salon",
+          "salon comedor"
+        ],
+        "en": [
+          "living room",
+          "lounge"
+        ],
+        "fr": [
+          "salon"
+        ],
+        "de": [
+          "wohnzimmer"
+        ],
+        "it": [
+          "soggiorno",
+          "salotto"
+        ]
+      }
+    },
+    "cocina": {
+      "ha": true,
+      "names": {
+        "es": [
+          "cocina"
+        ],
+        "en": [
+          "kitchen"
+        ],
+        "fr": [
+          "cuisine"
+        ],
+        "de": [
+          "küche"
+        ],
+        "it": [
+          "cucina"
+        ]
+      }
+    },
+    "dormitorio": {
+      "ha": true,
+      "names": {
+        "es": [
+          "dormitorio",
+          "habitacion"
+        ],
+        "en": [
+          "bedroom"
+        ],
+        "fr": [
+          "chambre"
+        ],
+        "de": [
+          "schlafzimmer"
+        ],
+        "it": [
+          "camera da letto",
+          "camera"
+        ]
+      }
+    },
+    "bano": {
+      "ha": true,
+      "names": {
+        "es": [
+          "baño",
+          "cuarto de bano"
+        ],
+        "en": [
+          "bathroom"
+        ],
+        "fr": [
+          "salle de bain"
+        ],
+        "de": [
+          "badezimmer",
+          "bad"
+        ],
+        "it": [
+          "bagno"
+        ]
+      }
+    },
+    "aseo": {
+      "ha": false,
+      "names": {
+        "es": [
+          "aseo"
+        ],
+        "en": [
+          "toilet",
+          "restroom"
+        ],
+        "fr": [
+          "toilettes",
+          "wc"
+        ],
+        "de": [
+          "gäste-wc",
+          "toilette"
+        ],
+        "it": [
+          "bagno di servizio"
+        ]
+      }
+    },
+    "sala_de_estar": {
+      "ha": true,
+      "names": {
+        "es": [
+          "sala de estar"
+        ],
+        "en": [
+          "family room"
+        ],
+        "fr": [
+          "salle de séjour"
+        ],
+        "de": [
+          "aufenthaltsraum"
+        ],
+        "it": [
+          "sala"
+        ]
+      }
+    },
+    "comedor": {
+      "ha": true,
+      "names": {
+        "es": [
+          "comedor"
+        ],
+        "en": [
+          "dining room"
+        ],
+        "fr": [
+          "salle à manger"
+        ],
+        "de": [
+          "esszimmer"
+        ],
+        "it": [
+          "sala da pranzo"
+        ]
+      }
+    },
+    "pasillo": {
+      "ha": true,
+      "names": {
+        "es": [
+          "pasillo"
+        ],
+        "en": [
+          "hallway",
+          "corridor"
+        ],
+        "fr": [
+          "couloir"
+        ],
+        "de": [
+          "flur",
+          "korridor"
+        ],
+        "it": [
+          "corridoio"
+        ]
+      }
+    },
+    "garaje": {
+      "ha": true,
+      "names": {
+        "es": [
+          "garaje"
+        ],
+        "en": [
+          "garage"
+        ],
+        "fr": [
+          "garage"
+        ],
+        "de": [
+          "garage"
+        ],
+        "it": [
+          "garage"
+        ]
+      }
+    },
+    "terraza": {
+      "ha": true,
+      "names": {
+        "es": [
+          "terraza"
+        ],
+        "en": [
+          "terrace"
+        ],
+        "fr": [
+          "terrasse"
+        ],
+        "de": [
+          "terrasse"
+        ],
+        "it": [
+          "terrazza"
+        ]
+      }
+    },
+    "jardin": {
+      "ha": true,
+      "names": {
+        "es": [
+          "jardin"
+        ],
+        "en": [
+          "garden"
+        ],
+        "fr": [
+          "jardin"
+        ],
+        "de": [
+          "garten"
+        ],
+        "it": [
+          "giardino"
+        ]
+      }
+    },
+    "estudio": {
+      "ha": true,
+      "names": {
+        "es": [
+          "estudio"
+        ],
+        "en": [
+          "study"
+        ],
+        "fr": [
+          "salle d'étude"
+        ],
+        "de": [
+          "arbeitszimmer"
+        ],
+        "it": [
+          "studio"
+        ]
+      }
+    },
+    "balcon": {
+      "ha": true,
+      "names": {
+        "es": [
+          "balcon"
+        ],
+        "en": [
+          "balcony"
+        ],
+        "fr": [
+          "balcon"
+        ],
+        "de": [
+          "balkon"
+        ],
+        "it": [
+          "balcone"
+        ]
+      }
+    },
+    "despacho": {
+      "ha": true,
+      "names": {
+        "es": [
+          "despacho",
+          "oficina"
+        ],
+        "en": [
+          "office"
+        ],
+        "fr": [
+          "bureau"
+        ],
+        "de": [
+          "büro"
+        ],
+        "it": [
+          "ufficio"
+        ]
+      }
+    },
+    "cuarto_de_juegos": {
+      "ha": true,
+      "names": {
+        "es": [
+          "cuarto de juegos"
+        ],
+        "en": [
+          "playroom"
+        ],
+        "fr": [
+          "salle de jeux"
+        ],
+        "de": [
+          "spielzimmer"
+        ],
+        "it": [
+          "sala giochi"
+        ]
+      }
+    },
+    "habitacion_de_invitados": {
+      "ha": true,
+      "names": {
+        "es": [
+          "habitacion de invitados"
+        ],
+        "en": [
+          "guest room"
+        ],
+        "fr": [
+          "chambre d'amis"
+        ],
+        "de": [
+          "gästezimmer"
+        ],
+        "it": [
+          "camera degli ospiti"
+        ]
+      }
+    },
+    "sotano": {
+      "ha": false,
+      "names": {
+        "es": [
+          "sotano"
+        ],
+        "en": [
+          "basement"
+        ],
+        "fr": [
+          "sous-sol",
+          "cave"
+        ],
+        "de": [
+          "keller"
+        ],
+        "it": [
+          "seminterrato",
+          "cantina"
+        ]
+      }
+    },
+    "entrada": {
+      "ha": false,
+      "names": {
+        "es": [
+          "entrada",
+          "vestibulo",
+          "recibidor"
+        ],
+        "en": [
+          "entrance",
+          "entryway"
+        ],
+        "fr": [
+          "entrée"
+        ],
+        "de": [
+          "eingang"
+        ],
+        "it": [
+          "ingresso"
+        ]
+      }
+    },
+    "vestidor": {
+      "ha": false,
+      "names": {
+        "es": [
+          "vestidor"
+        ],
+        "en": [
+          "dressing room",
+          "walk-in closet"
+        ],
+        "fr": [
+          "dressing"
+        ],
+        "de": [
+          "ankleidezimmer"
+        ],
+        "it": [
+          "cabina armadio"
+        ]
+      }
+    },
+    "lavadero": {
+      "ha": false,
+      "names": {
+        "es": [
+          "lavadero"
+        ],
+        "en": [
+          "laundry room"
+        ],
+        "fr": [
+          "buanderie"
+        ],
+        "de": [
+          "waschküche"
+        ],
+        "it": [
+          "lavanderia"
+        ]
+      }
+    },
+    "trastero": {
+      "ha": false,
+      "names": {
+        "es": [
+          "trastero"
+        ],
+        "en": [
+          "storage room"
+        ],
+        "fr": [
+          "débarras",
+          "cellier"
+        ],
+        "de": [
+          "abstellraum"
+        ],
+        "it": [
+          "ripostiglio"
+        ]
+      }
+    },
+    "despensa": {
+      "ha": false,
+      "names": {
+        "es": [
+          "despensa"
+        ],
+        "en": [
+          "pantry"
+        ],
+        "fr": [
+          "garde-manger"
+        ],
+        "de": [
+          "speisekammer"
+        ],
+        "it": [
+          "dispensa"
+        ]
+      }
+    },
+    "porche": {
+      "ha": false,
+      "names": {
+        "es": [
+          "porche"
+        ],
+        "en": [
+          "porch"
+        ],
+        "fr": [
+          "porche"
+        ],
+        "de": [
+          "veranda"
+        ],
+        "it": [
+          "portico"
+        ]
+      }
+    },
+    "patio": {
+      "ha": false,
+      "names": {
+        "es": [
+          "patio"
+        ],
+        "en": [
+          "patio"
+        ],
+        "fr": [
+          "patio"
+        ],
+        "de": [
+          "innenhof"
+        ],
+        "it": [
+          "cortile"
+        ]
+      }
+    },
+    "buhardilla": {
+      "ha": false,
+      "names": {
+        "es": [
+          "buhardilla"
+        ],
+        "en": [
+          "attic"
+        ],
+        "fr": [
+          "grenier",
+          "combles"
+        ],
+        "de": [
+          "dachboden"
+        ],
+        "it": [
+          "soffitta",
+          "mansarda"
+        ]
+      }
+    },
+    "gimnasio": {
+      "ha": false,
+      "names": {
+        "es": [
+          "gimnasio"
+        ],
+        "en": [
+          "gym"
+        ],
+        "fr": [
+          "salle de sport"
+        ],
+        "de": [
+          "fitnessraum"
+        ],
+        "it": [
+          "palestra"
+        ]
+      }
+    },
+    "biblioteca": {
+      "ha": false,
+      "names": {
+        "es": [
+          "biblioteca"
+        ],
+        "en": [
+          "library"
+        ],
+        "fr": [
+          "bibliothèque"
+        ],
+        "de": [
+          "bibliothek"
+        ],
+        "it": [
+          "biblioteca"
+        ]
+      }
+    },
+    "dormitorio_principal": {
+      "ha": false,
+      "names": {
+        "es": [
+          "dormitorio principal"
+        ],
+        "en": [
+          "master bedroom"
+        ],
+        "fr": [
+          "chambre parentale"
+        ],
+        "de": [
+          "elternschlafzimmer"
+        ],
+        "it": [
+          "camera matrimoniale"
+        ]
+      }
+    },
+    "cuarto_de_los_ninos": {
+      "ha": false,
+      "names": {
+        "es": [
+          "cuarto de los ninos"
+        ],
+        "en": [
+          "kids room"
+        ],
+        "fr": [
+          "chambre des enfants"
+        ],
+        "de": [
+          "kinderzimmer"
+        ],
+        "it": [
+          "cameretta"
+        ]
+      }
+    }
+  },
+  "dispositivo": {
+    "nevera": {
+      "ha": true,
+      "names": {
+        "es": [
+          "nevera",
+          "frigorifico"
+        ],
+        "en": [
+          "fridge",
+          "refrigerator"
+        ],
+        "fr": [
+          "réfrigérateur",
+          "frigo"
+        ],
+        "de": [
+          "kühlschrank"
+        ],
+        "it": [
+          "frigorifero",
+          "frigo"
+        ]
+      }
+    },
+    "microondas": {
+      "ha": true,
+      "names": {
+        "es": [
+          "microondas"
+        ],
+        "en": [
+          "microwave"
+        ],
+        "fr": [
+          "micro-ondes"
+        ],
+        "de": [
+          "mikrowelle"
+        ],
+        "it": [
+          "microonde"
+        ]
+      }
+    },
+    "lavadora": {
+      "ha": true,
+      "names": {
+        "es": [
+          "lavadora"
+        ],
+        "en": [
+          "washing machine"
+        ],
+        "fr": [
+          "machine à laver",
+          "lave-linge"
+        ],
+        "de": [
+          "waschmaschine"
+        ],
+        "it": [
+          "lavatrice"
+        ]
+      }
+    },
+    "secadora": {
+      "ha": false,
+      "names": {
+        "es": [
+          "secadora"
+        ],
+        "en": [
+          "dryer"
+        ],
+        "fr": [
+          "sèche-linge"
+        ],
+        "de": [
+          "trockner"
+        ],
+        "it": [
+          "asciugatrice"
+        ]
+      }
+    },
+    "lavavajillas": {
+      "ha": false,
+      "names": {
+        "es": [
+          "lavavajillas"
+        ],
+        "en": [
+          "dishwasher"
+        ],
+        "fr": [
+          "lave-vaisselle"
+        ],
+        "de": [
+          "geschirrspüler"
+        ],
+        "it": [
+          "lavastoviglie"
+        ]
+      }
+    },
+    "televisor": {
+      "ha": true,
+      "names": {
+        "es": [
+          "televisor",
+          "television"
+        ],
+        "en": [
+          "television",
+          "tv"
+        ],
+        "fr": [
+          "télévision",
+          "télé"
+        ],
+        "de": [
+          "fernseher"
+        ],
+        "it": [
+          "televisore",
+          "televisione"
+        ]
+      }
+    },
+    "ordenador": {
+      "ha": true,
+      "names": {
+        "es": [
+          "ordenador"
+        ],
+        "en": [
+          "computer"
+        ],
+        "fr": [
+          "ordinateur"
+        ],
+        "de": [
+          "rechner"
+        ],
+        "it": [
+          "computer"
+        ]
+      }
+    },
+    "cafetera": {
+      "ha": true,
+      "names": {
+        "es": [
+          "cafetera",
+          "maquina de cafe"
+        ],
+        "en": [
+          "coffee machine",
+          "coffee maker"
+        ],
+        "fr": [
+          "machine à café",
+          "cafetière"
+        ],
+        "de": [
+          "kaffeemaschine"
+        ],
+        "it": [
+          "macchina del caffè",
+          "caffettiera"
+        ]
+      }
+    },
+    "router": {
+      "ha": true,
+      "names": {
+        "es": [
+          "router"
+        ],
+        "en": [
+          "router"
+        ],
+        "fr": [
+          "routeur"
+        ],
+        "de": [
+          "router"
+        ],
+        "it": [
+          "router"
+        ]
+      }
+    },
+    "altavoz": {
+      "ha": true,
+      "names": {
+        "es": [
+          "altavoz"
+        ],
+        "en": [
+          "speaker"
+        ],
+        "fr": [
+          "enceinte",
+          "haut-parleur"
+        ],
+        "de": [
+          "lautsprecher"
+        ],
+        "it": [
+          "altoparlante",
+          "cassa"
+        ]
+      }
+    },
+    "ventilador": {
+      "ha": true,
+      "names": {
+        "es": [
+          "ventilador",
+          "ventilador de techo"
+        ],
+        "en": [
+          "fan"
+        ],
+        "fr": [
+          "ventilateur"
+        ],
+        "de": [
+          "ventilator"
+        ],
+        "it": [
+          "ventilatore"
+        ]
+      }
+    },
+    "lampara": {
+      "ha": true,
+      "names": {
+        "es": [
+          "lampara"
+        ],
+        "en": [
+          "lamp"
+        ],
+        "fr": [
+          "lampe"
+        ],
+        "de": [
+          "lampe"
+        ],
+        "it": [
+          "lampada"
+        ]
+      }
+    },
+    "cargador": {
+      "ha": true,
+      "names": {
+        "es": [
+          "cargador",
+          "cargador del movil"
+        ],
+        "en": [
+          "charger",
+          "phone charger"
+        ],
+        "fr": [
+          "chargeur"
+        ],
+        "de": [
+          "ladegerät"
+        ],
+        "it": [
+          "caricabatterie",
+          "caricatore"
+        ]
+      }
+    },
+    "humidificador": {
+      "ha": true,
+      "names": {
+        "es": [
+          "humidificador"
+        ],
+        "en": [
+          "humidifier"
+        ],
+        "fr": [
+          "humidificateur"
+        ],
+        "de": [
+          "luftbefeuchter"
+        ],
+        "it": [
+          "umidificatore"
+        ]
+      }
+    },
+    "deshumidificador": {
+      "ha": false,
+      "names": {
+        "es": [
+          "deshumidificador"
+        ],
+        "en": [
+          "dehumidifier"
+        ],
+        "fr": [
+          "déshumidificateur"
+        ],
+        "de": [
+          "luftentfeuchter"
+        ],
+        "it": [
+          "deumidificatore"
+        ]
+      }
+    },
+    "calefactor": {
+      "ha": true,
+      "names": {
+        "es": [
+          "calefactor",
+          "radiador",
+          "radiador electrico"
+        ],
+        "en": [
+          "heater",
+          "radiator"
+        ],
+        "fr": [
+          "radiateur",
+          "chauffage"
+        ],
+        "de": [
+          "heizung",
+          "heizlüfter"
+        ],
+        "it": [
+          "termosifone"
+        ]
+      }
+    },
+    "aspirador": {
+      "ha": true,
+      "names": {
+        "es": [
+          "aspirador"
+        ],
+        "en": [
+          "vacuum cleaner"
+        ],
+        "fr": [
+          "aspirateur"
+        ],
+        "de": [
+          "staubsauger"
+        ],
+        "it": [
+          "aspirapolvere"
+        ]
+      }
+    },
+    "robot_aspirador": {
+      "ha": false,
+      "names": {
+        "es": [
+          "robot aspirador"
+        ],
+        "en": [
+          "robot vacuum"
+        ],
+        "fr": [
+          "robot aspirateur"
+        ],
+        "de": [
+          "saugroboter"
+        ],
+        "it": [
+          "robot aspirapolvere"
+        ]
+      }
+    },
+    "equipo_de_musica": {
+      "ha": true,
+      "names": {
+        "es": [
+          "equipo de musica",
+          "sistema de sonido"
+        ],
+        "en": [
+          "stereo",
+          "sound system"
+        ],
+        "fr": [
+          "chaîne stéréo"
+        ],
+        "de": [
+          "stereoanlage"
+        ],
+        "it": [
+          "impianto stereo"
+        ]
+      }
+    },
+    "estufa": {
+      "ha": true,
+      "names": {
+        "es": [
+          "estufa"
+        ],
+        "en": [
+          "stove"
+        ],
+        "fr": [
+          "poêle"
+        ],
+        "de": [
+          "ofen"
+        ],
+        "it": [
+          "stufa"
+        ]
+      }
+    },
+    "termo": {
+      "ha": true,
+      "names": {
+        "es": [
+          "termo",
+          "calentador",
+          "calentador de agua"
+        ],
+        "en": [
+          "water heater",
+          "boiler"
+        ],
+        "fr": [
+          "chauffe-eau"
+        ],
+        "de": [
+          "boiler",
+          "warmwasserbereiter"
+        ],
+        "it": [
+          "scaldabagno"
+        ]
+      }
+    },
+    "aire_acondicionado": {
+      "ha": false,
+      "names": {
+        "es": [
+          "aire acondicionado"
+        ],
+        "en": [
+          "air conditioner"
+        ],
+        "fr": [
+          "climatiseur",
+          "climatisation"
+        ],
+        "de": [
+          "klimaanlage"
+        ],
+        "it": [
+          "condizionatore",
+          "aria condizionata"
+        ]
+      }
+    },
+    "horno": {
+      "ha": false,
+      "names": {
+        "es": [
+          "horno",
+          "horno electrico"
+        ],
+        "en": [
+          "oven"
+        ],
+        "fr": [
+          "four"
+        ],
+        "de": [
+          "backofen"
+        ],
+        "it": [
+          "forno"
+        ]
+      }
+    },
+    "tostadora": {
+      "ha": false,
+      "names": {
+        "es": [
+          "tostadora",
+          "tostador"
+        ],
+        "en": [
+          "toaster"
+        ],
+        "fr": [
+          "grille-pain"
+        ],
+        "de": [
+          "toaster"
+        ],
+        "it": [
+          "tostapane"
+        ]
+      }
+    },
+    "batidora": {
+      "ha": false,
+      "names": {
+        "es": [
+          "batidora"
+        ],
+        "en": [
+          "blender",
+          "mixer"
+        ],
+        "fr": [
+          "mixeur",
+          "blender"
+        ],
+        "de": [
+          "mixer"
+        ],
+        "it": [
+          "frullatore"
+        ]
+      }
+    },
+    "freidora": {
+      "ha": false,
+      "names": {
+        "es": [
+          "freidora",
+          "freidora de aire"
+        ],
+        "en": [
+          "air fryer",
+          "fryer"
+        ],
+        "fr": [
+          "friteuse",
+          "friteuse à air"
+        ],
+        "de": [
+          "heißluftfritteuse",
+          "fritteuse"
+        ],
+        "it": [
+          "friggitrice"
+        ]
+      }
+    },
+    "impresora": {
+      "ha": false,
+      "names": {
+        "es": [
+          "impresora"
+        ],
+        "en": [
+          "printer"
+        ],
+        "fr": [
+          "imprimante"
+        ],
+        "de": [
+          "drucker"
+        ],
+        "it": [
+          "stampante"
+        ]
+      }
+    },
+    "proyector": {
+      "ha": false,
+      "names": {
+        "es": [
+          "proyector",
+          "proyector de cine"
+        ],
+        "en": [
+          "projector"
+        ],
+        "fr": [
+          "projecteur"
+        ],
+        "de": [
+          "beamer",
+          "projektor"
+        ],
+        "it": [
+          "proiettore"
+        ]
+      }
+    },
+    "purificador": {
+      "ha": false,
+      "names": {
+        "es": [
+          "purificador",
+          "purificador de aire"
+        ],
+        "en": [
+          "air purifier"
+        ],
+        "fr": [
+          "purificateur d'air"
+        ],
+        "de": [
+          "luftreiniger"
+        ],
+        "it": [
+          "purificatore d'aria"
+        ]
+      }
+    },
+    "consola": {
+      "ha": false,
+      "names": {
+        "es": [
+          "consola",
+          "consola de videojuegos"
+        ],
+        "en": [
+          "game console",
+          "console"
+        ],
+        "fr": [
+          "console"
+        ],
+        "de": [
+          "spielkonsole",
+          "konsole"
+        ],
+        "it": [
+          "console"
+        ]
+      }
+    },
+    "monitor": {
+      "ha": false,
+      "names": {
+        "es": [
+          "monitor"
+        ],
+        "en": [
+          "monitor"
+        ],
+        "fr": [
+          "moniteur",
+          "écran"
+        ],
+        "de": [
+          "bildschirm"
+        ],
+        "it": [
+          "monitor",
+          "schermo"
+        ]
+      }
+    },
+    "extractor": {
+      "ha": false,
+      "names": {
+        "es": [
+          "extractor"
+        ],
+        "en": [
+          "extractor fan",
+          "range hood"
+        ],
+        "fr": [
+          "hotte"
+        ],
+        "de": [
+          "dunstabzugshaube"
+        ],
+        "it": [
+          "cappa"
+        ]
+      }
+    }
+  },
+  "modo": {
+    "noche": {
+      "ha": true,
+      "names": {
+        "es": [
+          "noche",
+          "noche en casa"
+        ],
+        "en": [
+          "night"
+        ],
+        "fr": [
+          "nuit"
+        ],
+        "de": [
+          "nacht"
+        ],
+        "it": [
+          "notte"
+        ]
+      }
+    },
+    "dia": {
+      "ha": false,
+      "names": {
+        "es": [
+          "dia"
+        ],
+        "en": [
+          "day"
+        ],
+        "fr": [
+          "jour"
+        ],
+        "de": [
+          "tag"
+        ],
+        "it": [
+          "giorno"
+        ]
+      }
+    },
+    "cine": {
+      "ha": true,
+      "names": {
+        "es": [
+          "cine",
+          "pelicula",
+          "serie"
+        ],
+        "en": [
+          "cinema",
+          "movie"
+        ],
+        "fr": [
+          "cinéma"
+        ],
+        "de": [
+          "kino"
+        ],
+        "it": [
+          "cinema"
+        ]
+      }
+    },
+    "trabajo": {
+      "ha": true,
+      "names": {
+        "es": [
+          "trabajo",
+          "videollamada",
+          "presentacion"
+        ],
+        "en": [
+          "work"
+        ],
+        "fr": [
+          "travail"
+        ],
+        "de": [
+          "arbeit"
+        ],
+        "it": [
+          "lavoro"
+        ]
+      }
+    },
+    "relax": {
+      "ha": true,
+      "names": {
+        "es": [
+          "relax",
+          "descanso",
+          "relax en casa",
+          "bano relajante"
+        ],
+        "en": [
+          "relax"
+        ],
+        "fr": [
+          "détente"
+        ],
+        "de": [
+          "entspannung"
+        ],
+        "it": [
+          "relax"
+        ]
+      }
+    },
+    "romantico": {
+      "ha": true,
+      "names": {
+        "es": [
+          "romantico"
+        ],
+        "en": [
+          "romantic"
+        ],
+        "fr": [
+          "romantique"
+        ],
+        "de": [
+          "romantisch"
+        ],
+        "it": [
+          "romantico"
+        ]
+      }
+    },
+    "fiesta": {
+      "ha": true,
+      "names": {
+        "es": [
+          "fiesta",
+          "fiesta en casa",
+          "cumpleanos"
+        ],
+        "en": [
+          "party"
+        ],
+        "fr": [
+          "fête"
+        ],
+        "de": [
+          "feier"
+        ],
+        "it": [
+          "festa"
+        ]
+      }
+    },
+    "vacaciones": {
+      "ha": false,
+      "names": {
+        "es": [
+          "vacaciones"
+        ],
+        "en": [
+          "vacation",
+          "holiday"
+        ],
+        "fr": [
+          "vacances"
+        ],
+        "de": [
+          "urlaub",
+          "ferien"
+        ],
+        "it": [
+          "vacanze"
+        ]
+      }
+    },
+    "lectura": {
+      "ha": false,
+      "names": {
+        "es": [
+          "lectura"
+        ],
+        "en": [
+          "reading"
+        ],
+        "fr": [
+          "lecture"
+        ],
+        "de": [
+          "lesen"
+        ],
+        "it": [
+          "lettura"
+        ]
+      }
+    },
+    "deporte": {
+      "ha": false,
+      "names": {
+        "es": [
+          "deporte",
+          "ejercicio"
+        ],
+        "en": [
+          "sport",
+          "workout"
+        ],
+        "fr": [
+          "sport"
+        ],
+        "de": [
+          "sport"
+        ],
+        "it": [
+          "sport"
+        ]
+      }
+    },
+    "musica": {
+      "ha": false,
+      "names": {
+        "es": [
+          "musica",
+          "masajes"
+        ],
+        "en": [
+          "music"
+        ],
+        "fr": [
+          "musique"
+        ],
+        "de": [
+          "musik"
+        ],
+        "it": [
+          "musica"
+        ]
+      }
+    },
+    "juego": {
+      "ha": false,
+      "names": {
+        "es": [
+          "juego"
+        ],
+        "en": [
+          "gaming",
+          "game"
+        ],
+        "fr": [
+          "jeu"
+        ],
+        "de": [
+          "spiel",
+          "gaming"
+        ],
+        "it": [
+          "gioco"
+        ]
+      }
+    },
+    "estudiar": {
+      "ha": false,
+      "names": {
+        "es": [
+          "estudiar"
+        ],
+        "en": [
+          "studying"
+        ],
+        "fr": [
+          "étude"
+        ],
+        "de": [
+          "lernen"
+        ],
+        "it": [
+          "studiare"
+        ]
+      }
+    },
+    "siesta": {
+      "ha": false,
+      "names": {
+        "es": [
+          "siesta"
+        ],
+        "en": [
+          "nap"
+        ],
+        "fr": [
+          "sieste"
+        ],
+        "de": [
+          "nickerchen",
+          "siesta"
+        ],
+        "it": [
+          "pisolino",
+          "siesta"
+        ]
+      }
+    },
+    "dormir": {
+      "ha": false,
+      "names": {
+        "es": [
+          "dormir",
+          "madrugada"
+        ],
+        "en": [
+          "sleep"
+        ],
+        "fr": [
+          "sommeil",
+          "dormir"
+        ],
+        "de": [
+          "schlafen"
+        ],
+        "it": [
+          "dormire",
+          "sonno"
+        ]
+      }
+    },
+    "meditacion": {
+      "ha": false,
+      "names": {
+        "es": [
+          "meditacion"
+        ],
+        "en": [
+          "meditation"
+        ],
+        "fr": [
+          "méditation"
+        ],
+        "de": [
+          "meditation"
+        ],
+        "it": [
+          "meditazione"
+        ]
+      }
+    },
+    "yoga": {
+      "ha": false,
+      "names": {
+        "es": [
+          "yoga"
+        ],
+        "en": [
+          "yoga"
+        ],
+        "fr": [
+          "yoga"
+        ],
+        "de": [
+          "yoga"
+        ],
+        "it": [
+          "yoga"
+        ]
+      }
+    },
+    "seguridad": {
+      "ha": false,
+      "names": {
+        "es": [
+          "seguridad"
+        ],
+        "en": [
+          "security"
+        ],
+        "fr": [
+          "sécurité"
+        ],
+        "de": [
+          "sicherheit"
+        ],
+        "it": [
+          "sicurezza"
+        ]
+      }
+    },
+    "ahorro": {
+      "ha": false,
+      "names": {
+        "es": [
+          "ahorro",
+          "ahorro de energia"
+        ],
+        "en": [
+          "energy saving",
+          "eco"
+        ],
+        "fr": [
+          "économie d'énergie",
+          "éco"
+        ],
+        "de": [
+          "energiesparen",
+          "sparmodus"
+        ],
+        "it": [
+          "risparmio energetico",
+          "risparmio"
+        ]
+      }
+    },
+    "navidad": {
+      "ha": false,
+      "names": {
+        "es": [
+          "navidad"
+        ],
+        "en": [
+          "christmas"
+        ],
+        "fr": [
+          "noël"
+        ],
+        "de": [
+          "weihnachten"
+        ],
+        "it": [
+          "natale"
+        ]
+      }
+    },
+    "buenas_noches": {
+      "ha": false,
+      "names": {
+        "es": [
+          "buenas noches"
+        ],
+        "en": [
+          "good night"
+        ],
+        "fr": [
+          "bonne nuit"
+        ],
+        "de": [
+          "gute nacht"
+        ],
+        "it": [
+          "buonanotte"
+        ]
+      }
+    },
+    "buenos_dias": {
+      "ha": false,
+      "names": {
+        "es": [
+          "buenos dias"
+        ],
+        "en": [
+          "good morning"
+        ],
+        "fr": [
+          "bonjour"
+        ],
+        "de": [
+          "guten morgen"
+        ],
+        "it": [
+          "buongiorno"
+        ]
+      }
+    },
+    "concentracion": {
+      "ha": false,
+      "names": {
+        "es": [
+          "concentracion"
+        ],
+        "en": [
+          "focus",
+          "concentration"
+        ],
+        "fr": [
+          "concentration"
+        ],
+        "de": [
+          "konzentration"
+        ],
+        "it": [
+          "concentrazione"
+        ]
+      }
+    },
+    "amanecer": {
+      "ha": false,
+      "names": {
+        "es": [
+          "amanecer"
+        ],
+        "en": [
+          "sunrise"
+        ],
+        "fr": [
+          "lever du soleil"
+        ],
+        "de": [
+          "sonnenaufgang"
+        ],
+        "it": [
+          "alba"
+        ]
+      }
+    },
+    "atardecer": {
+      "ha": false,
+      "names": {
+        "es": [
+          "atardecer"
+        ],
+        "en": [
+          "sunset"
+        ],
+        "fr": [
+          "coucher de soleil"
+        ],
+        "de": [
+          "sonnenuntergang"
+        ],
+        "it": [
+          "tramonto"
+        ]
+      }
+    }
+  }
+}

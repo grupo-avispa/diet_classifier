@@ -1,0 +1,220 @@
+# Modèles d'exemples. Les emplacements [{sala}](sala), [{dispositivo}](dispositivo) et
+# [{modo}](modo) sont remplis avec les noms de data/names.json (scripts/generate_data.py).
+# "nlu" -> entraînement, "validation" -> validation (formulations différentes).
+version: "3.1"
+
+nlu:
+
+- intent: encender_luz
+  examples: |
+    - allume la lumière de [{sala}](sala)
+    - allume la lumière dans [{sala}](sala)
+    - s'il te plaît allume la lumière de [{sala}](sala)
+    - allume l'éclairage de [{sala}](sala)
+    - active la lumière de [{sala}](sala)
+    - j'ai besoin de lumière dans [{sala}](sala)
+    - éclaire [{sala}](sala)
+    - mets la lumière de [{sala}](sala)
+    - peux-tu allumer la lumière de [{sala}](sala)
+    - je veux de la lumière dans [{sala}](sala)
+    - allume les lumières de [{sala}](sala)
+    - hé allume la lumière de [{sala}](sala)
+    - lumière allumée dans [{sala}](sala)
+    - fais de la lumière dans [{sala}](sala)
+
+- intent: apagar_luz
+  examples: |
+    - éteins la lumière de [{sala}](sala)
+    - éteins la lumière dans [{sala}](sala)
+    - s'il te plaît éteins la lumière de [{sala}](sala)
+    - éteins l'éclairage de [{sala}](sala)
+    - désactive la lumière de [{sala}](sala)
+    - coupe la lumière de [{sala}](sala)
+    - je veux la lumière éteinte dans [{sala}](sala)
+    - peux-tu éteindre la lumière de [{sala}](sala)
+    - arrête la lumière de [{sala}](sala)
+    - éteins les lumières de [{sala}](sala)
+    - hé éteins la lumière de [{sala}](sala)
+    - plus de lumière dans [{sala}](sala)
+    - lumière éteinte dans [{sala}](sala)
+    - enlève la lumière de [{sala}](sala)
+
+- intent: activar_enchufe
+  examples: |
+    - active la prise de [{dispositivo}](dispositivo)
+    - s'il te plaît active la prise de [{dispositivo}](dispositivo)
+    - allume la prise de [{dispositivo}](dispositivo)
+    - allume [{dispositivo}](dispositivo)
+    - active [{dispositivo}](dispositivo)
+    - mets en marche [{dispositivo}](dispositivo)
+    - je veux que [{dispositivo}](dispositivo) soit allumé
+    - démarre [{dispositivo}](dispositivo)
+    - s'il te plaît allume [{dispositivo}](dispositivo)
+    - peux-tu allumer [{dispositivo}](dispositivo)
+    - hé active la prise de [{dispositivo}](dispositivo)
+    - branche [{dispositivo}](dispositivo)
+    - mets [{dispositivo}](dispositivo) en route
+
+- intent: apagar_enchufe
+  examples: |
+    - désactive la prise de [{dispositivo}](dispositivo)
+    - s'il te plaît désactive la prise de [{dispositivo}](dispositivo)
+    - éteins la prise de [{dispositivo}](dispositivo)
+    - éteins [{dispositivo}](dispositivo)
+    - désactive [{dispositivo}](dispositivo)
+    - arrête [{dispositivo}](dispositivo)
+    - je veux que [{dispositivo}](dispositivo) soit éteint
+    - coupe [{dispositivo}](dispositivo)
+    - s'il te plaît éteins [{dispositivo}](dispositivo)
+    - peux-tu éteindre [{dispositivo}](dispositivo)
+    - hé désactive la prise de [{dispositivo}](dispositivo)
+    - débranche [{dispositivo}](dispositivo)
+    - mets [{dispositivo}](dispositivo) à l'arrêt
+
+- intent: subir_persiana
+  examples: |
+    - monte le volet de [{sala}](sala)
+    - monte les volets de [{sala}](sala)
+    - s'il te plaît monte le volet de [{sala}](sala)
+    - ouvre le volet de [{sala}](sala)
+    - ouvre les volets dans [{sala}](sala)
+    - relève le volet de [{sala}](sala)
+    - lève le store de [{sala}](sala)
+    - je veux le volet ouvert dans [{sala}](sala)
+    - peux-tu ouvrir le volet de [{sala}](sala)
+    - hé monte le store de [{sala}](sala)
+    - remonte les volets de [{sala}](sala)
+    - fais monter le volet de [{sala}](sala)
+    - volet ouvert dans [{sala}](sala)
+
+- intent: bajar_persiana
+  examples: |
+    - baisse le volet de [{sala}](sala)
+    - baisse les volets de [{sala}](sala)
+    - s'il te plaît baisse le volet de [{sala}](sala)
+    - ferme le volet de [{sala}](sala)
+    - ferme les volets dans [{sala}](sala)
+    - descends le volet de [{sala}](sala)
+    - abaisse le store de [{sala}](sala)
+    - je veux le volet fermé dans [{sala}](sala)
+    - peux-tu fermer le volet de [{sala}](sala)
+    - hé baisse le store de [{sala}](sala)
+    - rabaisse les volets de [{sala}](sala)
+    - fais descendre le volet de [{sala}](sala)
+    - volet fermé dans [{sala}](sala)
+
+- intent: parar_persiana
+  examples: |
+    - stop
+    - arrête
+    - arrête le volet
+    - arrête les volets
+    - stoppe le volet
+    - s'il te plaît arrête le volet
+    - ça suffit arrête le volet
+    - hé arrête le store
+    - bloque le volet
+    - peux-tu arrêter le volet
+    - arrête tout
+    - ne bouge plus
+    - stop le volet
+
+- intent: activar_modo
+  examples: |
+    - active le mode [{modo}](modo)
+    - s'il te plaît active le mode [{modo}](modo)
+    - mets le mode [{modo}](modo)
+    - passe en mode [{modo}](modo)
+    - lance le mode [{modo}](modo)
+    - je veux le mode [{modo}](modo)
+    - démarre le mode [{modo}](modo)
+    - peux-tu activer le mode [{modo}](modo)
+    - hé active le mode [{modo}](modo)
+    - mets la maison en mode [{modo}](modo)
+    - allume le mode [{modo}](modo)
+    - enclenche le mode [{modo}](modo)
+
+- intent: desactivar_modo
+  examples: |
+    - désactive le mode [{modo}](modo)
+    - s'il te plaît désactive le mode [{modo}](modo)
+    - arrête le mode [{modo}](modo)
+    - quitte le mode [{modo}](modo)
+    - termine le mode [{modo}](modo)
+    - je ne veux plus du mode [{modo}](modo)
+    - éteins le mode [{modo}](modo)
+    - peux-tu désactiver le mode [{modo}](modo)
+    - hé désactive le mode [{modo}](modo)
+    - sors du mode [{modo}](modo)
+    - annule le mode [{modo}](modo)
+    - coupe le mode [{modo}](modo)
+
+validation:
+
+- intent: encender_luz
+  examples: |
+    - donne-moi de la lumière dans [{sala}](sala)
+    - pourrais-tu allumer la lumière de [{sala}](sala) s'il te plaît
+    - il me faut de la lumière dans [{sala}](sala)
+    - mets de la lumière dans [{sala}](sala)
+    - allume-moi [{sala}](sala)
+    - lumière de [{sala}](sala) allumée
+
+- intent: apagar_luz
+  examples: |
+    - plus de lumière de [{sala}](sala)
+    - pourrais-tu éteindre la lumière de [{sala}](sala) s'il te plaît
+    - je n'ai plus besoin de lumière dans [{sala}](sala)
+    - mets la lumière de [{sala}](sala) à off
+    - éteins-moi [{sala}](sala)
+    - lumière de [{sala}](sala) éteinte
+
+- intent: activar_enchufe
+  examples: |
+    - mets [{dispositivo}](dispositivo) sous tension
+    - pourrais-tu allumer [{dispositivo}](dispositivo) s'il te plaît
+    - il me faut [{dispositivo}](dispositivo) allumé
+    - fais marcher [{dispositivo}](dispositivo)
+
+- intent: apagar_enchufe
+  examples: |
+    - mets [{dispositivo}](dispositivo) hors tension
+    - pourrais-tu éteindre [{dispositivo}](dispositivo) s'il te plaît
+    - je n'ai plus besoin de [{dispositivo}](dispositivo)
+    - coupe l'alimentation de [{dispositivo}](dispositivo)
+
+- intent: subir_persiana
+  examples: |
+    - remonte le store de [{sala}](sala)
+    - pourrais-tu monter le volet de [{sala}](sala) s'il te plaît
+    - il me faut le volet ouvert dans [{sala}](sala)
+    - volets en haut dans [{sala}](sala)
+
+- intent: bajar_persiana
+  examples: |
+    - descends le store de [{sala}](sala)
+    - pourrais-tu baisser le volet de [{sala}](sala) s'il te plaît
+    - il me faut le volet fermé dans [{sala}](sala)
+    - volets en bas dans [{sala}](sala)
+
+- intent: parar_persiana
+  examples: |
+    - stop là
+    - pourrais-tu arrêter le volet s'il te plaît
+    - arrête-toi
+    - assez arrête les volets
+    - stoppe tout
+
+- intent: activar_modo
+  examples: |
+    - allons en mode [{modo}](modo)
+    - active le mode [{modo}](modo) s'il te plaît
+    - je voudrais le mode [{modo}](modo)
+    - exécute le mode [{modo}](modo)
+
+- intent: desactivar_modo
+  examples: |
+    - sortons du mode [{modo}](modo)
+    - désactive le mode [{modo}](modo) s'il te plaît
+    - j'en ai fini avec le mode [{modo}](modo)
+    - quitte le mode [{modo}](modo) maintenant

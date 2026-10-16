@@ -1,0 +1,557 @@
+version: "3.1"
+
+nlu:
+
+- intent: encender_luz
+  examples: |
+    - necesito luz en la [buhardilla](sala)
+    - necesito luz en la [cuarto de bano](sala)
+    - necesito luz en la [habitacion de invitados](sala)
+    - necesito luz en la [baño](sala)
+    - pon luz en el [aseo](sala)
+    - pon luz en el [baño](sala)
+    - pon luz en el [terraza](sala)
+    - pon luz en el [buhardilla](sala)
+    - pon luz en el [recibidor](sala)
+    - activa la lampara del [salon comedor](sala)
+    - activa la lampara del [sala de estar](sala)
+    - activa la lampara del [gimnasio](sala)
+    - activa la lampara del [jardin](sala)
+    - ilumina el [dormitorio](sala) por favor
+    - ilumina el [jardin](sala) por favor
+    - ilumina el [balcon](sala) por favor
+    - ilumina el [gimnasio](sala) por favor
+    - quiero que se ilumine el [salon](sala)
+    - quiero que se ilumine el [aseo](sala)
+    - quiero que se ilumine el [terraza](sala)
+    - quiero que se ilumine el [sotano](sala)
+    - quiero que se ilumine el [estudio](sala)
+    - enciende las luces de la [salon](sala)
+    - enciende las luces de la [salon comedor](sala)
+    - enciende las luces de la [recibidor](sala)
+    - enciende las luces de la [sala de estar](sala)
+    - enciende las luces de la [garaje](sala)
+    - da luz a la [balcon](sala)
+    - da luz a la [pasillo](sala)
+    - da luz a la [patio](sala)
+    - da luz a la [garaje](sala)
+    - da luz a la [despacho](sala)
+    - haz que haya luz en el [cuarto de bano](sala)
+    - haz que haya luz en el [sala de estar](sala)
+    - haz que haya luz en el [comedor](sala)
+    - haz que haya luz en el [dormitorio](sala)
+    - prende las luces del [comedor](sala)
+    - prende las luces del [salon](sala)
+    - prende las luces del [trastero](sala)
+    - prende las luces del [garaje](sala)
+    - prende las luces del [cuarto de juegos](sala)
+    - necesito iluminacion en la [dormitorio principal](sala)
+    - necesito iluminacion en la [garaje](sala)
+    - necesito iluminacion en la [dormitorio](sala)
+    - necesito iluminacion en la [salon comedor](sala)
+    - necesito iluminacion en la [despacho](sala)
+    - activa las lamparas del [patio](sala)
+    - activa las lamparas del [aseo](sala)
+    - activa las lamparas del [dormitorio principal](sala)
+    - activa las lamparas del [jardin](sala)
+    - activa las lamparas del [pasillo](sala)
+    - por favor enciende las luces de la [pasillo](sala)
+    - por favor enciende las luces de la [terraza](sala)
+    - por favor enciende las luces de la [oficina](sala)
+    - por favor enciende las luces de la [despacho](sala)
+    - por favor enciende las luces de la [cuarto de los ninos](sala)
+
+- intent: apagar_luz
+  examples: |
+    - deja a oscuras la [cuarto de juegos](sala)
+    - deja a oscuras la [buhardilla](sala)
+    - deja a oscuras la [cuarto de bano](sala)
+    - deja a oscuras la [porche](sala)
+    - deja a oscuras la [pasillo](sala)
+    - deja a oscuras la [entrada](sala)
+    - oscurece el [cuarto de los ninos](sala) por favor
+    - oscurece el [lavadero](sala) por favor
+    - oscurece el [cocina](sala) por favor
+    - oscurece el [recibidor](sala) por favor
+    - oscurece el [habitacion de invitados](sala) por favor
+    - oscurece el [salon](sala) por favor
+    - desactiva las lamparas del [salon comedor](sala)
+    - desactiva las lamparas del [porche](sala)
+    - desactiva las lamparas del [jardin](sala)
+    - desactiva las lamparas del [cuarto de bano](sala)
+    - desactiva las lamparas del [recibidor](sala)
+    - desactiva las lamparas del [comedor](sala)
+    - quita las luces del [trastero](sala)
+    - quita las luces del [patio](sala)
+    - quita las luces del [sala de estar](sala)
+    - quita las luces del [entrada](sala)
+    - quita las luces del [estudio](sala)
+    - quita las luces del [buhardilla](sala)
+    - no quiero iluminacion en el [garaje](sala)
+    - no quiero iluminacion en el [cuarto de los ninos](sala)
+    - no quiero iluminacion en el [cuarto de bano](sala)
+    - no quiero iluminacion en el [despacho](sala)
+    - no quiero iluminacion en el [terraza](sala)
+    - no quiero iluminacion en el [salon comedor](sala)
+    - deja sin luz la [trastero](sala)
+    - deja sin luz la [comedor](sala)
+    - deja sin luz la [estudio](sala)
+    - deja sin luz la [habitacion](sala)
+    - deja sin luz la [sotano](sala)
+    - deja sin luz la [gimnasio](sala)
+    - haz que no haya luz en el [pasillo](sala)
+    - haz que no haya luz en el [cuarto de bano](sala)
+    - haz que no haya luz en el [porche](sala)
+    - haz que no haya luz en el [oficina](sala)
+    - haz que no haya luz en el [despacho](sala)
+    - apaga las luces del [habitacion](sala)
+    - apaga las luces del [balcon](sala)
+    - apaga las luces del [baño](sala)
+    - apaga las luces del [despensa](sala)
+    - apaga las luces del [porche](sala)
+    - apaga las luces del [sala de estar](sala)
+    - quita la iluminacion de la [comedor](sala)
+    - quita la iluminacion de la [cuarto de los ninos](sala)
+    - quita la iluminacion de la [vestidor](sala)
+    - quita la iluminacion de la [balcon](sala)
+    - quita la iluminacion de la [despacho](sala)
+    - quita la iluminacion de la [biblioteca](sala)
+    - por favor apaga las luces de la [cuarto de bano](sala)
+    - por favor apaga las luces de la [pasillo](sala)
+    - por favor apaga las luces de la [biblioteca](sala)
+    - por favor apaga las luces de la [salon](sala)
+    - por favor apaga las luces de la [cocina](sala)
+    - por favor apaga las luces de la [cuarto de los ninos](sala)
+
+- intent: activar_enchufe
+  examples: |
+    - quiero que funcione la [batidora](dispositivo)
+    - quiero que funcione la [proyector](dispositivo)
+    - quiero que funcione la [ventilador](dispositivo)
+    - quiero que funcione la [aire acondicionado](dispositivo)
+    - quiero que funcione la [purificador](dispositivo)
+    - quiero que funcione la [extractor](dispositivo)
+    - quiero que funcione la [lampara](dispositivo)
+    - quiero que funcione la [monitor](dispositivo)
+    - quiero que funcione la [impresora](dispositivo)
+    - quiero que funcione la [horno electrico](dispositivo)
+    - quiero que funcione la [estufa](dispositivo)
+    - quiero que funcione la [cargador](dispositivo)
+    - quiero que funcione la [calentador](dispositivo)
+    - quiero que funcione la [cafetera](dispositivo)
+    - quiero que funcione la [aspirador](dispositivo)
+    - quiero que funcione la [humidificador](dispositivo)
+    - quiero que funcione la [cargador del movil](dispositivo)
+    - quiero que funcione la [lavadora](dispositivo)
+    - activa el [consola de videojuegos](dispositivo) por favor
+    - activa el [calentador de agua](dispositivo) por favor
+    - activa el [consola](dispositivo) por favor
+    - activa el [purificador de aire](dispositivo) por favor
+    - activa el [extractor](dispositivo) por favor
+    - activa el [purificador](dispositivo) por favor
+    - activa el [cargador](dispositivo) por favor
+    - activa el [aspirador](dispositivo) por favor
+    - activa el [humidificador](dispositivo) por favor
+    - activa el [sistema de sonido](dispositivo) por favor
+    - activa el [proyector de cine](dispositivo) por favor
+    - activa el [radiador electrico](dispositivo) por favor
+    - activa el [lavadora](dispositivo) por favor
+    - activa el [cafetera](dispositivo) por favor
+    - activa el [maquina de cafe](dispositivo) por favor
+    - activa el [nevera](dispositivo) por favor
+    - activa el [equipo de musica](dispositivo) por favor
+    - activa el [aire acondicionado](dispositivo) por favor
+    - dale al interruptor del [altavoz](dispositivo)
+    - dale al interruptor del [frigorifico](dispositivo)
+    - dale al interruptor del [microondas](dispositivo)
+    - dale al interruptor del [calefactor](dispositivo)
+    - dale al interruptor del [estufa](dispositivo)
+    - dale al interruptor del [purificador de aire](dispositivo)
+    - dale al interruptor del [cargador](dispositivo)
+    - dale al interruptor del [maquina de cafe](dispositivo)
+    - dale al interruptor del [ventilador de techo](dispositivo)
+    - dale al interruptor del [ordenador](dispositivo)
+    - dale al interruptor del [calentador](dispositivo)
+    - dale al interruptor del [nevera](dispositivo)
+    - dale al interruptor del [termo](dispositivo)
+    - dale al interruptor del [television](dispositivo)
+    - dale al interruptor del [sistema de sonido](dispositivo)
+    - dale al interruptor del [lavadora](dispositivo)
+    - dale al interruptor del [calentador de agua](dispositivo)
+    - dale al interruptor del [equipo de musica](dispositivo)
+    - haz que funcione el [nevera](dispositivo)
+    - haz que funcione el [televisor](dispositivo)
+    - haz que funcione el [sistema de sonido](dispositivo)
+    - haz que funcione el [maquina de cafe](dispositivo)
+    - haz que funcione el [television](dispositivo)
+    - haz que funcione el [router](dispositivo)
+    - haz que funcione el [freidora](dispositivo)
+    - haz que funcione el [purificador](dispositivo)
+    - haz que funcione el [ventilador](dispositivo)
+    - haz que funcione el [batidora](dispositivo)
+    - haz que funcione el [calentador de agua](dispositivo)
+    - haz que funcione el [radiador](dispositivo)
+    - haz que funcione el [lavavajillas](dispositivo)
+    - haz que funcione el [robot aspirador](dispositivo)
+    - haz que funcione el [aire acondicionado](dispositivo)
+    - haz que funcione el [termo](dispositivo)
+    - haz que funcione el [cafetera](dispositivo)
+    - haz que funcione el [monitor](dispositivo)
+
+- intent: apagar_enchufe
+  examples: |
+    - quiero que pare la [lavadora](dispositivo)
+    - quiero que pare la [lampara](dispositivo)
+    - quiero que pare la [cargador](dispositivo)
+    - quiero que pare la [deshumidificador](dispositivo)
+    - quiero que pare la [batidora](dispositivo)
+    - quiero que pare la [consola](dispositivo)
+    - quiero que pare la [frigorifico](dispositivo)
+    - quiero que pare la [router](dispositivo)
+    - quiero que pare la [humidificador](dispositivo)
+    - quiero que pare la [aspirador](dispositivo)
+    - quiero que pare la [impresora](dispositivo)
+    - quiero que pare la [maquina de cafe](dispositivo)
+    - deja de usar el [horno](dispositivo)
+    - deja de usar el [secadora](dispositivo)
+    - deja de usar el [router](dispositivo)
+    - deja de usar el [deshumidificador](dispositivo)
+    - deja de usar el [batidora](dispositivo)
+    - deja de usar el [humidificador](dispositivo)
+    - deja de usar el [ventilador](dispositivo)
+    - deja de usar el [cargador del movil](dispositivo)
+    - deja de usar el [calefactor](dispositivo)
+    - deja de usar el [equipo de musica](dispositivo)
+    - deja de usar el [ventilador de techo](dispositivo)
+    - deja de usar el [microondas](dispositivo)
+    - deja de usar el [altavoz](dispositivo)
+    - desactiva el [frigorifico](dispositivo) por favor
+    - desactiva el [aire acondicionado](dispositivo) por favor
+    - desactiva el [proyector](dispositivo) por favor
+    - desactiva el [calentador](dispositivo) por favor
+    - desactiva el [lampara](dispositivo) por favor
+    - desactiva el [ventilador](dispositivo) por favor
+    - desactiva el [sistema de sonido](dispositivo) por favor
+    - desactiva el [calefactor](dispositivo) por favor
+    - desactiva el [radiador](dispositivo) por favor
+    - desactiva el [ventilador de techo](dispositivo) por favor
+    - desactiva el [humidificador](dispositivo) por favor
+    - desactiva el [cargador del movil](dispositivo) por favor
+    - desactiva el [extractor](dispositivo) por favor
+    - corta el interruptor del [calentador de agua](dispositivo)
+    - corta el interruptor del [ventilador](dispositivo)
+    - corta el interruptor del [lavadora](dispositivo)
+    - corta el interruptor del [nevera](dispositivo)
+    - corta el interruptor del [extractor](dispositivo)
+    - corta el interruptor del [consola de videojuegos](dispositivo)
+    - corta el interruptor del [sistema de sonido](dispositivo)
+    - corta el interruptor del [cargador del movil](dispositivo)
+    - corta el interruptor del [ordenador](dispositivo)
+    - corta el interruptor del [proyector](dispositivo)
+    - corta el interruptor del [tostador](dispositivo)
+    - corta el interruptor del [purificador de aire](dispositivo)
+    - haz que deje de funcionar el [consola](dispositivo)
+    - haz que deje de funcionar el [altavoz](dispositivo)
+    - haz que deje de funcionar el [proyector](dispositivo)
+    - haz que deje de funcionar el [ventilador de techo](dispositivo)
+    - haz que deje de funcionar el [equipo de musica](dispositivo)
+    - haz que deje de funcionar el [impresora](dispositivo)
+    - haz que deje de funcionar el [lampara](dispositivo)
+    - haz que deje de funcionar el [calefactor](dispositivo)
+    - haz que deje de funcionar el [sistema de sonido](dispositivo)
+    - haz que deje de funcionar el [router](dispositivo)
+    - haz que deje de funcionar el [lavadora](dispositivo)
+    - haz que deje de funcionar el [nevera](dispositivo)
+    - haz que deje de funcionar el [cargador del movil](dispositivo)
+    - quita la corriente al [deshumidificador](dispositivo)
+    - quita la corriente al [monitor](dispositivo)
+    - quita la corriente al [proyector de cine](dispositivo)
+    - quita la corriente al [ordenador](dispositivo)
+    - quita la corriente al [radiador](dispositivo)
+    - quita la corriente al [microondas](dispositivo)
+    - quita la corriente al [ventilador](dispositivo)
+    - quita la corriente al [frigorifico](dispositivo)
+    - quita la corriente al [calefactor](dispositivo)
+    - quita la corriente al [altavoz](dispositivo)
+    - quita la corriente al [cargador del movil](dispositivo)
+    - quita la corriente al [consola de videojuegos](dispositivo)
+    - quita la corriente al [cargador](dispositivo)
+
+- intent: subir_persiana
+  examples: |
+    - abre las persianas del [entrada](sala)
+    - abre las persianas del [salon comedor](sala)
+    - abre las persianas del [lavadero](sala)
+    - abre las persianas del [sotano](sala)
+    - abre las persianas del [estudio](sala)
+    - abre las persianas del [gimnasio](sala)
+    - abre las persianas del [habitacion](sala)
+    - abre las persianas del [cuarto de juegos](sala)
+    - abre las persianas del [comedor](sala)
+    - alza la persiana de la [jardin](sala)
+    - alza la persiana de la [porche](sala)
+    - alza la persiana de la [vestibulo](sala)
+    - alza la persiana de la [garaje](sala)
+    - alza la persiana de la [dormitorio](sala)
+    - alza la persiana de la [vestidor](sala)
+    - alza la persiana de la [cuarto de juegos](sala)
+    - alza la persiana de la [oficina](sala)
+    - alza la persiana de la [biblioteca](sala)
+    - abre la persiana del [habitacion](sala) por favor
+    - abre la persiana del [jardin](sala) por favor
+    - abre la persiana del [biblioteca](sala) por favor
+    - abre la persiana del [oficina](sala) por favor
+    - abre la persiana del [despacho](sala) por favor
+    - abre la persiana del [trastero](sala) por favor
+    - abre la persiana del [sotano](sala) por favor
+    - abre la persiana del [dormitorio](sala) por favor
+    - abre las persianas de la [estudio](sala)
+    - abre las persianas de la [terraza](sala)
+    - abre las persianas de la [patio](sala)
+    - abre las persianas de la [sala de estar](sala)
+    - abre las persianas de la [pasillo](sala)
+    - abre las persianas de la [salon](sala)
+    - abre las persianas de la [vestidor](sala)
+    - abre las persianas de la [cocina](sala)
+    - por favor abre las persianas de la [buhardilla](sala)
+    - por favor abre las persianas de la [cuarto de bano](sala)
+    - por favor abre las persianas de la [recibidor](sala)
+    - por favor abre las persianas de la [estudio](sala)
+    - por favor abre las persianas de la [dormitorio](sala)
+    - por favor abre las persianas de la [oficina](sala)
+    - por favor abre las persianas de la [despacho](sala)
+    - por favor abre las persianas de la [baño](sala)
+    - alza las persianas del [oficina](sala)
+    - alza las persianas del [garaje](sala)
+    - alza las persianas del [comedor](sala)
+    - alza las persianas del [despacho](sala)
+    - alza las persianas del [baño](sala)
+    - alza las persianas del [pasillo](sala)
+    - alza las persianas del [estudio](sala)
+
+- intent: bajar_persiana
+  examples: |
+    - cierra las persianas del [dormitorio](sala)
+    - cierra las persianas del [jardin](sala)
+    - cierra las persianas del [buhardilla](sala)
+    - cierra las persianas del [lavadero](sala)
+    - cierra las persianas del [comedor](sala)
+    - cierra las persianas del [cuarto de bano](sala)
+    - cierra las persianas del [garaje](sala)
+    - cierra las persianas del [habitacion de invitados](sala)
+    - cierra las persianas del [oficina](sala)
+    - cierra las persianas del [salon comedor](sala)
+    - cierra las persianas del [pasillo](sala)
+    - cierra las persianas del [terraza](sala)
+    - cierra las persianas del [salon](sala)
+    - cierra la persiana del [gimnasio](sala) por favor
+    - cierra la persiana del [biblioteca](sala) por favor
+    - cierra la persiana del [recibidor](sala) por favor
+    - cierra la persiana del [cuarto de juegos](sala) por favor
+    - cierra la persiana del [aseo](sala) por favor
+    - cierra la persiana del [balcon](sala) por favor
+    - cierra la persiana del [pasillo](sala) por favor
+    - cierra la persiana del [dormitorio principal](sala) por favor
+    - cierra la persiana del [despacho](sala) por favor
+    - cierra la persiana del [estudio](sala) por favor
+    - cierra la persiana del [entrada](sala) por favor
+    - cierra la persiana del [dormitorio](sala) por favor
+    - cierra la persiana del [garaje](sala) por favor
+    - cierra las persianas de la [recibidor](sala)
+    - cierra las persianas de la [comedor](sala)
+    - cierra las persianas de la [dormitorio](sala)
+    - cierra las persianas de la [cuarto de juegos](sala)
+    - cierra las persianas de la [salon](sala)
+    - cierra las persianas de la [salon comedor](sala)
+    - cierra las persianas de la [jardin](sala)
+    - cierra las persianas de la [oficina](sala)
+    - cierra las persianas de la [estudio](sala)
+    - cierra las persianas de la [baño](sala)
+    - cierra las persianas de la [habitacion de invitados](sala)
+    - por favor cierra las persianas de la [habitacion](sala)
+    - por favor cierra las persianas de la [despacho](sala)
+    - por favor cierra las persianas de la [estudio](sala)
+    - por favor cierra las persianas de la [sotano](sala)
+    - por favor cierra las persianas de la [balcon](sala)
+    - por favor cierra las persianas de la [terraza](sala)
+    - por favor cierra las persianas de la [buhardilla](sala)
+    - por favor cierra las persianas de la [biblioteca](sala)
+    - por favor cierra las persianas de la [cuarto de juegos](sala)
+    - por favor cierra las persianas de la [vestidor](sala)
+    - por favor cierra las persianas de la [recibidor](sala)
+
+- intent: parar_persiana
+  examples: |
+    - alto ahi
+    - basta
+    - dejala ahi
+    - para ya la persiana
+    - que se detenga
+    - deten la persiana del [oficina](sala) ahi
+    - deten la persiana del [biblioteca](sala) ahi
+    - deten la persiana del [terraza](sala) ahi
+    - deten la persiana del [jardin](sala) ahi
+    - deten la persiana del [cuarto de bano](sala) ahi
+    - deten la persiana del [dormitorio](sala) ahi
+    - deten la persiana del [entrada](sala) ahi
+    - frena la persiana de la [habitacion de invitados](sala)
+    - frena la persiana de la [gimnasio](sala)
+    - frena la persiana de la [biblioteca](sala)
+    - frena la persiana de la [cocina](sala)
+    - frena la persiana de la [salon comedor](sala)
+    - frena la persiana de la [patio](sala)
+    - frena la persiana de la [buhardilla](sala)
+    - para el movimiento de la persiana del [balcon](sala)
+    - para el movimiento de la persiana del [estudio](sala)
+    - para el movimiento de la persiana del [biblioteca](sala)
+    - para el movimiento de la persiana del [patio](sala)
+    - para el movimiento de la persiana del [habitacion](sala)
+    - para el movimiento de la persiana del [sotano](sala)
+    - para el movimiento de la persiana del [cuarto de bano](sala)
+    - deja la persiana del [gimnasio](sala) ahi
+    - deja la persiana del [balcon](sala) ahi
+    - deja la persiana del [dormitorio](sala) ahi
+    - deja la persiana del [baño](sala) ahi
+    - deja la persiana del [oficina](sala) ahi
+    - deja la persiana del [salon](sala) ahi
+    - deja la persiana del [lavadero](sala) ahi
+    - stop persiana del [aseo](sala)
+    - stop persiana del [baño](sala)
+    - stop persiana del [jardin](sala)
+    - stop persiana del [gimnasio](sala)
+    - stop persiana del [pasillo](sala)
+    - stop persiana del [cuarto de juegos](sala)
+    - stop persiana del [porche](sala)
+    - que pare la persiana del [balcon](sala)
+    - que pare la persiana del [sala de estar](sala)
+    - que pare la persiana del [comedor](sala)
+    - que pare la persiana del [dormitorio](sala)
+    - que pare la persiana del [pasillo](sala)
+    - que pare la persiana del [oficina](sala)
+    - detener persiana de la [cuarto de juegos](sala)
+    - detener persiana de la [dormitorio](sala)
+    - detener persiana de la [jardin](sala)
+    - detener persiana de la [habitacion de invitados](sala)
+    - detener persiana de la [oficina](sala)
+    - detener persiana de la [pasillo](sala)
+    - detener persiana de la [balcon](sala)
+    - para el movimiento del [entrada](sala)
+    - para el movimiento del [cuarto de bano](sala)
+    - para el movimiento del [cocina](sala)
+    - para el movimiento del [vestidor](sala)
+    - para el movimiento del [despacho](sala)
+    - para el movimiento del [habitacion](sala)
+
+- intent: activar_modo
+  examples: |
+    - vamos al modo [madrugada](modo)
+    - vamos al modo [trabajo](modo)
+    - vamos al modo [buenas noches](modo)
+    - vamos al modo [cumpleanos](modo)
+    - vamos al modo [noche](modo)
+    - vamos al modo [buenos dias](modo)
+    - vamos al modo [musica](modo)
+    - vamos al modo [siesta](modo)
+    - activa por favor el modo [madrugada](modo)
+    - activa por favor el modo [videollamada](modo)
+    - activa por favor el modo [fiesta](modo)
+    - activa por favor el modo [romantico](modo)
+    - activa por favor el modo [serie](modo)
+    - activa por favor el modo [buenos dias](modo)
+    - activa por favor el modo [descanso](modo)
+    - activa por favor el modo [vacaciones](modo)
+    - me gustaria el modo [descanso](modo)
+    - me gustaria el modo [romantico](modo)
+    - me gustaria el modo [masajes](modo)
+    - me gustaria el modo [fiesta en casa](modo)
+    - me gustaria el modo [ejercicio](modo)
+    - me gustaria el modo [seguridad](modo)
+    - me gustaria el modo [buenos dias](modo)
+    - me gustaria el modo [estudiar](modo)
+    - ejecuta el modo [serie](modo)
+    - ejecuta el modo [presentacion](modo)
+    - ejecuta el modo [romantico](modo)
+    - ejecuta el modo [vacaciones](modo)
+    - ejecuta el modo [ahorro](modo)
+    - ejecuta el modo [descanso](modo)
+    - ejecuta el modo [fiesta](modo)
+    - activa el modo [bano relajante](modo) por favor
+    - activa el modo [fiesta](modo) por favor
+    - activa el modo [relax en casa](modo) por favor
+    - activa el modo [concentracion](modo) por favor
+    - activa el modo [musica](modo) por favor
+    - activa el modo [madrugada](modo) por favor
+    - activa el modo [vacaciones](modo) por favor
+    - activa el modo [masajes](modo) por favor
+    - ponme en modo [estudiar](modo)
+    - ponme en modo [fiesta](modo)
+    - ponme en modo [ahorro](modo)
+    - ponme en modo [serie](modo)
+    - ponme en modo [seguridad](modo)
+    - ponme en modo [siesta](modo)
+    - ponme en modo [vacaciones](modo)
+    - quiero modo [madrugada](modo)
+    - quiero modo [amanecer](modo)
+    - quiero modo [fiesta](modo)
+    - quiero modo [trabajo](modo)
+    - quiero modo [serie](modo)
+    - quiero modo [navidad](modo)
+    - quiero modo [bano relajante](modo)
+
+- intent: desactivar_modo
+  examples: |
+    - salgamos del modo [buenas noches](modo)
+    - salgamos del modo [trabajo](modo)
+    - salgamos del modo [madrugada](modo)
+    - salgamos del modo [fiesta en casa](modo)
+    - salgamos del modo [noche en casa](modo)
+    - salgamos del modo [presentacion](modo)
+    - salgamos del modo [serie](modo)
+    - salgamos del modo [cumpleanos](modo)
+    - salgamos del modo [siesta](modo)
+    - salgamos del modo [concentracion](modo)
+    - salgamos del modo [ahorro](modo)
+    - desactiva por favor el modo [presentacion](modo)
+    - desactiva por favor el modo [pelicula](modo)
+    - desactiva por favor el modo [romantico](modo)
+    - desactiva por favor el modo [serie](modo)
+    - desactiva por favor el modo [fiesta](modo)
+    - desactiva por favor el modo [deporte](modo)
+    - desactiva por favor el modo [noche en casa](modo)
+    - desactiva por favor el modo [descanso](modo)
+    - desactiva por favor el modo [fiesta en casa](modo)
+    - desactiva por favor el modo [bano relajante](modo)
+    - desactiva por favor el modo [ahorro de energia](modo)
+    - ya no quiero el modo [fiesta en casa](modo)
+    - ya no quiero el modo [deporte](modo)
+    - ya no quiero el modo [seguridad](modo)
+    - ya no quiero el modo [juego](modo)
+    - ya no quiero el modo [noche](modo)
+    - ya no quiero el modo [relax](modo)
+    - ya no quiero el modo [concentracion](modo)
+    - ya no quiero el modo [ejercicio](modo)
+    - ya no quiero el modo [estudiar](modo)
+    - ya no quiero el modo [bano relajante](modo)
+    - ya no quiero el modo [buenas noches](modo)
+    - termina el modo [ahorro de energia](modo)
+    - termina el modo [bano relajante](modo)
+    - termina el modo [fiesta](modo)
+    - termina el modo [videollamada](modo)
+    - termina el modo [estudiar](modo)
+    - termina el modo [relax en casa](modo)
+    - termina el modo [cumpleanos](modo)
+    - termina el modo [masajes](modo)
+    - termina el modo [madrugada](modo)
+    - termina el modo [cine](modo)
+    - termina el modo [fiesta en casa](modo)
+    - desactiva el modo [relax](modo) por favor
+    - desactiva el modo [dormir](modo) por favor
+    - desactiva el modo [siesta](modo) por favor
+    - desactiva el modo [cumpleanos](modo) por favor
+    - desactiva el modo [descanso](modo) por favor
+    - desactiva el modo [bano relajante](modo) por favor
+    - desactiva el modo [seguridad](modo) por favor
+    - desactiva el modo [meditacion](modo) por favor
+    - desactiva el modo [noche en casa](modo) por favor
+    - desactiva el modo [dia](modo) por favor
+

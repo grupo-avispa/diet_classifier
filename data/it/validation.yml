@@ -1,0 +1,410 @@
+version: "3.1"
+
+nlu:
+
+- intent: encender_luz
+  examples: |
+    - dammi la luce in [camera da letto](sala)
+    - dammi la luce in [bagno](sala)
+    - dammi la luce in [salotto](sala)
+    - dammi la luce in [sala da pranzo](sala)
+    - dammi la luce in [cabina armadio](sala)
+    - dammi la luce in [sala giochi](sala)
+    - dammi la luce in [garage](sala)
+    - dammi la luce in [camera](sala)
+    - potresti accendere la luce di [cucina](sala) per favore
+    - potresti accendere la luce di [soggiorno](sala) per favore
+    - potresti accendere la luce di [camera da letto](sala) per favore
+    - potresti accendere la luce di [biblioteca](sala) per favore
+    - potresti accendere la luce di [terrazza](sala) per favore
+    - potresti accendere la luce di [studio](sala) per favore
+    - potresti accendere la luce di [seminterrato](sala) per favore
+    - potresti accendere la luce di [corridoio](sala) per favore
+    - mi serve la luce in [studio](sala)
+    - mi serve la luce in [giardino](sala)
+    - mi serve la luce in [corridoio](sala)
+    - mi serve la luce in [portico](sala)
+    - mi serve la luce in [camera degli ospiti](sala)
+    - mi serve la luce in [soffitta](sala)
+    - mi serve la luce in [camera](sala)
+    - mi serve la luce in [dispensa](sala)
+    - lascia la luce accesa in [camera da letto](sala)
+    - lascia la luce accesa in [cabina armadio](sala)
+    - lascia la luce accesa in [sala giochi](sala)
+    - lascia la luce accesa in [cameretta](sala)
+    - lascia la luce accesa in [salotto](sala)
+    - lascia la luce accesa in [terrazza](sala)
+    - lascia la luce accesa in [corridoio](sala)
+    - lascia la luce accesa in [mansarda](sala)
+    - lascia la luce accesa in [soggiorno](sala)
+    - luce di [camera da letto](sala) accesa
+    - luce di [soffitta](sala) accesa
+    - luce di [garage](sala) accesa
+    - luce di [camera degli ospiti](sala) accesa
+    - luce di [studio](sala) accesa
+    - luce di [balcone](sala) accesa
+    - luce di [camera matrimoniale](sala) accesa
+    - luce di [salotto](sala) accesa
+    - luce di [giardino](sala) accesa
+    - rendi luminosa [dispensa](sala)
+    - rendi luminosa [sala giochi](sala)
+    - rendi luminosa [sala da pranzo](sala)
+    - rendi luminosa [giardino](sala)
+    - rendi luminosa [mansarda](sala)
+    - rendi luminosa [ufficio](sala)
+    - rendi luminosa [terrazza](sala)
+    - rendi luminosa [balcone](sala)
+
+- intent: apagar_luz
+  examples: |
+    - niente luce in [studio](sala)
+    - niente luce in [camera da letto](sala)
+    - niente luce in [bagno](sala)
+    - niente luce in [portico](sala)
+    - niente luce in [salotto](sala)
+    - niente luce in [camera](sala)
+    - niente luce in [sala da pranzo](sala)
+    - niente luce in [corridoio](sala)
+    - potresti spegnere la luce di [bagno di servizio](sala) per favore
+    - potresti spegnere la luce di [camera degli ospiti](sala) per favore
+    - potresti spegnere la luce di [cortile](sala) per favore
+    - potresti spegnere la luce di [balcone](sala) per favore
+    - potresti spegnere la luce di [salotto](sala) per favore
+    - potresti spegnere la luce di [camera da letto](sala) per favore
+    - potresti spegnere la luce di [bagno](sala) per favore
+    - potresti spegnere la luce di [soffitta](sala) per favore
+    - mi serve la luce spenta in [cucina](sala)
+    - mi serve la luce spenta in [mansarda](sala)
+    - mi serve la luce spenta in [dispensa](sala)
+    - mi serve la luce spenta in [cantina](sala)
+    - mi serve la luce spenta in [ufficio](sala)
+    - mi serve la luce spenta in [studio](sala)
+    - mi serve la luce spenta in [corridoio](sala)
+    - mi serve la luce spenta in [sala](sala)
+    - lascia la luce spenta in [sala](sala)
+    - lascia la luce spenta in [garage](sala)
+    - lascia la luce spenta in [palestra](sala)
+    - lascia la luce spenta in [camera](sala)
+    - lascia la luce spenta in [ingresso](sala)
+    - lascia la luce spenta in [salotto](sala)
+    - lascia la luce spenta in [sala giochi](sala)
+    - lascia la luce spenta in [cabina armadio](sala)
+    - lascia la luce spenta in [corridoio](sala)
+    - luce di [sala giochi](sala) spenta
+    - luce di [studio](sala) spenta
+    - luce di [salotto](sala) spenta
+    - luce di [seminterrato](sala) spenta
+    - luce di [palestra](sala) spenta
+    - luce di [ripostiglio](sala) spenta
+    - luce di [corridoio](sala) spenta
+    - luce di [camera matrimoniale](sala) spenta
+    - rendi buia [studio](sala)
+    - rendi buia [seminterrato](sala)
+    - rendi buia [sala giochi](sala)
+    - rendi buia [sala da pranzo](sala)
+    - rendi buia [garage](sala)
+    - rendi buia [mansarda](sala)
+    - rendi buia [palestra](sala)
+    - rendi buia [salotto](sala)
+    - rendi buia [biblioteca](sala)
+
+- intent: activar_enchufe
+  examples: |
+    - metti [aria condizionata](dispositivo) sotto tensione
+    - metti [umidificatore](dispositivo) sotto tensione
+    - metti [stufa](dispositivo) sotto tensione
+    - metti [caricabatterie](dispositivo) sotto tensione
+    - metti [router](dispositivo) sotto tensione
+    - metti [computer](dispositivo) sotto tensione
+    - metti [frigo](dispositivo) sotto tensione
+    - metti [frigorifero](dispositivo) sotto tensione
+    - metti [microonde](dispositivo) sotto tensione
+    - metti [caricatore](dispositivo) sotto tensione
+    - metti [impianto stereo](dispositivo) sotto tensione
+    - metti [frullatore](dispositivo) sotto tensione
+    - metti [televisore](dispositivo) sotto tensione
+    - metti [robot aspirapolvere](dispositivo) sotto tensione
+    - potresti accendere [lavatrice](dispositivo) per favore
+    - potresti accendere [router](dispositivo) per favore
+    - potresti accendere [stampante](dispositivo) per favore
+    - potresti accendere [computer](dispositivo) per favore
+    - potresti accendere [aspirapolvere](dispositivo) per favore
+    - potresti accendere [caricabatterie](dispositivo) per favore
+    - potresti accendere [altoparlante](dispositivo) per favore
+    - potresti accendere [stufa](dispositivo) per favore
+    - potresti accendere [cassa](dispositivo) per favore
+    - potresti accendere [purificatore d'aria](dispositivo) per favore
+    - potresti accendere [umidificatore](dispositivo) per favore
+    - potresti accendere [frigo](dispositivo) per favore
+    - potresti accendere [scaldabagno](dispositivo) per favore
+    - mi serve [purificatore d'aria](dispositivo) acceso
+    - mi serve [cassa](dispositivo) acceso
+    - mi serve [forno](dispositivo) acceso
+    - mi serve [router](dispositivo) acceso
+    - mi serve [televisione](dispositivo) acceso
+    - mi serve [televisore](dispositivo) acceso
+    - mi serve [caricatore](dispositivo) acceso
+    - mi serve [schermo](dispositivo) acceso
+    - mi serve [lavatrice](dispositivo) acceso
+    - mi serve [computer](dispositivo) acceso
+    - mi serve [stufa](dispositivo) acceso
+    - mi serve [aspirapolvere](dispositivo) acceso
+    - mi serve [termosifone](dispositivo) acceso
+    - mi serve [frigo](dispositivo) acceso
+    - fai funzionare [frullatore](dispositivo)
+    - fai funzionare [macchina del caffè](dispositivo)
+    - fai funzionare [microonde](dispositivo)
+    - fai funzionare [condizionatore](dispositivo)
+    - fai funzionare [scaldabagno](dispositivo)
+    - fai funzionare [frigo](dispositivo)
+    - fai funzionare [friggitrice](dispositivo)
+    - fai funzionare [schermo](dispositivo)
+    - fai funzionare [stufa](dispositivo)
+    - fai funzionare [caffettiera](dispositivo)
+    - fai funzionare [forno](dispositivo)
+    - fai funzionare [aria condizionata](dispositivo)
+    - fai funzionare [computer](dispositivo)
+    - fai funzionare [caricatore](dispositivo)
+    - fai funzionare [aspirapolvere](dispositivo)
+
+- intent: apagar_enchufe
+  examples: |
+    - metti [frullatore](dispositivo) fuori tensione
+    - metti [schermo](dispositivo) fuori tensione
+    - metti [forno](dispositivo) fuori tensione
+    - metti [router](dispositivo) fuori tensione
+    - metti [computer](dispositivo) fuori tensione
+    - metti [tostapane](dispositivo) fuori tensione
+    - metti [scaldabagno](dispositivo) fuori tensione
+    - metti [caricatore](dispositivo) fuori tensione
+    - metti [frigo](dispositivo) fuori tensione
+    - metti [macchina del caffè](dispositivo) fuori tensione
+    - metti [aria condizionata](dispositivo) fuori tensione
+    - metti [frigorifero](dispositivo) fuori tensione
+    - metti [stampante](dispositivo) fuori tensione
+    - metti [console](dispositivo) fuori tensione
+    - potresti spegnere [caffettiera](dispositivo) per favore
+    - potresti spegnere [ventilatore](dispositivo) per favore
+    - potresti spegnere [caricabatterie](dispositivo) per favore
+    - potresti spegnere [forno](dispositivo) per favore
+    - potresti spegnere [purificatore d'aria](dispositivo) per favore
+    - potresti spegnere [lavatrice](dispositivo) per favore
+    - potresti spegnere [deumidificatore](dispositivo) per favore
+    - potresti spegnere [asciugatrice](dispositivo) per favore
+    - potresti spegnere [console](dispositivo) per favore
+    - potresti spegnere [robot aspirapolvere](dispositivo) per favore
+    - potresti spegnere [cappa](dispositivo) per favore
+    - potresti spegnere [televisore](dispositivo) per favore
+    - potresti spegnere [altoparlante](dispositivo) per favore
+    - potresti spegnere [router](dispositivo) per favore
+    - non mi serve più [aria condizionata](dispositivo)
+    - non mi serve più [caricabatterie](dispositivo)
+    - non mi serve più [console](dispositivo)
+    - non mi serve più [frigo](dispositivo)
+    - non mi serve più [cassa](dispositivo)
+    - non mi serve più [lavatrice](dispositivo)
+    - non mi serve più [frigorifero](dispositivo)
+    - non mi serve più [ventilatore](dispositivo)
+    - non mi serve più [forno](dispositivo)
+    - non mi serve più [altoparlante](dispositivo)
+    - non mi serve più [televisione](dispositivo)
+    - non mi serve più [router](dispositivo)
+    - non mi serve più [monitor](dispositivo)
+    - non mi serve più [termosifone](dispositivo)
+    - taglia la corrente a [frullatore](dispositivo)
+    - taglia la corrente a [caricatore](dispositivo)
+    - taglia la corrente a [lavastoviglie](dispositivo)
+    - taglia la corrente a [caffettiera](dispositivo)
+    - taglia la corrente a [caricabatterie](dispositivo)
+    - taglia la corrente a [altoparlante](dispositivo)
+    - taglia la corrente a [frigo](dispositivo)
+    - taglia la corrente a [umidificatore](dispositivo)
+    - taglia la corrente a [friggitrice](dispositivo)
+    - taglia la corrente a [tostapane](dispositivo)
+    - taglia la corrente a [aria condizionata](dispositivo)
+    - taglia la corrente a [ventilatore](dispositivo)
+    - taglia la corrente a [lavatrice](dispositivo)
+    - taglia la corrente a [router](dispositivo)
+
+- intent: subir_persiana
+  examples: |
+    - sposta su la tapparella di [lavanderia](sala)
+    - sposta su la tapparella di [sala](sala)
+    - sposta su la tapparella di [camera degli ospiti](sala)
+    - sposta su la tapparella di [cortile](sala)
+    - sposta su la tapparella di [cucina](sala)
+    - sposta su la tapparella di [soggiorno](sala)
+    - sposta su la tapparella di [terrazza](sala)
+    - sposta su la tapparella di [sala giochi](sala)
+    - sposta su la tapparella di [ufficio](sala)
+    - sposta su la tapparella di [biblioteca](sala)
+    - sposta su la tapparella di [giardino](sala)
+    - sposta su la tapparella di [camera da letto](sala)
+    - potresti alzare la tapparella di [soggiorno](sala) per favore
+    - potresti alzare la tapparella di [sala giochi](sala) per favore
+    - potresti alzare la tapparella di [bagno di servizio](sala) per favore
+    - potresti alzare la tapparella di [balcone](sala) per favore
+    - potresti alzare la tapparella di [soffitta](sala) per favore
+    - potresti alzare la tapparella di [studio](sala) per favore
+    - potresti alzare la tapparella di [camera](sala) per favore
+    - potresti alzare la tapparella di [camera degli ospiti](sala) per favore
+    - potresti alzare la tapparella di [camera da letto](sala) per favore
+    - potresti alzare la tapparella di [lavanderia](sala) per favore
+    - potresti alzare la tapparella di [giardino](sala) per favore
+    - mi serve la tapparella aperta in [bagno di servizio](sala)
+    - mi serve la tapparella aperta in [sala da pranzo](sala)
+    - mi serve la tapparella aperta in [lavanderia](sala)
+    - mi serve la tapparella aperta in [sala](sala)
+    - mi serve la tapparella aperta in [mansarda](sala)
+    - mi serve la tapparella aperta in [camera](sala)
+    - mi serve la tapparella aperta in [sala giochi](sala)
+    - mi serve la tapparella aperta in [giardino](sala)
+    - mi serve la tapparella aperta in [ripostiglio](sala)
+    - mi serve la tapparella aperta in [portico](sala)
+    - mi serve la tapparella aperta in [terrazza](sala)
+    - mi serve la tapparella aperta in [camera da letto](sala)
+    - tapparelle in alto in [cantina](sala)
+    - tapparelle in alto in [sala](sala)
+    - tapparelle in alto in [salotto](sala)
+    - tapparelle in alto in [cucina](sala)
+    - tapparelle in alto in [dispensa](sala)
+    - tapparelle in alto in [garage](sala)
+    - tapparelle in alto in [camera](sala)
+    - tapparelle in alto in [soggiorno](sala)
+    - tapparelle in alto in [sala giochi](sala)
+    - tapparelle in alto in [ufficio](sala)
+    - tapparelle in alto in [cameretta](sala)
+    - tapparelle in alto in [camera matrimoniale](sala)
+
+- intent: bajar_persiana
+  examples: |
+    - sposta giù la tapparella di [cameretta](sala)
+    - sposta giù la tapparella di [bagno di servizio](sala)
+    - sposta giù la tapparella di [cucina](sala)
+    - sposta giù la tapparella di [balcone](sala)
+    - sposta giù la tapparella di [corridoio](sala)
+    - sposta giù la tapparella di [salotto](sala)
+    - sposta giù la tapparella di [soffitta](sala)
+    - sposta giù la tapparella di [portico](sala)
+    - sposta giù la tapparella di [lavanderia](sala)
+    - sposta giù la tapparella di [camera da letto](sala)
+    - sposta giù la tapparella di [dispensa](sala)
+    - sposta giù la tapparella di [seminterrato](sala)
+    - sposta giù la tapparella di [cortile](sala)
+    - potresti abbassare la tapparella di [ingresso](sala) per favore
+    - potresti abbassare la tapparella di [bagno di servizio](sala) per favore
+    - potresti abbassare la tapparella di [studio](sala) per favore
+    - potresti abbassare la tapparella di [soggiorno](sala) per favore
+    - potresti abbassare la tapparella di [giardino](sala) per favore
+    - potresti abbassare la tapparella di [cabina armadio](sala) per favore
+    - potresti abbassare la tapparella di [camera matrimoniale](sala) per favore
+    - potresti abbassare la tapparella di [camera degli ospiti](sala) per favore
+    - potresti abbassare la tapparella di [cameretta](sala) per favore
+    - potresti abbassare la tapparella di [sala da pranzo](sala) per favore
+    - potresti abbassare la tapparella di [ufficio](sala) per favore
+    - potresti abbassare la tapparella di [camera](sala) per favore
+    - mi serve la tapparella chiusa in [ufficio](sala)
+    - mi serve la tapparella chiusa in [terrazza](sala)
+    - mi serve la tapparella chiusa in [balcone](sala)
+    - mi serve la tapparella chiusa in [cameretta](sala)
+    - mi serve la tapparella chiusa in [sala](sala)
+    - mi serve la tapparella chiusa in [bagno](sala)
+    - mi serve la tapparella chiusa in [camera](sala)
+    - mi serve la tapparella chiusa in [cucina](sala)
+    - mi serve la tapparella chiusa in [garage](sala)
+    - mi serve la tapparella chiusa in [mansarda](sala)
+    - mi serve la tapparella chiusa in [biblioteca](sala)
+    - tapparelle in basso in [cantina](sala)
+    - tapparelle in basso in [sala da pranzo](sala)
+    - tapparelle in basso in [sala](sala)
+    - tapparelle in basso in [cucina](sala)
+    - tapparelle in basso in [seminterrato](sala)
+    - tapparelle in basso in [bagno](sala)
+    - tapparelle in basso in [giardino](sala)
+    - tapparelle in basso in [camera da letto](sala)
+    - tapparelle in basso in [cabina armadio](sala)
+    - tapparelle in basso in [soggiorno](sala)
+    - tapparelle in basso in [ufficio](sala)
+
+- intent: parar_persiana
+  examples: |
+    - fermo là
+    - potresti fermare la tapparella per favore
+    - alt
+    - basta ferma le tapparelle
+    - ferma tutto adesso
+
+- intent: activar_modo
+  examples: |
+    - andiamo in modalità [yoga](modo)
+    - andiamo in modalità [risparmio](modo)
+    - andiamo in modalità [alba](modo)
+    - andiamo in modalità [vacanze](modo)
+    - andiamo in modalità [meditazione](modo)
+    - andiamo in modalità [lettura](modo)
+    - andiamo in modalità [relax](modo)
+    - andiamo in modalità [studiare](modo)
+    - andiamo in modalità [concentrazione](modo)
+    - attiva per favore la modalità [risparmio energetico](modo)
+    - attiva per favore la modalità [concentrazione](modo)
+    - attiva per favore la modalità [natale](modo)
+    - attiva per favore la modalità [relax](modo)
+    - attiva per favore la modalità [notte](modo)
+    - attiva per favore la modalità [yoga](modo)
+    - attiva per favore la modalità [alba](modo)
+    - attiva per favore la modalità [tramonto](modo)
+    - attiva per favore la modalità [sonno](modo)
+    - vorrei la modalità [notte](modo)
+    - vorrei la modalità [vacanze](modo)
+    - vorrei la modalità [romantico](modo)
+    - vorrei la modalità [lavoro](modo)
+    - vorrei la modalità [relax](modo)
+    - vorrei la modalità [sport](modo)
+    - vorrei la modalità [natale](modo)
+    - vorrei la modalità [risparmio](modo)
+    - esegui la modalità [tramonto](modo)
+    - esegui la modalità [lavoro](modo)
+    - esegui la modalità [natale](modo)
+    - esegui la modalità [notte](modo)
+    - esegui la modalità [alba](modo)
+    - esegui la modalità [romantico](modo)
+    - esegui la modalità [lettura](modo)
+    - esegui la modalità [pisolino](modo)
+
+- intent: desactivar_modo
+  examples: |
+    - usciamo dalla modalità [lavoro](modo)
+    - usciamo dalla modalità [tramonto](modo)
+    - usciamo dalla modalità [siesta](modo)
+    - usciamo dalla modalità [buonanotte](modo)
+    - usciamo dalla modalità [meditazione](modo)
+    - usciamo dalla modalità [cinema](modo)
+    - usciamo dalla modalità [natale](modo)
+    - usciamo dalla modalità [yoga](modo)
+    - disattiva per favore la modalità [relax](modo)
+    - disattiva per favore la modalità [lavoro](modo)
+    - disattiva per favore la modalità [concentrazione](modo)
+    - disattiva per favore la modalità [musica](modo)
+    - disattiva per favore la modalità [buongiorno](modo)
+    - disattiva per favore la modalità [sonno](modo)
+    - disattiva per favore la modalità [pisolino](modo)
+    - disattiva per favore la modalità [notte](modo)
+    - ho finito con la modalità [natale](modo)
+    - ho finito con la modalità [lavoro](modo)
+    - ho finito con la modalità [buonanotte](modo)
+    - ho finito con la modalità [risparmio](modo)
+    - ho finito con la modalità [risparmio energetico](modo)
+    - ho finito con la modalità [sonno](modo)
+    - ho finito con la modalità [sport](modo)
+    - ho finito con la modalità [musica](modo)
+    - ho finito con la modalità [meditazione](modo)
+    - termina adesso la modalità [romantico](modo)
+    - termina adesso la modalità [pisolino](modo)
+    - termina adesso la modalità [relax](modo)
+    - termina adesso la modalità [musica](modo)
+    - termina adesso la modalità [siesta](modo)
+    - termina adesso la modalità [notte](modo)
+    - termina adesso la modalità [cinema](modo)
+    - termina adesso la modalità [gioco](modo)
+    - termina adesso la modalità [lavoro](modo)
+

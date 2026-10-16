@@ -1,0 +1,1308 @@
+version: "3.1"
+
+nlu:
+
+- intent: encender_luz
+  examples: |
+    - turn on the light in the [gym](sala)
+    - turn on the light in the [bathroom](sala)
+    - turn on the light in the [dining room](sala)
+    - turn on the light in the [playroom](sala)
+    - turn on the light in the [garage](sala)
+    - turn on the light in the [office](sala)
+    - turn on the light in the [family room](sala)
+    - turn on the light in the [master bedroom](sala)
+    - turn on the light in the [terrace](sala)
+    - turn on the [patio](sala) light
+    - turn on the [garage](sala) light
+    - turn on the [lounge](sala) light
+    - turn on the [library](sala) light
+    - turn on the [balcony](sala) light
+    - turn on the [laundry room](sala) light
+    - turn on the [office](sala) light
+    - turn on the [entrance](sala) light
+    - turn on the [kids room](sala) light
+    - turn on the [study](sala) light
+    - turn on the [guest room](sala) light
+    - please turn on the light in the [playroom](sala)
+    - please turn on the light in the [lounge](sala)
+    - please turn on the light in the [bedroom](sala)
+    - please turn on the light in the [walk-in closet](sala)
+    - please turn on the light in the [office](sala)
+    - please turn on the light in the [corridor](sala)
+    - please turn on the light in the [terrace](sala)
+    - please turn on the light in the [study](sala)
+    - please turn on the light in the [laundry room](sala)
+    - please turn on the light in the [toilet](sala)
+    - switch on the [basement](sala) light
+    - switch on the [living room](sala) light
+    - switch on the [office](sala) light
+    - switch on the [balcony](sala) light
+    - switch on the [entrance](sala) light
+    - switch on the [garage](sala) light
+    - switch on the [bathroom](sala) light
+    - switch on the [dressing room](sala) light
+    - switch on the [family room](sala) light
+    - switch on the [dining room](sala) light
+    - switch on the [kids room](sala) light
+    - switch on the light in the [office](sala)
+    - switch on the light in the [storage room](sala)
+    - switch on the light in the [family room](sala)
+    - switch on the light in the [bedroom](sala)
+    - switch on the light in the [entrance](sala)
+    - switch on the light in the [playroom](sala)
+    - switch on the light in the [entryway](sala)
+    - switch on the light in the [balcony](sala)
+    - switch on the light in the [study](sala)
+    - switch on the light in the [terrace](sala)
+    - switch on the light in the [guest room](sala)
+    - i want the light on in the [living room](sala)
+    - i want the light on in the [restroom](sala)
+    - i want the light on in the [pantry](sala)
+    - i want the light on in the [hallway](sala)
+    - i want the light on in the [garden](sala)
+    - i want the light on in the [bathroom](sala)
+    - i want the light on in the [porch](sala)
+    - i want the light on in the [lounge](sala)
+    - i want the light on in the [guest room](sala)
+    - i want the light on in the [dining room](sala)
+    - i want the light on in the [dressing room](sala)
+    - light up the [living room](sala)
+    - light up the [laundry room](sala)
+    - light up the [bedroom](sala)
+    - light up the [garage](sala)
+    - light up the [basement](sala)
+    - light up the [bathroom](sala)
+    - light up the [playroom](sala)
+    - light up the [walk-in closet](sala)
+    - light up the [balcony](sala)
+    - light up the [restroom](sala)
+    - put the [corridor](sala) light on
+    - put the [guest room](sala) light on
+    - put the [bathroom](sala) light on
+    - put the [bedroom](sala) light on
+    - put the [porch](sala) light on
+    - put the [terrace](sala) light on
+    - put the [family room](sala) light on
+    - put the [attic](sala) light on
+    - put the [dining room](sala) light on
+    - put the [kids room](sala) light on
+    - could you turn on the [bathroom](sala) light
+    - could you turn on the [living room](sala) light
+    - could you turn on the [corridor](sala) light
+    - could you turn on the [dressing room](sala) light
+    - could you turn on the [kitchen](sala) light
+    - could you turn on the [hallway](sala) light
+    - could you turn on the [laundry room](sala) light
+    - could you turn on the [porch](sala) light
+    - could you turn on the [library](sala) light
+    - i need light in the [kitchen](sala)
+    - i need light in the [dining room](sala)
+    - i need light in the [storage room](sala)
+    - i need light in the [garage](sala)
+    - i need light in the [entryway](sala)
+    - i need light in the [toilet](sala)
+    - i need light in the [office](sala)
+    - i need light in the [terrace](sala)
+    - i need light in the [dressing room](sala)
+    - i need light in the [study](sala)
+    - activate the lights in the [gym](sala)
+    - activate the lights in the [master bedroom](sala)
+    - activate the lights in the [hallway](sala)
+    - activate the lights in the [restroom](sala)
+    - activate the lights in the [patio](sala)
+    - activate the lights in the [bathroom](sala)
+    - activate the lights in the [pantry](sala)
+    - activate the lights in the [storage room](sala)
+    - activate the lights in the [living room](sala)
+    - hey turn on the [walk-in closet](sala) light
+    - hey turn on the [garage](sala) light
+    - hey turn on the [balcony](sala) light
+    - hey turn on the [entryway](sala) light
+    - hey turn on the [laundry room](sala) light
+    - hey turn on the [study](sala) light
+    - hey turn on the [hallway](sala) light
+    - hey turn on the [corridor](sala) light
+    - hey turn on the [guest room](sala) light
+    - hey turn on the [patio](sala) light
+    - hey turn on the [living room](sala) light
+    - can you switch on the lights in the [bathroom](sala)
+    - can you switch on the lights in the [garage](sala)
+    - can you switch on the lights in the [library](sala)
+    - can you switch on the lights in the [laundry room](sala)
+    - can you switch on the lights in the [gym](sala)
+    - can you switch on the lights in the [toilet](sala)
+    - can you switch on the lights in the [kitchen](sala)
+    - can you switch on the lights in the [lounge](sala)
+    - can you switch on the lights in the [study](sala)
+    - can you switch on the lights in the [living room](sala)
+    - can you switch on the lights in the [kids room](sala)
+    - lights on in the [library](sala)
+    - lights on in the [lounge](sala)
+    - lights on in the [attic](sala)
+    - lights on in the [toilet](sala)
+    - lights on in the [hallway](sala)
+    - lights on in the [garage](sala)
+    - lights on in the [bedroom](sala)
+    - lights on in the [balcony](sala)
+    - lights on in the [gym](sala)
+    - lights on in the [office](sala)
+    - lights on in the [family room](sala)
+    - make the [entryway](sala) light turn on
+    - make the [porch](sala) light turn on
+    - make the [master bedroom](sala) light turn on
+    - make the [study](sala) light turn on
+    - make the [balcony](sala) light turn on
+    - make the [hallway](sala) light turn on
+    - make the [bathroom](sala) light turn on
+    - make the [office](sala) light turn on
+    - make the [family room](sala) light turn on
+    - make the [living room](sala) light turn on
+
+- intent: apagar_luz
+  examples: |
+    - turn off the light in the [family room](sala)
+    - turn off the light in the [kids room](sala)
+    - turn off the light in the [bedroom](sala)
+    - turn off the light in the [study](sala)
+    - turn off the light in the [basement](sala)
+    - turn off the light in the [patio](sala)
+    - turn off the light in the [hallway](sala)
+    - turn off the light in the [attic](sala)
+    - turn off the light in the [toilet](sala)
+    - turn off the light in the [bathroom](sala)
+    - turn off the [office](sala) light
+    - turn off the [dining room](sala) light
+    - turn off the [hallway](sala) light
+    - turn off the [garden](sala) light
+    - turn off the [kitchen](sala) light
+    - turn off the [guest room](sala) light
+    - turn off the [terrace](sala) light
+    - turn off the [entrance](sala) light
+    - turn off the [restroom](sala) light
+    - turn off the [living room](sala) light
+    - please turn off the light in the [study](sala)
+    - please turn off the light in the [pantry](sala)
+    - please turn off the light in the [lounge](sala)
+    - please turn off the light in the [kitchen](sala)
+    - please turn off the light in the [terrace](sala)
+    - please turn off the light in the [patio](sala)
+    - please turn off the light in the [corridor](sala)
+    - please turn off the light in the [balcony](sala)
+    - please turn off the light in the [family room](sala)
+    - please turn off the light in the [entryway](sala)
+    - please turn off the light in the [office](sala)
+    - switch off the [balcony](sala) light
+    - switch off the [lounge](sala) light
+    - switch off the [garage](sala) light
+    - switch off the [patio](sala) light
+    - switch off the [corridor](sala) light
+    - switch off the [guest room](sala) light
+    - switch off the [master bedroom](sala) light
+    - switch off the [basement](sala) light
+    - switch off the [restroom](sala) light
+    - switch off the [hallway](sala) light
+    - switch off the light in the [storage room](sala)
+    - switch off the light in the [study](sala)
+    - switch off the light in the [kitchen](sala)
+    - switch off the light in the [basement](sala)
+    - switch off the light in the [bedroom](sala)
+    - switch off the light in the [dining room](sala)
+    - switch off the light in the [garage](sala)
+    - switch off the light in the [corridor](sala)
+    - switch off the light in the [toilet](sala)
+    - switch off the light in the [master bedroom](sala)
+    - switch off the light in the [patio](sala)
+    - i want the light off in the [attic](sala)
+    - i want the light off in the [bedroom](sala)
+    - i want the light off in the [living room](sala)
+    - i want the light off in the [gym](sala)
+    - i want the light off in the [guest room](sala)
+    - i want the light off in the [garage](sala)
+    - i want the light off in the [corridor](sala)
+    - i want the light off in the [toilet](sala)
+    - i want the light off in the [balcony](sala)
+    - i want the light off in the [entryway](sala)
+    - shut off the [balcony](sala) light
+    - shut off the [office](sala) light
+    - shut off the [guest room](sala) light
+    - shut off the [entrance](sala) light
+    - shut off the [garage](sala) light
+    - shut off the [bedroom](sala) light
+    - shut off the [bathroom](sala) light
+    - shut off the [kitchen](sala) light
+    - shut off the [family room](sala) light
+    - shut off the [attic](sala) light
+    - put the [hallway](sala) light off
+    - put the [kitchen](sala) light off
+    - put the [garden](sala) light off
+    - put the [terrace](sala) light off
+    - put the [living room](sala) light off
+    - put the [toilet](sala) light off
+    - put the [gym](sala) light off
+    - put the [guest room](sala) light off
+    - put the [office](sala) light off
+    - put the [kids room](sala) light off
+    - put the [bathroom](sala) light off
+    - could you turn off the [garage](sala) light
+    - could you turn off the [living room](sala) light
+    - could you turn off the [library](sala) light
+    - could you turn off the [storage room](sala) light
+    - could you turn off the [dining room](sala) light
+    - could you turn off the [toilet](sala) light
+    - could you turn off the [study](sala) light
+    - could you turn off the [basement](sala) light
+    - could you turn off the [guest room](sala) light
+    - could you turn off the [porch](sala) light
+    - deactivate the lights in the [balcony](sala)
+    - deactivate the lights in the [hallway](sala)
+    - deactivate the lights in the [lounge](sala)
+    - deactivate the lights in the [study](sala)
+    - deactivate the lights in the [bedroom](sala)
+    - deactivate the lights in the [corridor](sala)
+    - deactivate the lights in the [garage](sala)
+    - deactivate the lights in the [kids room](sala)
+    - deactivate the lights in the [attic](sala)
+    - deactivate the lights in the [office](sala)
+    - hey turn off the [office](sala) light
+    - hey turn off the [basement](sala) light
+    - hey turn off the [playroom](sala) light
+    - hey turn off the [bedroom](sala) light
+    - hey turn off the [bathroom](sala) light
+    - hey turn off the [library](sala) light
+    - hey turn off the [family room](sala) light
+    - hey turn off the [patio](sala) light
+    - hey turn off the [hallway](sala) light
+    - hey turn off the [entrance](sala) light
+    - hey turn off the [corridor](sala) light
+    - can you switch off the lights in the [walk-in closet](sala)
+    - can you switch off the lights in the [kitchen](sala)
+    - can you switch off the lights in the [gym](sala)
+    - can you switch off the lights in the [family room](sala)
+    - can you switch off the lights in the [guest room](sala)
+    - can you switch off the lights in the [entrance](sala)
+    - can you switch off the lights in the [entryway](sala)
+    - can you switch off the lights in the [attic](sala)
+    - can you switch off the lights in the [dining room](sala)
+    - can you switch off the lights in the [basement](sala)
+    - can you switch off the lights in the [laundry room](sala)
+    - lights off in the [dining room](sala)
+    - lights off in the [porch](sala)
+    - lights off in the [basement](sala)
+    - lights off in the [garage](sala)
+    - lights off in the [storage room](sala)
+    - lights off in the [dressing room](sala)
+    - lights off in the [study](sala)
+    - lights off in the [hallway](sala)
+    - lights off in the [living room](sala)
+    - lights off in the [playroom](sala)
+    - make the [garden](sala) light turn off
+    - make the [kids room](sala) light turn off
+    - make the [lounge](sala) light turn off
+    - make the [storage room](sala) light turn off
+    - make the [porch](sala) light turn off
+    - make the [bathroom](sala) light turn off
+    - make the [walk-in closet](sala) light turn off
+    - make the [pantry](sala) light turn off
+    - make the [balcony](sala) light turn off
+    - make the [library](sala) light turn off
+    - make the [entryway](sala) light turn off
+
+- intent: activar_enchufe
+  examples: |
+    - activate the [refrigerator](dispositivo) plug
+    - activate the [mixer](dispositivo) plug
+    - activate the [range hood](dispositivo) plug
+    - activate the [television](dispositivo) plug
+    - activate the [computer](dispositivo) plug
+    - activate the [stereo](dispositivo) plug
+    - activate the [sound system](dispositivo) plug
+    - activate the [speaker](dispositivo) plug
+    - activate the [fryer](dispositivo) plug
+    - activate the [washing machine](dispositivo) plug
+    - activate the [fridge](dispositivo) plug
+    - activate the [router](dispositivo) plug
+    - activate the [phone charger](dispositivo) plug
+    - activate the [lamp](dispositivo) plug
+    - please activate the [computer](dispositivo) plug
+    - please activate the [mixer](dispositivo) plug
+    - please activate the [vacuum cleaner](dispositivo) plug
+    - please activate the [fan](dispositivo) plug
+    - please activate the [microwave](dispositivo) plug
+    - please activate the [router](dispositivo) plug
+    - please activate the [air fryer](dispositivo) plug
+    - please activate the [coffee maker](dispositivo) plug
+    - please activate the [humidifier](dispositivo) plug
+    - please activate the [projector](dispositivo) plug
+    - please activate the [charger](dispositivo) plug
+    - please activate the [air conditioner](dispositivo) plug
+    - please activate the [printer](dispositivo) plug
+    - turn on the [radiator](dispositivo) socket
+    - turn on the [boiler](dispositivo) socket
+    - turn on the [television](dispositivo) socket
+    - turn on the [air fryer](dispositivo) socket
+    - turn on the [range hood](dispositivo) socket
+    - turn on the [computer](dispositivo) socket
+    - turn on the [oven](dispositivo) socket
+    - turn on the [router](dispositivo) socket
+    - turn on the [microwave](dispositivo) socket
+    - turn on the [mixer](dispositivo) socket
+    - turn on the [toaster](dispositivo) socket
+    - turn on the [air conditioner](dispositivo) socket
+    - turn on the [tv](dispositivo) socket
+    - turn on the [refrigerator](dispositivo) socket
+    - turn on the [toaster](dispositivo)
+    - turn on the [humidifier](dispositivo)
+    - turn on the [tv](dispositivo)
+    - turn on the [coffee maker](dispositivo)
+    - turn on the [stove](dispositivo)
+    - turn on the [printer](dispositivo)
+    - turn on the [speaker](dispositivo)
+    - turn on the [boiler](dispositivo)
+    - turn on the [fridge](dispositivo)
+    - turn on the [fan](dispositivo)
+    - turn on the [lamp](dispositivo)
+    - turn on the [charger](dispositivo)
+    - turn on the [water heater](dispositivo)
+    - turn on the [washing machine](dispositivo)
+    - switch on the [range hood](dispositivo)
+    - switch on the [charger](dispositivo)
+    - switch on the [boiler](dispositivo)
+    - switch on the [refrigerator](dispositivo)
+    - switch on the [heater](dispositivo)
+    - switch on the [extractor fan](dispositivo)
+    - switch on the [fryer](dispositivo)
+    - switch on the [television](dispositivo)
+    - switch on the [game console](dispositivo)
+    - switch on the [stove](dispositivo)
+    - switch on the [microwave](dispositivo)
+    - switch on the [router](dispositivo)
+    - switch on the [lamp](dispositivo)
+    - switch on the [radiator](dispositivo)
+    - switch on the [dishwasher](dispositivo)
+    - activate the [radiator](dispositivo)
+    - activate the [speaker](dispositivo)
+    - activate the [stereo](dispositivo)
+    - activate the [projector](dispositivo)
+    - activate the [washing machine](dispositivo)
+    - activate the [microwave](dispositivo)
+    - activate the [fan](dispositivo)
+    - activate the [extractor fan](dispositivo)
+    - activate the [water heater](dispositivo)
+    - activate the [fridge](dispositivo)
+    - activate the [dehumidifier](dispositivo)
+    - activate the [coffee maker](dispositivo)
+    - i want the [computer](dispositivo) on
+    - i want the [stereo](dispositivo) on
+    - i want the [vacuum cleaner](dispositivo) on
+    - i want the [coffee maker](dispositivo) on
+    - i want the [television](dispositivo) on
+    - i want the [monitor](dispositivo) on
+    - i want the [charger](dispositivo) on
+    - i want the [microwave](dispositivo) on
+    - i want the [fryer](dispositivo) on
+    - i want the [phone charger](dispositivo) on
+    - i want the [coffee machine](dispositivo) on
+    - i want the [fan](dispositivo) on
+    - i want the [air purifier](dispositivo) on
+    - power on the [tv](dispositivo)
+    - power on the [fridge](dispositivo)
+    - power on the [robot vacuum](dispositivo)
+    - power on the [air conditioner](dispositivo)
+    - power on the [stove](dispositivo)
+    - power on the [range hood](dispositivo)
+    - power on the [oven](dispositivo)
+    - power on the [humidifier](dispositivo)
+    - power on the [extractor fan](dispositivo)
+    - power on the [sound system](dispositivo)
+    - power on the [blender](dispositivo)
+    - power on the [computer](dispositivo)
+    - power on the [charger](dispositivo)
+    - power on the [mixer](dispositivo)
+    - power on the [vacuum cleaner](dispositivo)
+    - please turn on the [fridge](dispositivo)
+    - please turn on the [air purifier](dispositivo)
+    - please turn on the [mixer](dispositivo)
+    - please turn on the [microwave](dispositivo)
+    - please turn on the [range hood](dispositivo)
+    - please turn on the [stereo](dispositivo)
+    - please turn on the [water heater](dispositivo)
+    - please turn on the [router](dispositivo)
+    - please turn on the [charger](dispositivo)
+    - please turn on the [computer](dispositivo)
+    - please turn on the [fryer](dispositivo)
+    - please turn on the [projector](dispositivo)
+    - please turn on the [coffee maker](dispositivo)
+    - please turn on the [washing machine](dispositivo)
+    - could you turn on the [router](dispositivo)
+    - could you turn on the [air conditioner](dispositivo)
+    - could you turn on the [stereo](dispositivo)
+    - could you turn on the [fan](dispositivo)
+    - could you turn on the [air purifier](dispositivo)
+    - could you turn on the [speaker](dispositivo)
+    - could you turn on the [computer](dispositivo)
+    - could you turn on the [humidifier](dispositivo)
+    - could you turn on the [console](dispositivo)
+    - could you turn on the [tv](dispositivo)
+    - could you turn on the [fridge](dispositivo)
+    - could you turn on the [vacuum cleaner](dispositivo)
+    - could you turn on the [boiler](dispositivo)
+    - could you turn on the [microwave](dispositivo)
+    - start the [coffee maker](dispositivo)
+    - start the [charger](dispositivo)
+    - start the [sound system](dispositivo)
+    - start the [router](dispositivo)
+    - start the [washing machine](dispositivo)
+    - start the [refrigerator](dispositivo)
+    - start the [microwave](dispositivo)
+    - start the [computer](dispositivo)
+    - start the [game console](dispositivo)
+    - start the [lamp](dispositivo)
+    - start the [dehumidifier](dispositivo)
+    - start the [phone charger](dispositivo)
+    - start the [air fryer](dispositivo)
+    - start the [television](dispositivo)
+    - start the [extractor fan](dispositivo)
+    - hey switch on the [coffee machine](dispositivo) plug
+    - hey switch on the [coffee maker](dispositivo) plug
+    - hey switch on the [tv](dispositivo) plug
+    - hey switch on the [microwave](dispositivo) plug
+    - hey switch on the [router](dispositivo) plug
+    - hey switch on the [boiler](dispositivo) plug
+    - hey switch on the [stereo](dispositivo) plug
+    - hey switch on the [stove](dispositivo) plug
+    - hey switch on the [mixer](dispositivo) plug
+    - hey switch on the [vacuum cleaner](dispositivo) plug
+    - hey switch on the [toaster](dispositivo) plug
+    - hey switch on the [fridge](dispositivo) plug
+    - hey switch on the [computer](dispositivo) plug
+    - enable the [stereo](dispositivo) socket
+    - enable the [coffee maker](dispositivo) socket
+    - enable the [fryer](dispositivo) socket
+    - enable the [television](dispositivo) socket
+    - enable the [coffee machine](dispositivo) socket
+    - enable the [game console](dispositivo) socket
+    - enable the [boiler](dispositivo) socket
+    - enable the [mixer](dispositivo) socket
+    - enable the [air purifier](dispositivo) socket
+    - enable the [refrigerator](dispositivo) socket
+    - enable the [dehumidifier](dispositivo) socket
+    - enable the [vacuum cleaner](dispositivo) socket
+    - enable the [extractor fan](dispositivo) socket
+    - enable the [water heater](dispositivo) socket
+    - put the [humidifier](dispositivo) on
+    - put the [heater](dispositivo) on
+    - put the [boiler](dispositivo) on
+    - put the [fridge](dispositivo) on
+    - put the [extractor fan](dispositivo) on
+    - put the [dryer](dispositivo) on
+    - put the [coffee machine](dispositivo) on
+    - put the [stove](dispositivo) on
+    - put the [air purifier](dispositivo) on
+    - put the [refrigerator](dispositivo) on
+    - put the [toaster](dispositivo) on
+    - put the [lamp](dispositivo) on
+    - put the [sound system](dispositivo) on
+
+- intent: apagar_enchufe
+  examples: |
+    - deactivate the [tv](dispositivo) plug
+    - deactivate the [fan](dispositivo) plug
+    - deactivate the [dehumidifier](dispositivo) plug
+    - deactivate the [fridge](dispositivo) plug
+    - deactivate the [dryer](dispositivo) plug
+    - deactivate the [stereo](dispositivo) plug
+    - deactivate the [computer](dispositivo) plug
+    - deactivate the [phone charger](dispositivo) plug
+    - deactivate the [microwave](dispositivo) plug
+    - deactivate the [washing machine](dispositivo) plug
+    - deactivate the [lamp](dispositivo) plug
+    - deactivate the [refrigerator](dispositivo) plug
+    - deactivate the [air fryer](dispositivo) plug
+    - deactivate the [oven](dispositivo) plug
+    - deactivate the [air conditioner](dispositivo) plug
+    - please deactivate the [speaker](dispositivo) plug
+    - please deactivate the [coffee machine](dispositivo) plug
+    - please deactivate the [stereo](dispositivo) plug
+    - please deactivate the [printer](dispositivo) plug
+    - please deactivate the [coffee maker](dispositivo) plug
+    - please deactivate the [microwave](dispositivo) plug
+    - please deactivate the [humidifier](dispositivo) plug
+    - please deactivate the [router](dispositivo) plug
+    - please deactivate the [dishwasher](dispositivo) plug
+    - please deactivate the [blender](dispositivo) plug
+    - please deactivate the [computer](dispositivo) plug
+    - please deactivate the [washing machine](dispositivo) plug
+    - please deactivate the [phone charger](dispositivo) plug
+    - please deactivate the [monitor](dispositivo) plug
+    - turn off the [stereo](dispositivo) socket
+    - turn off the [air purifier](dispositivo) socket
+    - turn off the [sound system](dispositivo) socket
+    - turn off the [boiler](dispositivo) socket
+    - turn off the [speaker](dispositivo) socket
+    - turn off the [television](dispositivo) socket
+    - turn off the [fridge](dispositivo) socket
+    - turn off the [air conditioner](dispositivo) socket
+    - turn off the [coffee machine](dispositivo) socket
+    - turn off the [vacuum cleaner](dispositivo) socket
+    - turn off the [refrigerator](dispositivo) socket
+    - turn off the [fan](dispositivo) socket
+    - turn off the [mixer](dispositivo) socket
+    - turn off the [computer](dispositivo) socket
+    - turn off the [washing machine](dispositivo) socket
+    - turn off the [stove](dispositivo)
+    - turn off the [dishwasher](dispositivo)
+    - turn off the [radiator](dispositivo)
+    - turn off the [humidifier](dispositivo)
+    - turn off the [monitor](dispositivo)
+    - turn off the [console](dispositivo)
+    - turn off the [air purifier](dispositivo)
+    - turn off the [dryer](dispositivo)
+    - turn off the [coffee machine](dispositivo)
+    - turn off the [refrigerator](dispositivo)
+    - turn off the [television](dispositivo)
+    - turn off the [charger](dispositivo)
+    - turn off the [stereo](dispositivo)
+    - turn off the [heater](dispositivo)
+    - turn off the [coffee maker](dispositivo)
+    - switch off the [heater](dispositivo)
+    - switch off the [phone charger](dispositivo)
+    - switch off the [sound system](dispositivo)
+    - switch off the [stove](dispositivo)
+    - switch off the [radiator](dispositivo)
+    - switch off the [air purifier](dispositivo)
+    - switch off the [monitor](dispositivo)
+    - switch off the [washing machine](dispositivo)
+    - switch off the [projector](dispositivo)
+    - switch off the [range hood](dispositivo)
+    - switch off the [water heater](dispositivo)
+    - switch off the [vacuum cleaner](dispositivo)
+    - switch off the [lamp](dispositivo)
+    - deactivate the [boiler](dispositivo)
+    - deactivate the [printer](dispositivo)
+    - deactivate the [computer](dispositivo)
+    - deactivate the [phone charger](dispositivo)
+    - deactivate the [coffee maker](dispositivo)
+    - deactivate the [lamp](dispositivo)
+    - deactivate the [heater](dispositivo)
+    - deactivate the [monitor](dispositivo)
+    - deactivate the [air fryer](dispositivo)
+    - deactivate the [air purifier](dispositivo)
+    - deactivate the [refrigerator](dispositivo)
+    - deactivate the [fridge](dispositivo)
+    - i want the [air conditioner](dispositivo) off
+    - i want the [projector](dispositivo) off
+    - i want the [router](dispositivo) off
+    - i want the [stereo](dispositivo) off
+    - i want the [radiator](dispositivo) off
+    - i want the [refrigerator](dispositivo) off
+    - i want the [tv](dispositivo) off
+    - i want the [water heater](dispositivo) off
+    - i want the [fryer](dispositivo) off
+    - i want the [microwave](dispositivo) off
+    - i want the [phone charger](dispositivo) off
+    - i want the [television](dispositivo) off
+    - i want the [speaker](dispositivo) off
+    - i want the [air fryer](dispositivo) off
+    - i want the [computer](dispositivo) off
+    - power off the [oven](dispositivo)
+    - power off the [robot vacuum](dispositivo)
+    - power off the [extractor fan](dispositivo)
+    - power off the [fryer](dispositivo)
+    - power off the [mixer](dispositivo)
+    - power off the [water heater](dispositivo)
+    - power off the [coffee maker](dispositivo)
+    - power off the [dryer](dispositivo)
+    - power off the [lamp](dispositivo)
+    - power off the [speaker](dispositivo)
+    - power off the [computer](dispositivo)
+    - power off the [monitor](dispositivo)
+    - power off the [microwave](dispositivo)
+    - power off the [toaster](dispositivo)
+    - please turn off the [fridge](dispositivo)
+    - please turn off the [speaker](dispositivo)
+    - please turn off the [television](dispositivo)
+    - please turn off the [humidifier](dispositivo)
+    - please turn off the [sound system](dispositivo)
+    - please turn off the [extractor fan](dispositivo)
+    - please turn off the [fan](dispositivo)
+    - please turn off the [range hood](dispositivo)
+    - please turn off the [dryer](dispositivo)
+    - please turn off the [phone charger](dispositivo)
+    - please turn off the [radiator](dispositivo)
+    - please turn off the [stereo](dispositivo)
+    - could you turn off the [computer](dispositivo)
+    - could you turn off the [coffee maker](dispositivo)
+    - could you turn off the [dehumidifier](dispositivo)
+    - could you turn off the [console](dispositivo)
+    - could you turn off the [robot vacuum](dispositivo)
+    - could you turn off the [lamp](dispositivo)
+    - could you turn off the [phone charger](dispositivo)
+    - could you turn off the [sound system](dispositivo)
+    - could you turn off the [fridge](dispositivo)
+    - could you turn off the [oven](dispositivo)
+    - could you turn off the [extractor fan](dispositivo)
+    - could you turn off the [humidifier](dispositivo)
+    - could you turn off the [tv](dispositivo)
+    - could you turn off the [television](dispositivo)
+    - could you turn off the [air fryer](dispositivo)
+    - stop the [dishwasher](dispositivo)
+    - stop the [range hood](dispositivo)
+    - stop the [speaker](dispositivo)
+    - stop the [stove](dispositivo)
+    - stop the [television](dispositivo)
+    - stop the [boiler](dispositivo)
+    - stop the [fryer](dispositivo)
+    - stop the [washing machine](dispositivo)
+    - stop the [water heater](dispositivo)
+    - stop the [game console](dispositivo)
+    - stop the [blender](dispositivo)
+    - stop the [vacuum cleaner](dispositivo)
+    - stop the [radiator](dispositivo)
+    - stop the [sound system](dispositivo)
+    - stop the [stereo](dispositivo)
+    - hey switch off the [extractor fan](dispositivo) plug
+    - hey switch off the [refrigerator](dispositivo) plug
+    - hey switch off the [oven](dispositivo) plug
+    - hey switch off the [dryer](dispositivo) plug
+    - hey switch off the [speaker](dispositivo) plug
+    - hey switch off the [coffee maker](dispositivo) plug
+    - hey switch off the [computer](dispositivo) plug
+    - hey switch off the [television](dispositivo) plug
+    - hey switch off the [coffee machine](dispositivo) plug
+    - hey switch off the [phone charger](dispositivo) plug
+    - hey switch off the [stereo](dispositivo) plug
+    - hey switch off the [projector](dispositivo) plug
+    - hey switch off the [lamp](dispositivo) plug
+    - hey switch off the [washing machine](dispositivo) plug
+    - hey switch off the [tv](dispositivo) plug
+    - disable the [fridge](dispositivo) socket
+    - disable the [water heater](dispositivo) socket
+    - disable the [oven](dispositivo) socket
+    - disable the [fryer](dispositivo) socket
+    - disable the [computer](dispositivo) socket
+    - disable the [stove](dispositivo) socket
+    - disable the [washing machine](dispositivo) socket
+    - disable the [vacuum cleaner](dispositivo) socket
+    - disable the [humidifier](dispositivo) socket
+    - disable the [dehumidifier](dispositivo) socket
+    - disable the [phone charger](dispositivo) socket
+    - disable the [lamp](dispositivo) socket
+    - disable the [coffee machine](dispositivo) socket
+    - shut down the [charger](dispositivo)
+    - shut down the [tv](dispositivo)
+    - shut down the [phone charger](dispositivo)
+    - shut down the [printer](dispositivo)
+    - shut down the [router](dispositivo)
+    - shut down the [sound system](dispositivo)
+    - shut down the [speaker](dispositivo)
+    - shut down the [computer](dispositivo)
+    - shut down the [lamp](dispositivo)
+    - shut down the [refrigerator](dispositivo)
+    - shut down the [stereo](dispositivo)
+    - shut down the [television](dispositivo)
+    - shut down the [radiator](dispositivo)
+
+- intent: subir_persiana
+  examples: |
+    - raise the blinds in the [kitchen](sala)
+    - raise the blinds in the [patio](sala)
+    - raise the blinds in the [laundry room](sala)
+    - raise the blinds in the [bathroom](sala)
+    - raise the blinds in the [playroom](sala)
+    - raise the blinds in the [master bedroom](sala)
+    - raise the blinds in the [hallway](sala)
+    - raise the blinds in the [garden](sala)
+    - raise the blinds in the [attic](sala)
+    - raise the blinds in the [basement](sala)
+    - raise the blinds in the [corridor](sala)
+    - raise the [balcony](sala) blinds
+    - raise the [dining room](sala) blinds
+    - raise the [basement](sala) blinds
+    - raise the [attic](sala) blinds
+    - raise the [library](sala) blinds
+    - raise the [terrace](sala) blinds
+    - raise the [garden](sala) blinds
+    - raise the [bedroom](sala) blinds
+    - raise the [living room](sala) blinds
+    - raise the [kitchen](sala) blinds
+    - raise the [hallway](sala) blinds
+    - please raise the blinds in the [living room](sala)
+    - please raise the blinds in the [office](sala)
+    - please raise the blinds in the [kitchen](sala)
+    - please raise the blinds in the [balcony](sala)
+    - please raise the blinds in the [playroom](sala)
+    - please raise the blinds in the [dining room](sala)
+    - please raise the blinds in the [guest room](sala)
+    - please raise the blinds in the [family room](sala)
+    - please raise the blinds in the [toilet](sala)
+    - please raise the blinds in the [hallway](sala)
+    - please raise the blinds in the [terrace](sala)
+    - open the blinds in the [entrance](sala)
+    - open the blinds in the [toilet](sala)
+    - open the blinds in the [bathroom](sala)
+    - open the blinds in the [guest room](sala)
+    - open the blinds in the [dressing room](sala)
+    - open the blinds in the [garage](sala)
+    - open the blinds in the [study](sala)
+    - open the blinds in the [dining room](sala)
+    - open the blinds in the [master bedroom](sala)
+    - open the blinds in the [living room](sala)
+    - open the blinds in the [pantry](sala)
+    - open the [playroom](sala) blinds
+    - open the [living room](sala) blinds
+    - open the [pantry](sala) blinds
+    - open the [garden](sala) blinds
+    - open the [toilet](sala) blinds
+    - open the [porch](sala) blinds
+    - open the [balcony](sala) blinds
+    - open the [hallway](sala) blinds
+    - open the [kids room](sala) blinds
+    - lift the [garage](sala) blinds
+    - lift the [corridor](sala) blinds
+    - lift the [playroom](sala) blinds
+    - lift the [pantry](sala) blinds
+    - lift the [bathroom](sala) blinds
+    - lift the [porch](sala) blinds
+    - lift the [storage room](sala) blinds
+    - lift the [entrance](sala) blinds
+    - lift the [guest room](sala) blinds
+    - roll up the blinds in the [dining room](sala)
+    - roll up the blinds in the [patio](sala)
+    - roll up the blinds in the [attic](sala)
+    - roll up the blinds in the [office](sala)
+    - roll up the blinds in the [bathroom](sala)
+    - roll up the blinds in the [restroom](sala)
+    - roll up the blinds in the [kitchen](sala)
+    - roll up the blinds in the [playroom](sala)
+    - roll up the blinds in the [kids room](sala)
+    - i want the blinds up in the [hallway](sala)
+    - i want the blinds up in the [terrace](sala)
+    - i want the blinds up in the [garage](sala)
+    - i want the blinds up in the [kids room](sala)
+    - i want the blinds up in the [dining room](sala)
+    - i want the blinds up in the [dressing room](sala)
+    - i want the blinds up in the [playroom](sala)
+    - i want the blinds up in the [gym](sala)
+    - i want the blinds up in the [guest room](sala)
+    - i want the blinds up in the [office](sala)
+    - i want the blinds up in the [balcony](sala)
+    - could you open the [entrance](sala) blinds
+    - could you open the [porch](sala) blinds
+    - could you open the [balcony](sala) blinds
+    - could you open the [garage](sala) blinds
+    - could you open the [pantry](sala) blinds
+    - could you open the [laundry room](sala) blinds
+    - could you open the [terrace](sala) blinds
+    - could you open the [master bedroom](sala) blinds
+    - could you open the [corridor](sala) blinds
+    - could you open the [office](sala) blinds
+    - could you open the [guest room](sala) blinds
+    - hey raise the [balcony](sala) shutter
+    - hey raise the [storage room](sala) shutter
+    - hey raise the [garden](sala) shutter
+    - hey raise the [entrance](sala) shutter
+    - hey raise the [dressing room](sala) shutter
+    - hey raise the [office](sala) shutter
+    - hey raise the [basement](sala) shutter
+    - hey raise the [guest room](sala) shutter
+    - hey raise the [kitchen](sala) shutter
+    - hey raise the [garage](sala) shutter
+    - hey raise the [dining room](sala) shutter
+    - open the shutters in the [attic](sala)
+    - open the shutters in the [office](sala)
+    - open the shutters in the [family room](sala)
+    - open the shutters in the [dressing room](sala)
+    - open the shutters in the [bedroom](sala)
+    - open the shutters in the [balcony](sala)
+    - open the shutters in the [terrace](sala)
+    - open the shutters in the [lounge](sala)
+    - open the shutters in the [storage room](sala)
+    - open the shutters in the [toilet](sala)
+    - open the shutters in the [master bedroom](sala)
+    - pull up the blinds in the [walk-in closet](sala)
+    - pull up the blinds in the [entrance](sala)
+    - pull up the blinds in the [garage](sala)
+    - pull up the blinds in the [balcony](sala)
+    - pull up the blinds in the [kids room](sala)
+    - pull up the blinds in the [office](sala)
+    - pull up the blinds in the [study](sala)
+    - pull up the blinds in the [lounge](sala)
+    - pull up the blinds in the [bedroom](sala)
+    - pull up the blinds in the [terrace](sala)
+    - move the [corridor](sala) blinds up
+    - move the [office](sala) blinds up
+    - move the [restroom](sala) blinds up
+    - move the [garage](sala) blinds up
+    - move the [bedroom](sala) blinds up
+    - move the [terrace](sala) blinds up
+    - move the [garden](sala) blinds up
+    - move the [porch](sala) blinds up
+    - move the [lounge](sala) blinds up
+    - move the [study](sala) blinds up
+    - move the [basement](sala) blinds up
+    - blinds up in the [attic](sala)
+    - blinds up in the [dining room](sala)
+    - blinds up in the [storage room](sala)
+    - blinds up in the [kitchen](sala)
+    - blinds up in the [corridor](sala)
+    - blinds up in the [study](sala)
+    - blinds up in the [guest room](sala)
+    - blinds up in the [bathroom](sala)
+    - blinds up in the [living room](sala)
+    - blinds up in the [garage](sala)
+
+- intent: bajar_persiana
+  examples: |
+    - lower the blinds in the [balcony](sala)
+    - lower the blinds in the [bathroom](sala)
+    - lower the blinds in the [garden](sala)
+    - lower the blinds in the [porch](sala)
+    - lower the blinds in the [guest room](sala)
+    - lower the blinds in the [lounge](sala)
+    - lower the blinds in the [kitchen](sala)
+    - lower the blinds in the [living room](sala)
+    - lower the blinds in the [bedroom](sala)
+    - lower the [entryway](sala) blinds
+    - lower the [office](sala) blinds
+    - lower the [patio](sala) blinds
+    - lower the [garage](sala) blinds
+    - lower the [dining room](sala) blinds
+    - lower the [gym](sala) blinds
+    - lower the [garden](sala) blinds
+    - lower the [study](sala) blinds
+    - lower the [family room](sala) blinds
+    - lower the [master bedroom](sala) blinds
+    - please lower the blinds in the [study](sala)
+    - please lower the blinds in the [playroom](sala)
+    - please lower the blinds in the [corridor](sala)
+    - please lower the blinds in the [living room](sala)
+    - please lower the blinds in the [hallway](sala)
+    - please lower the blinds in the [patio](sala)
+    - please lower the blinds in the [master bedroom](sala)
+    - please lower the blinds in the [gym](sala)
+    - please lower the blinds in the [toilet](sala)
+    - please lower the blinds in the [porch](sala)
+    - close the blinds in the [entrance](sala)
+    - close the blinds in the [bedroom](sala)
+    - close the blinds in the [guest room](sala)
+    - close the blinds in the [study](sala)
+    - close the blinds in the [garden](sala)
+    - close the blinds in the [storage room](sala)
+    - close the blinds in the [laundry room](sala)
+    - close the blinds in the [balcony](sala)
+    - close the blinds in the [gym](sala)
+    - close the [terrace](sala) blinds
+    - close the [patio](sala) blinds
+    - close the [guest room](sala) blinds
+    - close the [restroom](sala) blinds
+    - close the [garden](sala) blinds
+    - close the [balcony](sala) blinds
+    - close the [hallway](sala) blinds
+    - close the [pantry](sala) blinds
+    - close the [family room](sala) blinds
+    - close the [living room](sala) blinds
+    - drop the [master bedroom](sala) blinds
+    - drop the [guest room](sala) blinds
+    - drop the [garage](sala) blinds
+    - drop the [walk-in closet](sala) blinds
+    - drop the [porch](sala) blinds
+    - drop the [corridor](sala) blinds
+    - drop the [laundry room](sala) blinds
+    - drop the [terrace](sala) blinds
+    - drop the [playroom](sala) blinds
+    - drop the [balcony](sala) blinds
+    - roll down the blinds in the [corridor](sala)
+    - roll down the blinds in the [garden](sala)
+    - roll down the blinds in the [office](sala)
+    - roll down the blinds in the [dining room](sala)
+    - roll down the blinds in the [garage](sala)
+    - roll down the blinds in the [library](sala)
+    - roll down the blinds in the [entrance](sala)
+    - roll down the blinds in the [family room](sala)
+    - i want the blinds down in the [office](sala)
+    - i want the blinds down in the [corridor](sala)
+    - i want the blinds down in the [library](sala)
+    - i want the blinds down in the [study](sala)
+    - i want the blinds down in the [hallway](sala)
+    - i want the blinds down in the [family room](sala)
+    - i want the blinds down in the [attic](sala)
+    - i want the blinds down in the [terrace](sala)
+    - i want the blinds down in the [living room](sala)
+    - i want the blinds down in the [playroom](sala)
+    - could you close the [entrance](sala) blinds
+    - could you close the [bathroom](sala) blinds
+    - could you close the [garden](sala) blinds
+    - could you close the [garage](sala) blinds
+    - could you close the [hallway](sala) blinds
+    - could you close the [playroom](sala) blinds
+    - could you close the [restroom](sala) blinds
+    - could you close the [living room](sala) blinds
+    - could you close the [porch](sala) blinds
+    - could you close the [terrace](sala) blinds
+    - could you close the [corridor](sala) blinds
+    - hey lower the [garage](sala) shutter
+    - hey lower the [restroom](sala) shutter
+    - hey lower the [porch](sala) shutter
+    - hey lower the [attic](sala) shutter
+    - hey lower the [office](sala) shutter
+    - hey lower the [dining room](sala) shutter
+    - hey lower the [family room](sala) shutter
+    - hey lower the [guest room](sala) shutter
+    - hey lower the [kitchen](sala) shutter
+    - hey lower the [pantry](sala) shutter
+    - close the shutters in the [office](sala)
+    - close the shutters in the [storage room](sala)
+    - close the shutters in the [garden](sala)
+    - close the shutters in the [balcony](sala)
+    - close the shutters in the [kitchen](sala)
+    - close the shutters in the [guest room](sala)
+    - close the shutters in the [patio](sala)
+    - close the shutters in the [bedroom](sala)
+    - close the shutters in the [kids room](sala)
+    - close the shutters in the [hallway](sala)
+    - pull down the blinds in the [bedroom](sala)
+    - pull down the blinds in the [study](sala)
+    - pull down the blinds in the [pantry](sala)
+    - pull down the blinds in the [basement](sala)
+    - pull down the blinds in the [corridor](sala)
+    - pull down the blinds in the [balcony](sala)
+    - pull down the blinds in the [kitchen](sala)
+    - pull down the blinds in the [terrace](sala)
+    - pull down the blinds in the [attic](sala)
+    - pull down the blinds in the [gym](sala)
+    - pull down the blinds in the [garden](sala)
+    - move the [entrance](sala) blinds down
+    - move the [restroom](sala) blinds down
+    - move the [garden](sala) blinds down
+    - move the [dining room](sala) blinds down
+    - move the [attic](sala) blinds down
+    - move the [kitchen](sala) blinds down
+    - move the [gym](sala) blinds down
+    - move the [garage](sala) blinds down
+    - move the [bedroom](sala) blinds down
+    - move the [office](sala) blinds down
+    - move the [terrace](sala) blinds down
+    - blinds down in the [patio](sala)
+    - blinds down in the [kitchen](sala)
+    - blinds down in the [guest room](sala)
+    - blinds down in the [garage](sala)
+    - blinds down in the [attic](sala)
+    - blinds down in the [walk-in closet](sala)
+    - blinds down in the [porch](sala)
+    - blinds down in the [pantry](sala)
+    - blinds down in the [bedroom](sala)
+    - blinds down in the [dining room](sala)
+    - blinds down in the [basement](sala)
+
+- intent: parar_persiana
+  examples: |
+    - stop
+    - stop the blinds
+    - halt the blinds
+    - please stop the blinds
+    - stop the shutters
+    - stop moving
+    - hold the blinds
+    - hey stop the blinds
+    - freeze the blinds
+    - stop the shutter now
+    - that is enough stop the blinds
+    - can you stop the blinds
+    - stop it
+    - stop
+    - stop the blinds
+    - halt the blinds
+    - please stop the blinds
+    - stop the shutters
+    - stop moving
+    - hold the blinds
+    - hey stop the blinds
+    - freeze the blinds
+    - stop the shutter now
+    - that is enough stop the blinds
+    - can you stop the blinds
+    - stop it
+    - stop
+    - stop the blinds
+    - halt the blinds
+    - please stop the blinds
+    - stop the shutters
+    - stop moving
+    - hold the blinds
+    - hey stop the blinds
+    - freeze the blinds
+    - stop the shutter now
+    - that is enough stop the blinds
+    - can you stop the blinds
+    - stop it
+    - stop
+    - stop the blinds
+    - halt the blinds
+    - please stop the blinds
+    - stop the shutters
+    - stop moving
+    - hold the blinds
+    - hey stop the blinds
+    - freeze the blinds
+    - stop the shutter now
+    - that is enough stop the blinds
+    - can you stop the blinds
+    - stop it
+    - stop
+    - stop the blinds
+    - halt the blinds
+    - please stop the blinds
+    - stop the shutters
+    - stop moving
+    - hold the blinds
+    - hey stop the blinds
+    - freeze the blinds
+    - stop the shutter now
+    - that is enough stop the blinds
+    - can you stop the blinds
+    - stop it
+    - stop
+    - stop the blinds
+    - halt the blinds
+    - please stop the blinds
+    - stop the shutters
+    - stop moving
+    - hold the blinds
+    - hey stop the blinds
+
+- intent: activar_modo
+  examples: |
+    - activate the [relax](modo) mode
+    - activate the [sport](modo) mode
+    - activate the [workout](modo) mode
+    - activate the [energy saving](modo) mode
+    - activate the [security](modo) mode
+    - activate the [night](modo) mode
+    - activate the [sunrise](modo) mode
+    - activate the [music](modo) mode
+    - activate the [concentration](modo) mode
+    - activate the [holiday](modo) mode
+    - please activate the [meditation](modo) mode
+    - please activate the [game](modo) mode
+    - please activate the [sleep](modo) mode
+    - please activate the [vacation](modo) mode
+    - please activate the [reading](modo) mode
+    - please activate the [movie](modo) mode
+    - please activate the [security](modo) mode
+    - please activate the [focus](modo) mode
+    - please activate the [eco](modo) mode
+    - turn on the [vacation](modo) mode
+    - turn on the [sport](modo) mode
+    - turn on the [game](modo) mode
+    - turn on the [night](modo) mode
+    - turn on the [relax](modo) mode
+    - turn on the [party](modo) mode
+    - turn on the [gaming](modo) mode
+    - turn on the [work](modo) mode
+    - turn on the [studying](modo) mode
+    - turn on the [movie](modo) mode
+    - switch to [energy saving](modo) mode
+    - switch to [movie](modo) mode
+    - switch to [focus](modo) mode
+    - switch to [sport](modo) mode
+    - switch to [day](modo) mode
+    - switch to [workout](modo) mode
+    - switch to [work](modo) mode
+    - switch to [sunrise](modo) mode
+    - switch to [romantic](modo) mode
+    - switch to [studying](modo) mode
+    - set the [studying](modo) mode
+    - set the [gaming](modo) mode
+    - set the [holiday](modo) mode
+    - set the [movie](modo) mode
+    - set the [day](modo) mode
+    - set the [good night](modo) mode
+    - set the [night](modo) mode
+    - set the [energy saving](modo) mode
+    - set the [work](modo) mode
+    - set the [cinema](modo) mode
+    - i want the [eco](modo) mode
+    - i want the [security](modo) mode
+    - i want the [movie](modo) mode
+    - i want the [relax](modo) mode
+    - i want the [game](modo) mode
+    - i want the [vacation](modo) mode
+    - i want the [work](modo) mode
+    - i want the [day](modo) mode
+    - start the [relax](modo) mode
+    - start the [workout](modo) mode
+    - start the [concentration](modo) mode
+    - start the [eco](modo) mode
+    - start the [good morning](modo) mode
+    - start the [cinema](modo) mode
+    - start the [gaming](modo) mode
+    - start the [party](modo) mode
+    - start the [work](modo) mode
+    - enable [reading](modo) mode
+    - enable [day](modo) mode
+    - enable [romantic](modo) mode
+    - enable [movie](modo) mode
+    - enable [party](modo) mode
+    - enable [meditation](modo) mode
+    - enable [sunrise](modo) mode
+    - enable [workout](modo) mode
+    - enable [relax](modo) mode
+    - enable [security](modo) mode
+    - could you activate the [sport](modo) mode
+    - could you activate the [movie](modo) mode
+    - could you activate the [sunrise](modo) mode
+    - could you activate the [christmas](modo) mode
+    - could you activate the [night](modo) mode
+    - could you activate the [romantic](modo) mode
+    - could you activate the [gaming](modo) mode
+    - could you activate the [cinema](modo) mode
+    - could you activate the [relax](modo) mode
+    - put the house in [holiday](modo) mode
+    - put the house in [eco](modo) mode
+    - put the house in [night](modo) mode
+    - put the house in [good morning](modo) mode
+    - put the house in [movie](modo) mode
+    - put the house in [sleep](modo) mode
+    - put the house in [party](modo) mode
+    - put the house in [studying](modo) mode
+    - put the house in [work](modo) mode
+    - put the house in [christmas](modo) mode
+    - hey activate [christmas](modo) mode
+    - hey activate [sport](modo) mode
+    - hey activate [sunset](modo) mode
+    - hey activate [energy saving](modo) mode
+    - hey activate [yoga](modo) mode
+    - hey activate [work](modo) mode
+    - hey activate [night](modo) mode
+    - hey activate [cinema](modo) mode
+    - hey activate [eco](modo) mode
+    - hey activate [party](modo) mode
+    - go to [party](modo) mode
+    - go to [eco](modo) mode
+    - go to [cinema](modo) mode
+    - go to [movie](modo) mode
+    - go to [gaming](modo) mode
+    - go to [sunrise](modo) mode
+    - go to [night](modo) mode
+    - go to [concentration](modo) mode
+    - go to [yoga](modo) mode
+    - go to [reading](modo) mode
+
+- intent: desactivar_modo
+  examples: |
+    - deactivate the [romantic](modo) mode
+    - deactivate the [concentration](modo) mode
+    - deactivate the [good morning](modo) mode
+    - deactivate the [studying](modo) mode
+    - deactivate the [relax](modo) mode
+    - deactivate the [sport](modo) mode
+    - deactivate the [party](modo) mode
+    - deactivate the [sunset](modo) mode
+    - deactivate the [cinema](modo) mode
+    - deactivate the [night](modo) mode
+    - please deactivate the [eco](modo) mode
+    - please deactivate the [party](modo) mode
+    - please deactivate the [music](modo) mode
+    - please deactivate the [reading](modo) mode
+    - please deactivate the [workout](modo) mode
+    - please deactivate the [sunrise](modo) mode
+    - please deactivate the [work](modo) mode
+    - please deactivate the [holiday](modo) mode
+    - please deactivate the [day](modo) mode
+    - turn off the [holiday](modo) mode
+    - turn off the [gaming](modo) mode
+    - turn off the [good night](modo) mode
+    - turn off the [work](modo) mode
+    - turn off the [movie](modo) mode
+    - turn off the [christmas](modo) mode
+    - turn off the [cinema](modo) mode
+    - turn off the [night](modo) mode
+    - turn off the [good morning](modo) mode
+    - switch off [day](modo) mode
+    - switch off [night](modo) mode
+    - switch off [movie](modo) mode
+    - switch off [studying](modo) mode
+    - switch off [good night](modo) mode
+    - switch off [romantic](modo) mode
+    - switch off [workout](modo) mode
+    - switch off [party](modo) mode
+    - switch off [security](modo) mode
+    - end the [party](modo) mode
+    - end the [christmas](modo) mode
+    - end the [energy saving](modo) mode
+    - end the [romantic](modo) mode
+    - end the [day](modo) mode
+    - end the [work](modo) mode
+    - end the [vacation](modo) mode
+    - end the [movie](modo) mode
+    - end the [security](modo) mode
+    - i do not want the [romantic](modo) mode anymore
+    - i do not want the [focus](modo) mode anymore
+    - i do not want the [good morning](modo) mode anymore
+    - i do not want the [holiday](modo) mode anymore
+    - i do not want the [energy saving](modo) mode anymore
+    - i do not want the [eco](modo) mode anymore
+    - i do not want the [relax](modo) mode anymore
+    - i do not want the [night](modo) mode anymore
+    - i do not want the [cinema](modo) mode anymore
+    - i do not want the [sunset](modo) mode anymore
+    - stop the [relax](modo) mode
+    - stop the [security](modo) mode
+    - stop the [movie](modo) mode
+    - stop the [workout](modo) mode
+    - stop the [concentration](modo) mode
+    - stop the [sleep](modo) mode
+    - stop the [work](modo) mode
+    - stop the [energy saving](modo) mode
+    - stop the [party](modo) mode
+    - stop the [holiday](modo) mode
+    - disable [workout](modo) mode
+    - disable [night](modo) mode
+    - disable [music](modo) mode
+    - disable [relax](modo) mode
+    - disable [sport](modo) mode
+    - disable [movie](modo) mode
+    - disable [reading](modo) mode
+    - disable [day](modo) mode
+    - disable [sunset](modo) mode
+    - could you deactivate the [studying](modo) mode
+    - could you deactivate the [sleep](modo) mode
+    - could you deactivate the [night](modo) mode
+    - could you deactivate the [work](modo) mode
+    - could you deactivate the [vacation](modo) mode
+    - could you deactivate the [party](modo) mode
+    - could you deactivate the [eco](modo) mode
+    - could you deactivate the [game](modo) mode
+    - could you deactivate the [sunrise](modo) mode
+    - could you deactivate the [gaming](modo) mode
+    - exit [day](modo) mode
+    - exit [workout](modo) mode
+    - exit [romantic](modo) mode
+    - exit [christmas](modo) mode
+    - exit [game](modo) mode
+    - exit [yoga](modo) mode
+    - exit [movie](modo) mode
+    - exit [cinema](modo) mode
+    - exit [work](modo) mode
+    - exit [good night](modo) mode
+    - hey deactivate [sunset](modo) mode
+    - hey deactivate [reading](modo) mode
+    - hey deactivate [day](modo) mode
+    - hey deactivate [energy saving](modo) mode
+    - hey deactivate [sleep](modo) mode
+    - hey deactivate [relax](modo) mode
+    - hey deactivate [concentration](modo) mode
+    - hey deactivate [meditation](modo) mode
+    - hey deactivate [gaming](modo) mode
+    - hey deactivate [sunrise](modo) mode
+    - cancel the [reading](modo) mode
+    - cancel the [music](modo) mode
+    - cancel the [party](modo) mode
+    - cancel the [relax](modo) mode
+    - cancel the [workout](modo) mode
+    - cancel the [good night](modo) mode
+    - cancel the [energy saving](modo) mode
+    - cancel the [eco](modo) mode
+    - cancel the [sport](modo) mode
+

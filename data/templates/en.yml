@@ -1,0 +1,229 @@
+# Example templates. Slots [{sala}](sala), [{dispositivo}](dispositivo) and [{modo}](modo)
+# are filled with the names in data/names.json (scripts/generate_data.py).
+# "nlu" -> training, "validation" -> validation (different phrasings).
+version: "3.1"
+
+nlu:
+
+- intent: encender_luz
+  examples: |
+    - turn on the light in the [{sala}](sala)
+    - turn on the [{sala}](sala) light
+    - please turn on the light in the [{sala}](sala)
+    - switch on the [{sala}](sala) light
+    - switch on the light in the [{sala}](sala)
+    - i want the light on in the [{sala}](sala)
+    - light up the [{sala}](sala)
+    - put the [{sala}](sala) light on
+    - could you turn on the [{sala}](sala) light
+    - i need light in the [{sala}](sala)
+    - activate the lights in the [{sala}](sala)
+    - hey turn on the [{sala}](sala) light
+    - can you switch on the lights in the [{sala}](sala)
+    - lights on in the [{sala}](sala)
+    - make the [{sala}](sala) light turn on
+
+- intent: apagar_luz
+  examples: |
+    - turn off the light in the [{sala}](sala)
+    - turn off the [{sala}](sala) light
+    - please turn off the light in the [{sala}](sala)
+    - switch off the [{sala}](sala) light
+    - switch off the light in the [{sala}](sala)
+    - i want the light off in the [{sala}](sala)
+    - shut off the [{sala}](sala) light
+    - put the [{sala}](sala) light off
+    - could you turn off the [{sala}](sala) light
+    - deactivate the lights in the [{sala}](sala)
+    - hey turn off the [{sala}](sala) light
+    - can you switch off the lights in the [{sala}](sala)
+    - lights off in the [{sala}](sala)
+    - make the [{sala}](sala) light turn off
+
+- intent: activar_enchufe
+  examples: |
+    - activate the [{dispositivo}](dispositivo) plug
+    - please activate the [{dispositivo}](dispositivo) plug
+    - turn on the [{dispositivo}](dispositivo) socket
+    - turn on the [{dispositivo}](dispositivo)
+    - switch on the [{dispositivo}](dispositivo)
+    - activate the [{dispositivo}](dispositivo)
+    - i want the [{dispositivo}](dispositivo) on
+    - power on the [{dispositivo}](dispositivo)
+    - please turn on the [{dispositivo}](dispositivo)
+    - could you turn on the [{dispositivo}](dispositivo)
+    - start the [{dispositivo}](dispositivo)
+    - hey switch on the [{dispositivo}](dispositivo) plug
+    - enable the [{dispositivo}](dispositivo) socket
+    - put the [{dispositivo}](dispositivo) on
+
+- intent: apagar_enchufe
+  examples: |
+    - deactivate the [{dispositivo}](dispositivo) plug
+    - please deactivate the [{dispositivo}](dispositivo) plug
+    - turn off the [{dispositivo}](dispositivo) socket
+    - turn off the [{dispositivo}](dispositivo)
+    - switch off the [{dispositivo}](dispositivo)
+    - deactivate the [{dispositivo}](dispositivo)
+    - i want the [{dispositivo}](dispositivo) off
+    - power off the [{dispositivo}](dispositivo)
+    - please turn off the [{dispositivo}](dispositivo)
+    - could you turn off the [{dispositivo}](dispositivo)
+    - stop the [{dispositivo}](dispositivo)
+    - hey switch off the [{dispositivo}](dispositivo) plug
+    - disable the [{dispositivo}](dispositivo) socket
+    - shut down the [{dispositivo}](dispositivo)
+
+- intent: subir_persiana
+  examples: |
+    - raise the blinds in the [{sala}](sala)
+    - raise the [{sala}](sala) blinds
+    - please raise the blinds in the [{sala}](sala)
+    - open the blinds in the [{sala}](sala)
+    - open the [{sala}](sala) blinds
+    - lift the [{sala}](sala) blinds
+    - roll up the blinds in the [{sala}](sala)
+    - i want the blinds up in the [{sala}](sala)
+    - could you open the [{sala}](sala) blinds
+    - hey raise the [{sala}](sala) shutter
+    - open the shutters in the [{sala}](sala)
+    - pull up the blinds in the [{sala}](sala)
+    - move the [{sala}](sala) blinds up
+    - blinds up in the [{sala}](sala)
+
+- intent: bajar_persiana
+  examples: |
+    - lower the blinds in the [{sala}](sala)
+    - lower the [{sala}](sala) blinds
+    - please lower the blinds in the [{sala}](sala)
+    - close the blinds in the [{sala}](sala)
+    - close the [{sala}](sala) blinds
+    - drop the [{sala}](sala) blinds
+    - roll down the blinds in the [{sala}](sala)
+    - i want the blinds down in the [{sala}](sala)
+    - could you close the [{sala}](sala) blinds
+    - hey lower the [{sala}](sala) shutter
+    - close the shutters in the [{sala}](sala)
+    - pull down the blinds in the [{sala}](sala)
+    - move the [{sala}](sala) blinds down
+    - blinds down in the [{sala}](sala)
+
+- intent: parar_persiana
+  examples: |
+    - stop
+    - stop the blinds
+    - halt the blinds
+    - please stop the blinds
+    - stop the shutters
+    - stop moving
+    - hold the blinds
+    - hey stop the blinds
+    - freeze the blinds
+    - stop the shutter now
+    - that is enough stop the blinds
+    - can you stop the blinds
+    - stop it
+
+- intent: activar_modo
+  examples: |
+    - activate the [{modo}](modo) mode
+    - please activate the [{modo}](modo) mode
+    - turn on the [{modo}](modo) mode
+    - switch to [{modo}](modo) mode
+    - set the [{modo}](modo) mode
+    - i want the [{modo}](modo) mode
+    - start the [{modo}](modo) mode
+    - enable [{modo}](modo) mode
+    - could you activate the [{modo}](modo) mode
+    - put the house in [{modo}](modo) mode
+    - hey activate [{modo}](modo) mode
+    - go to [{modo}](modo) mode
+
+- intent: desactivar_modo
+  examples: |
+    - deactivate the [{modo}](modo) mode
+    - please deactivate the [{modo}](modo) mode
+    - turn off the [{modo}](modo) mode
+    - switch off [{modo}](modo) mode
+    - end the [{modo}](modo) mode
+    - i do not want the [{modo}](modo) mode anymore
+    - stop the [{modo}](modo) mode
+    - disable [{modo}](modo) mode
+    - could you deactivate the [{modo}](modo) mode
+    - exit [{modo}](modo) mode
+    - hey deactivate [{modo}](modo) mode
+    - cancel the [{modo}](modo) mode
+
+validation:
+
+- intent: encender_luz
+  examples: |
+    - give me light in the [{sala}](sala)
+    - could you put the [{sala}](sala) light on please
+    - i need the [{sala}](sala) lights on
+    - switch the [{sala}](sala) light on
+    - turn the light on in the [{sala}](sala)
+    - get the [{sala}](sala) light on
+
+- intent: apagar_luz
+  examples: |
+    - kill the light in the [{sala}](sala)
+    - could you put the [{sala}](sala) light off please
+    - i need the [{sala}](sala) lights off
+    - switch the [{sala}](sala) light off
+    - turn the light off in the [{sala}](sala)
+    - get the [{sala}](sala) light off
+
+- intent: activar_enchufe
+  examples: |
+    - switch the [{dispositivo}](dispositivo) on
+    - turn the [{dispositivo}](dispositivo) on
+    - could you power the [{dispositivo}](dispositivo) on please
+    - i need the [{dispositivo}](dispositivo) plug on
+    - get the [{dispositivo}](dispositivo) running
+
+- intent: apagar_enchufe
+  examples: |
+    - switch the [{dispositivo}](dispositivo) off
+    - turn the [{dispositivo}](dispositivo) off
+    - could you power the [{dispositivo}](dispositivo) off please
+    - i need the [{dispositivo}](dispositivo) plug off
+    - cut the power to the [{dispositivo}](dispositivo)
+
+- intent: subir_persiana
+  examples: |
+    - take the blinds up in the [{sala}](sala)
+    - could you raise the [{sala}](sala) blinds please
+    - i need the [{sala}](sala) blinds open
+    - put the [{sala}](sala) blinds up
+    - up with the blinds in the [{sala}](sala)
+
+- intent: bajar_persiana
+  examples: |
+    - take the blinds down in the [{sala}](sala)
+    - could you lower the [{sala}](sala) blinds please
+    - i need the [{sala}](sala) blinds closed
+    - put the [{sala}](sala) blinds down
+    - down with the blinds in the [{sala}](sala)
+
+- intent: parar_persiana
+  examples: |
+    - stop right there
+    - could you stop the blinds please
+    - halt
+    - stop the blinds now
+    - enough stop the shutters
+
+- intent: activar_modo
+  examples: |
+    - let us go to [{modo}](modo) mode
+    - enable the [{modo}](modo) mode please
+    - i would like [{modo}](modo) mode
+    - run the [{modo}](modo) mode
+
+- intent: desactivar_modo
+  examples: |
+    - leave the [{modo}](modo) mode
+    - disable the [{modo}](modo) mode please
+    - i am done with [{modo}](modo) mode
+    - quit the [{modo}](modo) mode

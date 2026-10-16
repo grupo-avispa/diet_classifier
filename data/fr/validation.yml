@@ -1,0 +1,406 @@
+version: "3.1"
+
+nlu:
+
+- intent: encender_luz
+  examples: |
+    - donne-moi de la lumière dans [salle de séjour](sala)
+    - donne-moi de la lumière dans [terrasse](sala)
+    - donne-moi de la lumière dans [garage](sala)
+    - donne-moi de la lumière dans [jardin](sala)
+    - donne-moi de la lumière dans [salle d'étude](sala)
+    - donne-moi de la lumière dans [chambre](sala)
+    - donne-moi de la lumière dans [couloir](sala)
+    - donne-moi de la lumière dans [cuisine](sala)
+    - pourrais-tu allumer la lumière de [salle de jeux](sala) s'il te plaît
+    - pourrais-tu allumer la lumière de [terrasse](sala) s'il te plaît
+    - pourrais-tu allumer la lumière de [jardin](sala) s'il te plaît
+    - pourrais-tu allumer la lumière de [sous-sol](sala) s'il te plaît
+    - pourrais-tu allumer la lumière de [bibliothèque](sala) s'il te plaît
+    - pourrais-tu allumer la lumière de [balcon](sala) s'il te plaît
+    - pourrais-tu allumer la lumière de [chambre d'amis](sala) s'il te plaît
+    - il me faut de la lumière dans [balcon](sala)
+    - il me faut de la lumière dans [chambre des enfants](sala)
+    - il me faut de la lumière dans [salon](sala)
+    - il me faut de la lumière dans [terrasse](sala)
+    - il me faut de la lumière dans [couloir](sala)
+    - il me faut de la lumière dans [garde-manger](sala)
+    - il me faut de la lumière dans [chambre d'amis](sala)
+    - il me faut de la lumière dans [jardin](sala)
+    - mets de la lumière dans [chambre](sala)
+    - mets de la lumière dans [salle de bain](sala)
+    - mets de la lumière dans [terrasse](sala)
+    - mets de la lumière dans [bureau](sala)
+    - mets de la lumière dans [salle de séjour](sala)
+    - mets de la lumière dans [couloir](sala)
+    - mets de la lumière dans [salle d'étude](sala)
+    - mets de la lumière dans [salle à manger](sala)
+    - allume-moi [débarras](sala)
+    - allume-moi [bureau](sala)
+    - allume-moi [balcon](sala)
+    - allume-moi [garde-manger](sala)
+    - allume-moi [salle à manger](sala)
+    - allume-moi [salle de sport](sala)
+    - allume-moi [garage](sala)
+    - lumière de [salle de bain](sala) allumée
+    - lumière de [jardin](sala) allumée
+    - lumière de [salon](sala) allumée
+    - lumière de [salle de jeux](sala) allumée
+    - lumière de [chambre d'amis](sala) allumée
+    - lumière de [garage](sala) allumée
+    - lumière de [couloir](sala) allumée
+
+- intent: apagar_luz
+  examples: |
+    - plus de lumière de [jardin](sala)
+    - plus de lumière de [toilettes](sala)
+    - plus de lumière de [balcon](sala)
+    - plus de lumière de [salle de jeux](sala)
+    - plus de lumière de [salon](sala)
+    - plus de lumière de [couloir](sala)
+    - plus de lumière de [cave](sala)
+    - plus de lumière de [chambre](sala)
+    - pourrais-tu éteindre la lumière de [salle de sport](sala) s'il te plaît
+    - pourrais-tu éteindre la lumière de [patio](sala) s'il te plaît
+    - pourrais-tu éteindre la lumière de [bibliothèque](sala) s'il te plaît
+    - pourrais-tu éteindre la lumière de [salle à manger](sala) s'il te plaît
+    - pourrais-tu éteindre la lumière de [garage](sala) s'il te plaît
+    - pourrais-tu éteindre la lumière de [entrée](sala) s'il te plaît
+    - pourrais-tu éteindre la lumière de [sous-sol](sala) s'il te plaît
+    - je n'ai plus besoin de lumière dans [toilettes](sala)
+    - je n'ai plus besoin de lumière dans [salle de jeux](sala)
+    - je n'ai plus besoin de lumière dans [salle d'étude](sala)
+    - je n'ai plus besoin de lumière dans [couloir](sala)
+    - je n'ai plus besoin de lumière dans [garage](sala)
+    - je n'ai plus besoin de lumière dans [cave](sala)
+    - je n'ai plus besoin de lumière dans [terrasse](sala)
+    - mets la lumière de [salle de sport](sala) à off
+    - mets la lumière de [salle à manger](sala) à off
+    - mets la lumière de [garde-manger](sala) à off
+    - mets la lumière de [chambre d'amis](sala) à off
+    - mets la lumière de [salle de jeux](sala) à off
+    - mets la lumière de [cellier](sala) à off
+    - mets la lumière de [garage](sala) à off
+    - mets la lumière de [entrée](sala) à off
+    - éteins-moi [bureau](sala)
+    - éteins-moi [couloir](sala)
+    - éteins-moi [salon](sala)
+    - éteins-moi [salle de jeux](sala)
+    - éteins-moi [débarras](sala)
+    - éteins-moi [terrasse](sala)
+    - éteins-moi [salle d'étude](sala)
+    - éteins-moi [sous-sol](sala)
+    - lumière de [salon](sala) éteinte
+    - lumière de [cuisine](sala) éteinte
+    - lumière de [toilettes](sala) éteinte
+    - lumière de [salle de bain](sala) éteinte
+    - lumière de [chambre](sala) éteinte
+    - lumière de [couloir](sala) éteinte
+    - lumière de [salle de séjour](sala) éteinte
+    - lumière de [wc](sala) éteinte
+
+- intent: activar_enchufe
+  examples: |
+    - mets [radiateur](dispositivo) sous tension
+    - mets [humidificateur](dispositivo) sous tension
+    - mets [micro-ondes](dispositivo) sous tension
+    - mets [aspirateur](dispositivo) sous tension
+    - mets [frigo](dispositivo) sous tension
+    - mets [lave-linge](dispositivo) sous tension
+    - mets [ordinateur](dispositivo) sous tension
+    - mets [poêle](dispositivo) sous tension
+    - mets [télévision](dispositivo) sous tension
+    - mets [écran](dispositivo) sous tension
+    - mets [réfrigérateur](dispositivo) sous tension
+    - mets [four](dispositivo) sous tension
+    - mets [haut-parleur](dispositivo) sous tension
+    - mets [projecteur](dispositivo) sous tension
+    - mets [routeur](dispositivo) sous tension
+    - pourrais-tu allumer [sèche-linge](dispositivo) s'il te plaît
+    - pourrais-tu allumer [mixeur](dispositivo) s'il te plaît
+    - pourrais-tu allumer [déshumidificateur](dispositivo) s'il te plaît
+    - pourrais-tu allumer [routeur](dispositivo) s'il te plaît
+    - pourrais-tu allumer [chargeur](dispositivo) s'il te plaît
+    - pourrais-tu allumer [micro-ondes](dispositivo) s'il te plaît
+    - pourrais-tu allumer [moniteur](dispositivo) s'il te plaît
+    - pourrais-tu allumer [humidificateur](dispositivo) s'il te plaît
+    - pourrais-tu allumer [frigo](dispositivo) s'il te plaît
+    - pourrais-tu allumer [chauffe-eau](dispositivo) s'il te plaît
+    - pourrais-tu allumer [machine à laver](dispositivo) s'il te plaît
+    - pourrais-tu allumer [ventilateur](dispositivo) s'il te plaît
+    - pourrais-tu allumer [friteuse à air](dispositivo) s'il te plaît
+    - pourrais-tu allumer [cafetière](dispositivo) s'il te plaît
+    - pourrais-tu allumer [chaîne stéréo](dispositivo) s'il te plaît
+    - pourrais-tu allumer [machine à café](dispositivo) s'il te plaît
+    - pourrais-tu allumer [poêle](dispositivo) s'il te plaît
+    - il me faut [robot aspirateur](dispositivo) allumé
+    - il me faut [machine à laver](dispositivo) allumé
+    - il me faut [lave-linge](dispositivo) allumé
+    - il me faut [aspirateur](dispositivo) allumé
+    - il me faut [micro-ondes](dispositivo) allumé
+    - il me faut [réfrigérateur](dispositivo) allumé
+    - il me faut [sèche-linge](dispositivo) allumé
+    - il me faut [télévision](dispositivo) allumé
+    - il me faut [hotte](dispositivo) allumé
+    - il me faut [chargeur](dispositivo) allumé
+    - il me faut [télé](dispositivo) allumé
+    - il me faut [mixeur](dispositivo) allumé
+    - il me faut [chaîne stéréo](dispositivo) allumé
+    - il me faut [humidificateur](dispositivo) allumé
+    - il me faut [chauffage](dispositivo) allumé
+    - fais marcher [machine à laver](dispositivo)
+    - fais marcher [console](dispositivo)
+    - fais marcher [chaîne stéréo](dispositivo)
+    - fais marcher [lave-vaisselle](dispositivo)
+    - fais marcher [haut-parleur](dispositivo)
+    - fais marcher [cafetière](dispositivo)
+    - fais marcher [aspirateur](dispositivo)
+    - fais marcher [enceinte](dispositivo)
+    - fais marcher [chargeur](dispositivo)
+    - fais marcher [poêle](dispositivo)
+    - fais marcher [frigo](dispositivo)
+    - fais marcher [lampe](dispositivo)
+    - fais marcher [four](dispositivo)
+    - fais marcher [machine à café](dispositivo)
+    - fais marcher [écran](dispositivo)
+
+- intent: apagar_enchufe
+  examples: |
+    - mets [cafetière](dispositivo) hors tension
+    - mets [frigo](dispositivo) hors tension
+    - mets [radiateur](dispositivo) hors tension
+    - mets [machine à laver](dispositivo) hors tension
+    - mets [lave-linge](dispositivo) hors tension
+    - mets [télé](dispositivo) hors tension
+    - mets [ordinateur](dispositivo) hors tension
+    - mets [robot aspirateur](dispositivo) hors tension
+    - mets [enceinte](dispositivo) hors tension
+    - mets [projecteur](dispositivo) hors tension
+    - mets [console](dispositivo) hors tension
+    - mets [poêle](dispositivo) hors tension
+    - mets [télévision](dispositivo) hors tension
+    - mets [réfrigérateur](dispositivo) hors tension
+    - mets [routeur](dispositivo) hors tension
+    - pourrais-tu éteindre [micro-ondes](dispositivo) s'il te plaît
+    - pourrais-tu éteindre [chargeur](dispositivo) s'il te plaît
+    - pourrais-tu éteindre [enceinte](dispositivo) s'il te plaît
+    - pourrais-tu éteindre [machine à laver](dispositivo) s'il te plaît
+    - pourrais-tu éteindre [humidificateur](dispositivo) s'il te plaît
+    - pourrais-tu éteindre [réfrigérateur](dispositivo) s'il te plaît
+    - pourrais-tu éteindre [imprimante](dispositivo) s'il te plaît
+    - pourrais-tu éteindre [poêle](dispositivo) s'il te plaît
+    - pourrais-tu éteindre [ordinateur](dispositivo) s'il te plaît
+    - pourrais-tu éteindre [lave-linge](dispositivo) s'il te plaît
+    - pourrais-tu éteindre [aspirateur](dispositivo) s'il te plaît
+    - pourrais-tu éteindre [télé](dispositivo) s'il te plaît
+    - pourrais-tu éteindre [projecteur](dispositivo) s'il te plaît
+    - pourrais-tu éteindre [lampe](dispositivo) s'il te plaît
+    - pourrais-tu éteindre [télévision](dispositivo) s'il te plaît
+    - je n'ai plus besoin de [machine à laver](dispositivo)
+    - je n'ai plus besoin de [réfrigérateur](dispositivo)
+    - je n'ai plus besoin de [mixeur](dispositivo)
+    - je n'ai plus besoin de [humidificateur](dispositivo)
+    - je n'ai plus besoin de [ventilateur](dispositivo)
+    - je n'ai plus besoin de [moniteur](dispositivo)
+    - je n'ai plus besoin de [chauffage](dispositivo)
+    - je n'ai plus besoin de [haut-parleur](dispositivo)
+    - je n'ai plus besoin de [grille-pain](dispositivo)
+    - je n'ai plus besoin de [chaîne stéréo](dispositivo)
+    - je n'ai plus besoin de [climatiseur](dispositivo)
+    - je n'ai plus besoin de [télé](dispositivo)
+    - je n'ai plus besoin de [aspirateur](dispositivo)
+    - je n'ai plus besoin de [routeur](dispositivo)
+    - je n'ai plus besoin de [lampe](dispositivo)
+    - coupe l'alimentation de [cafetière](dispositivo)
+    - coupe l'alimentation de [routeur](dispositivo)
+    - coupe l'alimentation de [enceinte](dispositivo)
+    - coupe l'alimentation de [ordinateur](dispositivo)
+    - coupe l'alimentation de [machine à laver](dispositivo)
+    - coupe l'alimentation de [déshumidificateur](dispositivo)
+    - coupe l'alimentation de [projecteur](dispositivo)
+    - coupe l'alimentation de [haut-parleur](dispositivo)
+    - coupe l'alimentation de [ventilateur](dispositivo)
+    - coupe l'alimentation de [lave-linge](dispositivo)
+    - coupe l'alimentation de [radiateur](dispositivo)
+    - coupe l'alimentation de [hotte](dispositivo)
+    - coupe l'alimentation de [robot aspirateur](dispositivo)
+    - coupe l'alimentation de [écran](dispositivo)
+    - coupe l'alimentation de [blender](dispositivo)
+
+- intent: subir_persiana
+  examples: |
+    - remonte le store de [bureau](sala)
+    - remonte le store de [cuisine](sala)
+    - remonte le store de [salle à manger](sala)
+    - remonte le store de [buanderie](sala)
+    - remonte le store de [bibliothèque](sala)
+    - remonte le store de [grenier](sala)
+    - remonte le store de [chambre d'amis](sala)
+    - remonte le store de [salle de jeux](sala)
+    - remonte le store de [balcon](sala)
+    - remonte le store de [garde-manger](sala)
+    - remonte le store de [sous-sol](sala)
+    - remonte le store de [entrée](sala)
+    - pourrais-tu monter le volet de [salle d'étude](sala) s'il te plaît
+    - pourrais-tu monter le volet de [bibliothèque](sala) s'il te plaît
+    - pourrais-tu monter le volet de [cuisine](sala) s'il te plaît
+    - pourrais-tu monter le volet de [chambre des enfants](sala) s'il te plaît
+    - pourrais-tu monter le volet de [salle de séjour](sala) s'il te plaît
+    - pourrais-tu monter le volet de [couloir](sala) s'il te plaît
+    - pourrais-tu monter le volet de [chambre](sala) s'il te plaît
+    - pourrais-tu monter le volet de [salle à manger](sala) s'il te plaît
+    - pourrais-tu monter le volet de [toilettes](sala) s'il te plaît
+    - pourrais-tu monter le volet de [wc](sala) s'il te plaît
+    - pourrais-tu monter le volet de [balcon](sala) s'il te plaît
+    - il me faut le volet ouvert dans [buanderie](sala)
+    - il me faut le volet ouvert dans [salon](sala)
+    - il me faut le volet ouvert dans [wc](sala)
+    - il me faut le volet ouvert dans [balcon](sala)
+    - il me faut le volet ouvert dans [terrasse](sala)
+    - il me faut le volet ouvert dans [salle de bain](sala)
+    - il me faut le volet ouvert dans [garage](sala)
+    - il me faut le volet ouvert dans [patio](sala)
+    - il me faut le volet ouvert dans [cave](sala)
+    - il me faut le volet ouvert dans [salle d'étude](sala)
+    - il me faut le volet ouvert dans [salle de séjour](sala)
+    - volets en haut dans [garage](sala)
+    - volets en haut dans [chambre](sala)
+    - volets en haut dans [terrasse](sala)
+    - volets en haut dans [salle de bain](sala)
+    - volets en haut dans [dressing](sala)
+    - volets en haut dans [salle à manger](sala)
+    - volets en haut dans [salle de sport](sala)
+    - volets en haut dans [balcon](sala)
+    - volets en haut dans [buanderie](sala)
+    - volets en haut dans [bibliothèque](sala)
+    - volets en haut dans [bureau](sala)
+
+- intent: bajar_persiana
+  examples: |
+    - descends le store de [chambre](sala)
+    - descends le store de [jardin](sala)
+    - descends le store de [terrasse](sala)
+    - descends le store de [salle de bain](sala)
+    - descends le store de [toilettes](sala)
+    - descends le store de [wc](sala)
+    - descends le store de [salon](sala)
+    - descends le store de [salle d'étude](sala)
+    - descends le store de [sous-sol](sala)
+    - descends le store de [chambre d'amis](sala)
+    - descends le store de [salle de sport](sala)
+    - descends le store de [couloir](sala)
+    - pourrais-tu baisser le volet de [salle d'étude](sala) s'il te plaît
+    - pourrais-tu baisser le volet de [couloir](sala) s'il te plaît
+    - pourrais-tu baisser le volet de [salle de séjour](sala) s'il te plaît
+    - pourrais-tu baisser le volet de [salle à manger](sala) s'il te plaît
+    - pourrais-tu baisser le volet de [garde-manger](sala) s'il te plaît
+    - pourrais-tu baisser le volet de [grenier](sala) s'il te plaît
+    - pourrais-tu baisser le volet de [patio](sala) s'il te plaît
+    - pourrais-tu baisser le volet de [salle de jeux](sala) s'il te plaît
+    - pourrais-tu baisser le volet de [terrasse](sala) s'il te plaît
+    - pourrais-tu baisser le volet de [jardin](sala) s'il te plaît
+    - pourrais-tu baisser le volet de [cave](sala) s'il te plaît
+    - il me faut le volet fermé dans [sous-sol](sala)
+    - il me faut le volet fermé dans [salon](sala)
+    - il me faut le volet fermé dans [porche](sala)
+    - il me faut le volet fermé dans [garde-manger](sala)
+    - il me faut le volet fermé dans [terrasse](sala)
+    - il me faut le volet fermé dans [jardin](sala)
+    - il me faut le volet fermé dans [balcon](sala)
+    - il me faut le volet fermé dans [wc](sala)
+    - il me faut le volet fermé dans [chambre](sala)
+    - il me faut le volet fermé dans [salle de bain](sala)
+    - il me faut le volet fermé dans [entrée](sala)
+    - il me faut le volet fermé dans [chambre parentale](sala)
+    - volets en bas dans [sous-sol](sala)
+    - volets en bas dans [grenier](sala)
+    - volets en bas dans [garage](sala)
+    - volets en bas dans [chambre d'amis](sala)
+    - volets en bas dans [bureau](sala)
+    - volets en bas dans [chambre parentale](sala)
+    - volets en bas dans [salle à manger](sala)
+    - volets en bas dans [dressing](sala)
+    - volets en bas dans [chambre](sala)
+    - volets en bas dans [toilettes](sala)
+    - volets en bas dans [cellier](sala)
+
+- intent: parar_persiana
+  examples: |
+    - stop là
+    - pourrais-tu arrêter le volet s'il te plaît
+    - arrête-toi
+    - assez arrête les volets
+    - stoppe tout
+
+- intent: activar_modo
+  examples: |
+    - allons en mode [bonne nuit](modo)
+    - allons en mode [yoga](modo)
+    - allons en mode [romantique](modo)
+    - allons en mode [lever du soleil](modo)
+    - allons en mode [travail](modo)
+    - allons en mode [lecture](modo)
+    - allons en mode [cinéma](modo)
+    - allons en mode [vacances](modo)
+    - active le mode [romantique](modo) s'il te plaît
+    - active le mode [lever du soleil](modo) s'il te plaît
+    - active le mode [sieste](modo) s'il te plaît
+    - active le mode [sport](modo) s'il te plaît
+    - active le mode [travail](modo) s'il te plaît
+    - active le mode [méditation](modo) s'il te plaît
+    - active le mode [bonjour](modo) s'il te plaît
+    - active le mode [noël](modo) s'il te plaît
+    - active le mode [musique](modo) s'il te plaît
+    - je voudrais le mode [concentration](modo)
+    - je voudrais le mode [détente](modo)
+    - je voudrais le mode [vacances](modo)
+    - je voudrais le mode [étude](modo)
+    - je voudrais le mode [sport](modo)
+    - je voudrais le mode [sieste](modo)
+    - je voudrais le mode [fête](modo)
+    - je voudrais le mode [nuit](modo)
+    - je voudrais le mode [travail](modo)
+    - exécute le mode [sécurité](modo)
+    - exécute le mode [nuit](modo)
+    - exécute le mode [méditation](modo)
+    - exécute le mode [fête](modo)
+    - exécute le mode [jour](modo)
+    - exécute le mode [travail](modo)
+    - exécute le mode [lecture](modo)
+    - exécute le mode [concentration](modo)
+
+- intent: desactivar_modo
+  examples: |
+    - sortons du mode [sécurité](modo)
+    - sortons du mode [fête](modo)
+    - sortons du mode [économie d'énergie](modo)
+    - sortons du mode [méditation](modo)
+    - sortons du mode [cinéma](modo)
+    - sortons du mode [yoga](modo)
+    - sortons du mode [romantique](modo)
+    - sortons du mode [travail](modo)
+    - désactive le mode [jeu](modo) s'il te plaît
+    - désactive le mode [travail](modo) s'il te plaît
+    - désactive le mode [dormir](modo) s'il te plaît
+    - désactive le mode [noël](modo) s'il te plaît
+    - désactive le mode [méditation](modo) s'il te plaît
+    - désactive le mode [économie d'énergie](modo) s'il te plaît
+    - désactive le mode [yoga](modo) s'il te plaît
+    - désactive le mode [jour](modo) s'il te plaît
+    - j'en ai fini avec le mode [nuit](modo)
+    - j'en ai fini avec le mode [sieste](modo)
+    - j'en ai fini avec le mode [détente](modo)
+    - j'en ai fini avec le mode [jeu](modo)
+    - j'en ai fini avec le mode [travail](modo)
+    - j'en ai fini avec le mode [vacances](modo)
+    - j'en ai fini avec le mode [concentration](modo)
+    - j'en ai fini avec le mode [sommeil](modo)
+    - quitte le mode [détente](modo) maintenant
+    - quitte le mode [travail](modo) maintenant
+    - quitte le mode [romantique](modo) maintenant
+    - quitte le mode [musique](modo) maintenant
+    - quitte le mode [lever du soleil](modo) maintenant
+    - quitte le mode [bonne nuit](modo) maintenant
+    - quitte le mode [sommeil](modo) maintenant
+    - quitte le mode [dormir](modo) maintenant
+

@@ -1,0 +1,454 @@
+version: "3.1"
+
+nlu:
+
+- intent: encender_luz
+  examples: |
+    - give me light in the [office](sala)
+    - give me light in the [walk-in closet](sala)
+    - give me light in the [toilet](sala)
+    - give me light in the [dining room](sala)
+    - give me light in the [lounge](sala)
+    - give me light in the [kitchen](sala)
+    - give me light in the [entryway](sala)
+    - give me light in the [garage](sala)
+    - give me light in the [bedroom](sala)
+    - could you put the [attic](sala) light on please
+    - could you put the [storage room](sala) light on please
+    - could you put the [garden](sala) light on please
+    - could you put the [study](sala) light on please
+    - could you put the [pantry](sala) light on please
+    - could you put the [corridor](sala) light on please
+    - could you put the [dressing room](sala) light on please
+    - could you put the [basement](sala) light on please
+    - could you put the [toilet](sala) light on please
+    - i need the [corridor](sala) lights on
+    - i need the [walk-in closet](sala) lights on
+    - i need the [playroom](sala) lights on
+    - i need the [restroom](sala) lights on
+    - i need the [laundry room](sala) lights on
+    - i need the [garage](sala) lights on
+    - i need the [balcony](sala) lights on
+    - i need the [hallway](sala) lights on
+    - i need the [family room](sala) lights on
+    - switch the [bathroom](sala) light on
+    - switch the [library](sala) light on
+    - switch the [garden](sala) light on
+    - switch the [study](sala) light on
+    - switch the [hallway](sala) light on
+    - switch the [lounge](sala) light on
+    - switch the [playroom](sala) light on
+    - switch the [toilet](sala) light on
+    - turn the light on in the [attic](sala)
+    - turn the light on in the [hallway](sala)
+    - turn the light on in the [kitchen](sala)
+    - turn the light on in the [terrace](sala)
+    - turn the light on in the [walk-in closet](sala)
+    - turn the light on in the [office](sala)
+    - turn the light on in the [garage](sala)
+    - turn the light on in the [bathroom](sala)
+    - turn the light on in the [living room](sala)
+    - get the [balcony](sala) light on
+    - get the [restroom](sala) light on
+    - get the [living room](sala) light on
+    - get the [library](sala) light on
+    - get the [kitchen](sala) light on
+    - get the [playroom](sala) light on
+    - get the [office](sala) light on
+    - get the [dressing room](sala) light on
+    - get the [guest room](sala) light on
+
+- intent: apagar_luz
+  examples: |
+    - kill the light in the [lounge](sala)
+    - kill the light in the [study](sala)
+    - kill the light in the [garden](sala)
+    - kill the light in the [office](sala)
+    - kill the light in the [dining room](sala)
+    - kill the light in the [kitchen](sala)
+    - kill the light in the [attic](sala)
+    - kill the light in the [restroom](sala)
+    - could you put the [balcony](sala) light off please
+    - could you put the [basement](sala) light off please
+    - could you put the [kitchen](sala) light off please
+    - could you put the [storage room](sala) light off please
+    - could you put the [patio](sala) light off please
+    - could you put the [toilet](sala) light off please
+    - could you put the [entryway](sala) light off please
+    - could you put the [living room](sala) light off please
+    - could you put the [study](sala) light off please
+    - i need the [toilet](sala) lights off
+    - i need the [family room](sala) lights off
+    - i need the [gym](sala) lights off
+    - i need the [bedroom](sala) lights off
+    - i need the [walk-in closet](sala) lights off
+    - i need the [library](sala) lights off
+    - i need the [hallway](sala) lights off
+    - i need the [entrance](sala) lights off
+    - i need the [terrace](sala) lights off
+    - switch the [bedroom](sala) light off
+    - switch the [garage](sala) light off
+    - switch the [garden](sala) light off
+    - switch the [playroom](sala) light off
+    - switch the [entryway](sala) light off
+    - switch the [bathroom](sala) light off
+    - switch the [patio](sala) light off
+    - switch the [hallway](sala) light off
+    - switch the [gym](sala) light off
+    - turn the light off in the [storage room](sala)
+    - turn the light off in the [dining room](sala)
+    - turn the light off in the [study](sala)
+    - turn the light off in the [guest room](sala)
+    - turn the light off in the [hallway](sala)
+    - turn the light off in the [office](sala)
+    - turn the light off in the [patio](sala)
+    - turn the light off in the [kitchen](sala)
+    - turn the light off in the [lounge](sala)
+    - get the [restroom](sala) light off
+    - get the [entryway](sala) light off
+    - get the [living room](sala) light off
+    - get the [terrace](sala) light off
+    - get the [bathroom](sala) light off
+    - get the [entrance](sala) light off
+    - get the [study](sala) light off
+
+- intent: activar_enchufe
+  examples: |
+    - switch the [game console](dispositivo) on
+    - switch the [stereo](dispositivo) on
+    - switch the [lamp](dispositivo) on
+    - switch the [boiler](dispositivo) on
+    - switch the [air conditioner](dispositivo) on
+    - switch the [refrigerator](dispositivo) on
+    - switch the [coffee maker](dispositivo) on
+    - switch the [coffee machine](dispositivo) on
+    - switch the [stove](dispositivo) on
+    - switch the [fan](dispositivo) on
+    - switch the [extractor fan](dispositivo) on
+    - switch the [vacuum cleaner](dispositivo) on
+    - switch the [speaker](dispositivo) on
+    - switch the [sound system](dispositivo) on
+    - turn the [speaker](dispositivo) on
+    - turn the [blender](dispositivo) on
+    - turn the [charger](dispositivo) on
+    - turn the [humidifier](dispositivo) on
+    - turn the [refrigerator](dispositivo) on
+    - turn the [dehumidifier](dispositivo) on
+    - turn the [boiler](dispositivo) on
+    - turn the [washing machine](dispositivo) on
+    - turn the [dishwasher](dispositivo) on
+    - turn the [coffee machine](dispositivo) on
+    - turn the [lamp](dispositivo) on
+    - turn the [microwave](dispositivo) on
+    - turn the [stove](dispositivo) on
+    - could you power the [computer](dispositivo) on please
+    - could you power the [dishwasher](dispositivo) on please
+    - could you power the [stereo](dispositivo) on please
+    - could you power the [humidifier](dispositivo) on please
+    - could you power the [tv](dispositivo) on please
+    - could you power the [microwave](dispositivo) on please
+    - could you power the [oven](dispositivo) on please
+    - could you power the [range hood](dispositivo) on please
+    - could you power the [sound system](dispositivo) on please
+    - could you power the [water heater](dispositivo) on please
+    - could you power the [refrigerator](dispositivo) on please
+    - could you power the [stove](dispositivo) on please
+    - could you power the [heater](dispositivo) on please
+    - could you power the [television](dispositivo) on please
+    - i need the [coffee maker](dispositivo) plug on
+    - i need the [coffee machine](dispositivo) plug on
+    - i need the [blender](dispositivo) plug on
+    - i need the [humidifier](dispositivo) plug on
+    - i need the [microwave](dispositivo) plug on
+    - i need the [washing machine](dispositivo) plug on
+    - i need the [range hood](dispositivo) plug on
+    - i need the [speaker](dispositivo) plug on
+    - i need the [radiator](dispositivo) plug on
+    - i need the [sound system](dispositivo) plug on
+    - i need the [boiler](dispositivo) plug on
+    - i need the [television](dispositivo) plug on
+    - i need the [stereo](dispositivo) plug on
+    - i need the [stove](dispositivo) plug on
+    - get the [coffee machine](dispositivo) running
+    - get the [lamp](dispositivo) running
+    - get the [television](dispositivo) running
+    - get the [heater](dispositivo) running
+    - get the [refrigerator](dispositivo) running
+    - get the [microwave](dispositivo) running
+    - get the [dishwasher](dispositivo) running
+    - get the [fan](dispositivo) running
+    - get the [blender](dispositivo) running
+    - get the [tv](dispositivo) running
+    - get the [humidifier](dispositivo) running
+    - get the [phone charger](dispositivo) running
+    - get the [air purifier](dispositivo) running
+
+- intent: apagar_enchufe
+  examples: |
+    - switch the [blender](dispositivo) off
+    - switch the [charger](dispositivo) off
+    - switch the [boiler](dispositivo) off
+    - switch the [radiator](dispositivo) off
+    - switch the [router](dispositivo) off
+    - switch the [lamp](dispositivo) off
+    - switch the [dryer](dispositivo) off
+    - switch the [fan](dispositivo) off
+    - switch the [tv](dispositivo) off
+    - switch the [water heater](dispositivo) off
+    - switch the [coffee machine](dispositivo) off
+    - turn the [console](dispositivo) off
+    - turn the [lamp](dispositivo) off
+    - turn the [oven](dispositivo) off
+    - turn the [microwave](dispositivo) off
+    - turn the [monitor](dispositivo) off
+    - turn the [dryer](dispositivo) off
+    - turn the [radiator](dispositivo) off
+    - turn the [washing machine](dispositivo) off
+    - turn the [coffee maker](dispositivo) off
+    - turn the [projector](dispositivo) off
+    - turn the [charger](dispositivo) off
+    - turn the [sound system](dispositivo) off
+    - turn the [heater](dispositivo) off
+    - could you power the [lamp](dispositivo) off please
+    - could you power the [dishwasher](dispositivo) off please
+    - could you power the [fryer](dispositivo) off please
+    - could you power the [coffee machine](dispositivo) off please
+    - could you power the [speaker](dispositivo) off please
+    - could you power the [computer](dispositivo) off please
+    - could you power the [router](dispositivo) off please
+    - could you power the [game console](dispositivo) off please
+    - could you power the [charger](dispositivo) off please
+    - could you power the [microwave](dispositivo) off please
+    - could you power the [fridge](dispositivo) off please
+    - could you power the [refrigerator](dispositivo) off please
+    - could you power the [heater](dispositivo) off please
+    - i need the [washing machine](dispositivo) plug off
+    - i need the [fryer](dispositivo) plug off
+    - i need the [robot vacuum](dispositivo) plug off
+    - i need the [dehumidifier](dispositivo) plug off
+    - i need the [sound system](dispositivo) plug off
+    - i need the [microwave](dispositivo) plug off
+    - i need the [game console](dispositivo) plug off
+    - i need the [television](dispositivo) plug off
+    - i need the [water heater](dispositivo) plug off
+    - i need the [dishwasher](dispositivo) plug off
+    - i need the [vacuum cleaner](dispositivo) plug off
+    - i need the [radiator](dispositivo) plug off
+    - i need the [computer](dispositivo) plug off
+    - i need the [toaster](dispositivo) plug off
+    - cut the power to the [coffee machine](dispositivo)
+    - cut the power to the [water heater](dispositivo)
+    - cut the power to the [fryer](dispositivo)
+    - cut the power to the [stereo](dispositivo)
+    - cut the power to the [stove](dispositivo)
+    - cut the power to the [fan](dispositivo)
+    - cut the power to the [charger](dispositivo)
+    - cut the power to the [heater](dispositivo)
+    - cut the power to the [phone charger](dispositivo)
+    - cut the power to the [tv](dispositivo)
+    - cut the power to the [robot vacuum](dispositivo)
+    - cut the power to the [microwave](dispositivo)
+
+- intent: subir_persiana
+  examples: |
+    - take the blinds up in the [patio](sala)
+    - take the blinds up in the [dressing room](sala)
+    - take the blinds up in the [hallway](sala)
+    - take the blinds up in the [dining room](sala)
+    - take the blinds up in the [library](sala)
+    - take the blinds up in the [walk-in closet](sala)
+    - take the blinds up in the [garage](sala)
+    - take the blinds up in the [study](sala)
+    - take the blinds up in the [porch](sala)
+    - take the blinds up in the [kitchen](sala)
+    - take the blinds up in the [entryway](sala)
+    - could you raise the [corridor](sala) blinds please
+    - could you raise the [study](sala) blinds please
+    - could you raise the [bedroom](sala) blinds please
+    - could you raise the [garden](sala) blinds please
+    - could you raise the [guest room](sala) blinds please
+    - could you raise the [hallway](sala) blinds please
+    - could you raise the [family room](sala) blinds please
+    - could you raise the [library](sala) blinds please
+    - could you raise the [office](sala) blinds please
+    - could you raise the [playroom](sala) blinds please
+    - could you raise the [bathroom](sala) blinds please
+    - i need the [corridor](sala) blinds open
+    - i need the [attic](sala) blinds open
+    - i need the [living room](sala) blinds open
+    - i need the [terrace](sala) blinds open
+    - i need the [garden](sala) blinds open
+    - i need the [study](sala) blinds open
+    - i need the [entryway](sala) blinds open
+    - i need the [walk-in closet](sala) blinds open
+    - i need the [bathroom](sala) blinds open
+    - i need the [basement](sala) blinds open
+    - put the [entrance](sala) blinds up
+    - put the [entryway](sala) blinds up
+    - put the [office](sala) blinds up
+    - put the [kids room](sala) blinds up
+    - put the [garden](sala) blinds up
+    - put the [study](sala) blinds up
+    - put the [bedroom](sala) blinds up
+    - put the [guest room](sala) blinds up
+    - put the [patio](sala) blinds up
+    - put the [library](sala) blinds up
+    - put the [hallway](sala) blinds up
+    - up with the blinds in the [pantry](sala)
+    - up with the blinds in the [gym](sala)
+    - up with the blinds in the [garden](sala)
+    - up with the blinds in the [dining room](sala)
+    - up with the blinds in the [porch](sala)
+    - up with the blinds in the [bathroom](sala)
+    - up with the blinds in the [lounge](sala)
+    - up with the blinds in the [attic](sala)
+    - up with the blinds in the [balcony](sala)
+    - up with the blinds in the [master bedroom](sala)
+    - up with the blinds in the [toilet](sala)
+
+- intent: bajar_persiana
+  examples: |
+    - take the blinds down in the [gym](sala)
+    - take the blinds down in the [laundry room](sala)
+    - take the blinds down in the [toilet](sala)
+    - take the blinds down in the [kids room](sala)
+    - take the blinds down in the [storage room](sala)
+    - take the blinds down in the [playroom](sala)
+    - take the blinds down in the [basement](sala)
+    - take the blinds down in the [hallway](sala)
+    - take the blinds down in the [corridor](sala)
+    - take the blinds down in the [terrace](sala)
+    - take the blinds down in the [entrance](sala)
+    - could you lower the [pantry](sala) blinds please
+    - could you lower the [corridor](sala) blinds please
+    - could you lower the [balcony](sala) blinds please
+    - could you lower the [family room](sala) blinds please
+    - could you lower the [patio](sala) blinds please
+    - could you lower the [dining room](sala) blinds please
+    - could you lower the [terrace](sala) blinds please
+    - could you lower the [office](sala) blinds please
+    - could you lower the [study](sala) blinds please
+    - could you lower the [lounge](sala) blinds please
+    - could you lower the [bedroom](sala) blinds please
+    - i need the [hallway](sala) blinds closed
+    - i need the [terrace](sala) blinds closed
+    - i need the [porch](sala) blinds closed
+    - i need the [garden](sala) blinds closed
+    - i need the [study](sala) blinds closed
+    - i need the [laundry room](sala) blinds closed
+    - i need the [basement](sala) blinds closed
+    - i need the [lounge](sala) blinds closed
+    - i need the [living room](sala) blinds closed
+    - i need the [playroom](sala) blinds closed
+    - i need the [master bedroom](sala) blinds closed
+    - put the [master bedroom](sala) blinds down
+    - put the [kitchen](sala) blinds down
+    - put the [garden](sala) blinds down
+    - put the [lounge](sala) blinds down
+    - put the [playroom](sala) blinds down
+    - put the [porch](sala) blinds down
+    - put the [pantry](sala) blinds down
+    - put the [balcony](sala) blinds down
+    - put the [terrace](sala) blinds down
+    - put the [kids room](sala) blinds down
+    - put the [guest room](sala) blinds down
+    - down with the blinds in the [study](sala)
+    - down with the blinds in the [garage](sala)
+    - down with the blinds in the [bedroom](sala)
+    - down with the blinds in the [playroom](sala)
+    - down with the blinds in the [kitchen](sala)
+    - down with the blinds in the [lounge](sala)
+    - down with the blinds in the [entryway](sala)
+    - down with the blinds in the [family room](sala)
+    - down with the blinds in the [corridor](sala)
+
+- intent: parar_persiana
+  examples: |
+    - stop right there
+    - could you stop the blinds please
+    - halt
+    - stop the blinds now
+    - enough stop the shutters
+
+- intent: activar_modo
+  examples: |
+    - let us go to [romantic](modo) mode
+    - let us go to [gaming](modo) mode
+    - let us go to [cinema](modo) mode
+    - let us go to [nap](modo) mode
+    - let us go to [focus](modo) mode
+    - let us go to [sunrise](modo) mode
+    - let us go to [work](modo) mode
+    - let us go to [party](modo) mode
+    - let us go to [christmas](modo) mode
+    - enable the [yoga](modo) mode please
+    - enable the [work](modo) mode please
+    - enable the [gaming](modo) mode please
+    - enable the [romantic](modo) mode please
+    - enable the [movie](modo) mode please
+    - enable the [relax](modo) mode please
+    - enable the [christmas](modo) mode please
+    - enable the [reading](modo) mode please
+    - enable the [music](modo) mode please
+    - i would like [good morning](modo) mode
+    - i would like [party](modo) mode
+    - i would like [meditation](modo) mode
+    - i would like [movie](modo) mode
+    - i would like [sport](modo) mode
+    - i would like [reading](modo) mode
+    - i would like [concentration](modo) mode
+    - i would like [romantic](modo) mode
+    - i would like [nap](modo) mode
+    - i would like [work](modo) mode
+    - run the [eco](modo) mode
+    - run the [romantic](modo) mode
+    - run the [sport](modo) mode
+    - run the [cinema](modo) mode
+    - run the [work](modo) mode
+    - run the [vacation](modo) mode
+    - run the [gaming](modo) mode
+    - run the [security](modo) mode
+    - run the [party](modo) mode
+    - run the [holiday](modo) mode
+
+- intent: desactivar_modo
+  examples: |
+    - leave the [sport](modo) mode
+    - leave the [sleep](modo) mode
+    - leave the [game](modo) mode
+    - leave the [gaming](modo) mode
+    - leave the [studying](modo) mode
+    - leave the [movie](modo) mode
+    - leave the [night](modo) mode
+    - leave the [christmas](modo) mode
+    - disable the [nap](modo) mode please
+    - disable the [party](modo) mode please
+    - disable the [work](modo) mode please
+    - disable the [eco](modo) mode please
+    - disable the [relax](modo) mode please
+    - disable the [holiday](modo) mode please
+    - disable the [christmas](modo) mode please
+    - disable the [vacation](modo) mode please
+    - disable the [workout](modo) mode please
+    - disable the [music](modo) mode please
+    - i am done with [cinema](modo) mode
+    - i am done with [studying](modo) mode
+    - i am done with [romantic](modo) mode
+    - i am done with [meditation](modo) mode
+    - i am done with [work](modo) mode
+    - i am done with [movie](modo) mode
+    - i am done with [night](modo) mode
+    - i am done with [concentration](modo) mode
+    - i am done with [sunrise](modo) mode
+    - i am done with [reading](modo) mode
+    - quit the [romantic](modo) mode
+    - quit the [game](modo) mode
+    - quit the [good night](modo) mode
+    - quit the [eco](modo) mode
+    - quit the [movie](modo) mode
+    - quit the [studying](modo) mode
+    - quit the [nap](modo) mode
+    - quit the [energy saving](modo) mode
+    - quit the [sunset](modo) mode
+    - quit the [meditation](modo) mode
+

@@ -1,0 +1,11 @@
+[
+  "encender_luz",
+  "apagar_luz",
+  "subir_persiana",
+  "bajar_persiana",
+  "parar_persiana",
+  "activar_enchufe",
+  "apagar_enchufe",
+  "activar_modo",
+  "desactivar_modo"
+]

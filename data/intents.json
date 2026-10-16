@@ -1,0 +1,17 @@
+{
+  "sala": [
+    "encender_luz",
+    "apagar_luz",
+    "subir_persiana",
+    "bajar_persiana",
+    "parar_persiana"
+  ],
+  "dispositivo": [
+    "activar_enchufe",
+    "apagar_enchufe"
+  ],
+  "modo": [
+    "activar_modo",
+    "desactivar_modo"
+  ]
+}

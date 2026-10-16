@@ -1,0 +1,409 @@
+# Plantillas de ejemplos. Los huecos [{sala}](sala), [{dispositivo}](dispositivo) y
+# [{modo}](modo) se rellenan con los nombres de data/names.json (scripts/generate_data.py).
+# "nlu" -> entrenamiento, "validation" -> validacion (frases distintas).
+version: "3.1"
+
+nlu:
+
+- intent: encender_luz
+  examples: |
+    - enciende la luz del [{sala}](sala)
+    - enciende la luz de la [{sala}](sala)
+    - por favor enciende la luz de la [{sala}](sala)
+    - quiero que enciendas la luz del [{sala}](sala)
+    - activa la luz del [{sala}](sala)
+    - ilumina la [{sala}](sala)
+    - pon la luz del [{sala}](sala) en marcha
+    - haz que la luz del [{sala}](sala) se encienda
+    - quiero luz en la [{sala}](sala)
+    - activa la iluminacion del [{sala}](sala)
+    - por favor enciende la luz del [{sala}](sala)
+    - quiero que la luz del [{sala}](sala) se encienda
+    - dale a la luz del [{sala}](sala)
+    - necesito luz en el [{sala}](sala)
+    - podrias encender la luz del [{sala}](sala)
+    - me gustaria que encendieras la luz del [{sala}](sala)
+    - prende la luz de la [{sala}](sala)
+    - activa las luces del [{sala}](sala)
+    - pon luz en la [{sala}](sala)
+    - enciende la iluminacion de la [{sala}](sala)
+    - quiero iluminacion en el [{sala}](sala)
+    - da luz al [{sala}](sala)
+    - activa la luz de la [{sala}](sala)
+    - ilumina el [{sala}](sala)
+    - pon la luz del [{sala}](sala)
+    - haz que se encienda la luz del [{sala}](sala)
+    - me puedes encender la luz del [{sala}](sala)
+    - oye enciende la luz de la [{sala}](sala)
+    - venga enciende la luz del [{sala}](sala)
+    - necesito que enciendas la luz de la [{sala}](sala)
+    - por favor ilumina la [{sala}](sala)
+    - dame luz en el [{sala}](sala)
+    - enciende todas las luces del [{sala}](sala)
+    - quiero que haya luz en la [{sala}](sala)
+    - pon en marcha la luz de la [{sala}](sala)
+    - necesito que enciendes la luz del [{sala}](sala)
+    - a ver si puedes encender la luz del [{sala}](sala)
+    - dale a la luz de la [{sala}](sala)
+    - le puedes dar a la luz del [{sala}](sala)
+    - me puedes iluminar el [{sala}](sala)
+    - enciende luz en el [{sala}](sala)
+    - por favor da luz al [{sala}](sala)
+    - hazme el favor y enciende el [{sala}](sala)
+    - podrias poner la luz del [{sala}](sala)
+
+- intent: apagar_luz
+  examples: |
+    - apaga la luz de la [{sala}](sala)
+    - por favor apaga la luz del [{sala}](sala)
+    - quiero que apagues la luz del [{sala}](sala)
+    - apaga la luz del [{sala}](sala)
+    - apaga la iluminacion del [{sala}](sala)
+    - desactiva la luz del [{sala}](sala)
+    - quita la luz del [{sala}](sala)
+    - podrias apagar la luz del [{sala}](sala)
+    - me gustaria que apagaras la luz del [{sala}](sala)
+    - apaga las luces de la [{sala}](sala)
+    - desactiva la iluminacion del [{sala}](sala)
+    - quita la luz de la [{sala}](sala)
+    - apaga la iluminacion de la [{sala}](sala)
+    - no quiero luz en el [{sala}](sala)
+    - desactiva la luz de la [{sala}](sala)
+    - oscurece el [{sala}](sala)
+    - haz que se apague la luz del [{sala}](sala)
+    - me puedes apagar la luz del [{sala}](sala)
+    - oye apaga la luz de la [{sala}](sala)
+    - venga apaga la luz del [{sala}](sala)
+    - necesito que apagues la luz de la [{sala}](sala)
+    - apaga todas las luces del [{sala}](sala)
+    - quiero que no haya luz en la [{sala}](sala)
+    - apaga el [{sala}](sala)
+    - necesito que apagues la luz del [{sala}](sala)
+    - oye apaga el [{sala}](sala)
+    - puedes apagar la luz del [{sala}](sala)
+    - quita la iluminacion del [{sala}](sala)
+    - corta la luz de la [{sala}](sala)
+    - le puedes quitar la luz al [{sala}](sala)
+    - deja a oscuras el [{sala}](sala)
+    - por favor quita la luz del [{sala}](sala)
+    - deja sin luz el [{sala}](sala)
+    - ya no necesito luz en el [{sala}](sala)
+
+- intent: activar_enchufe
+  examples: |
+    - activa el enchufe de la [{dispositivo}](dispositivo)
+    - por favor activa el enchufe del [{dispositivo}](dispositivo)
+    - quiero que actives el enchufe de la [{dispositivo}](dispositivo)
+    - enciende el enchufe del [{dispositivo}](dispositivo)
+    - pon en marcha el enchufe del [{dispositivo}](dispositivo)
+    - enciende el [{dispositivo}](dispositivo)
+    - activa el [{dispositivo}](dispositivo)
+    - quiero que actives el enchufe del [{dispositivo}](dispositivo)
+    - activa el enchufe del [{dispositivo}](dispositivo)
+    - enciende la [{dispositivo}](dispositivo)
+    - por favor activa el [{dispositivo}](dispositivo)
+    - quiero que actives la [{dispositivo}](dispositivo)
+    - dale corriente al [{dispositivo}](dispositivo)
+    - pon en marcha la [{dispositivo}](dispositivo)
+    - activa la [{dispositivo}](dispositivo)
+    - pon el [{dispositivo}](dispositivo)
+    - quiero que enciendas el [{dispositivo}](dispositivo)
+    - por favor activa la [{dispositivo}](dispositivo)
+    - pon en funcionamiento el [{dispositivo}](dispositivo)
+    - dale al [{dispositivo}](dispositivo)
+    - pon en marcha el [{dispositivo}](dispositivo)
+    - quiero encender el [{dispositivo}](dispositivo)
+    - por favor enciende el [{dispositivo}](dispositivo)
+    - conecta el [{dispositivo}](dispositivo)
+    - dale corriente a la [{dispositivo}](dispositivo)
+    - arranca el [{dispositivo}](dispositivo)
+    - conecta la [{dispositivo}](dispositivo)
+    - hazme el favor de encender el [{dispositivo}](dispositivo)
+    - carga el [{dispositivo}](dispositivo)
+    - activa la corriente del [{dispositivo}](dispositivo)
+    - dale a la [{dispositivo}](dispositivo)
+    - quiero que enciendas la [{dispositivo}](dispositivo)
+    - por favor conecta la [{dispositivo}](dispositivo)
+    - pon corriente al [{dispositivo}](dispositivo)
+    - necesito que enciendas el [{dispositivo}](dispositivo)
+    - quiero que arranques el [{dispositivo}](dispositivo)
+    - dale marcha al [{dispositivo}](dispositivo)
+
+- intent: apagar_enchufe
+  examples: |
+    - apaga el enchufe del [{dispositivo}](dispositivo)
+    - por favor apaga el enchufe del [{dispositivo}](dispositivo)
+    - apaga el [{dispositivo}](dispositivo)
+    - desactiva el [{dispositivo}](dispositivo)
+    - quiero que apagues el enchufe del [{dispositivo}](dispositivo)
+    - quiero que apagues el enchufe de la [{dispositivo}](dispositivo)
+    - apaga el enchufe de la [{dispositivo}](dispositivo)
+    - apaga la [{dispositivo}](dispositivo)
+    - desactiva la [{dispositivo}](dispositivo)
+    - quiero que apagues el [{dispositivo}](dispositivo)
+    - por favor desactiva la [{dispositivo}](dispositivo)
+    - para el [{dispositivo}](dispositivo)
+    - quiero apagar el [{dispositivo}](dispositivo)
+    - por favor apaga el [{dispositivo}](dispositivo)
+    - corta la corriente del [{dispositivo}](dispositivo)
+    - desconecta el [{dispositivo}](dispositivo)
+    - quita la corriente a la [{dispositivo}](dispositivo)
+    - para la [{dispositivo}](dispositivo)
+    - desconecta la [{dispositivo}](dispositivo)
+    - hazme el favor de apagar el [{dispositivo}](dispositivo)
+    - oye desconecta el [{dispositivo}](dispositivo)
+    - quiero que apagues la [{dispositivo}](dispositivo)
+    - por favor desconecta la [{dispositivo}](dispositivo)
+    - corta el enchufe del [{dispositivo}](dispositivo)
+    - necesito que apagues el [{dispositivo}](dispositivo)
+    - desactiva el enchufe del [{dispositivo}](dispositivo)
+    - quiero que pares el [{dispositivo}](dispositivo)
+
+- intent: subir_persiana
+  examples: |
+    - sube la persiana del [{sala}](sala)
+    - por favor sube la persiana de la [{sala}](sala)
+    - quiero que subas la persiana del [{sala}](sala)
+    - levanta la persiana del [{sala}](sala)
+    - abre la persiana de la [{sala}](sala)
+    - por favor sube la persiana del [{sala}](sala)
+    - sube la persiana de la [{sala}](sala)
+    - levanta las persianas del [{sala}](sala)
+    - abre la persiana del [{sala}](sala)
+    - podrias subir la persiana del [{sala}](sala)
+    - me gustaria que subieras la persiana del [{sala}](sala)
+    - eleva la persiana de la [{sala}](sala)
+    - sube las persianas del [{sala}](sala)
+    - quiero que levantes la persiana del [{sala}](sala)
+    - haz que se suba la persiana del [{sala}](sala)
+    - me puedes subir la persiana del [{sala}](sala)
+    - oye sube la persiana de la [{sala}](sala)
+    - venga sube la persiana del [{sala}](sala)
+    - necesito que subas la persiana de la [{sala}](sala)
+    - por favor abre la persiana de la [{sala}](sala)
+    - sube todas las persianas del [{sala}](sala)
+    - quiero que subas la persiana de la [{sala}](sala)
+    - por favor eleva la persiana del [{sala}](sala)
+    - haz que se levante la persiana de la [{sala}](sala)
+    - oye sube las persianas del [{sala}](sala)
+    - a ver si puedes levantar la persiana de la [{sala}](sala)
+    - necesito que subas la persiana del [{sala}](sala)
+    - me gustaria que levantaras la persiana del [{sala}](sala)
+    - venga abre la persiana del [{sala}](sala)
+    - dejame ver el exterior sube la persiana del [{sala}](sala)
+    - quiero que entre luz sube la persiana de la [{sala}](sala)
+    - eleva las persianas del [{sala}](sala)
+    - por favor levanta la persiana del [{sala}](sala)
+    - quiero abrir las persianas del [{sala}](sala)
+    - hazme el favor y sube la persiana del [{sala}](sala)
+    - por favor alza la persiana del [{sala}](sala)
+    - alza la persiana del [{sala}](sala)
+    - necesito que alces la persiana del [{sala}](sala)
+
+- intent: bajar_persiana
+  examples: |
+    - baja la persiana de la [{sala}](sala)
+    - por favor baja la persiana del [{sala}](sala)
+    - quiero que bajes la persiana del [{sala}](sala)
+    - baja la persiana del [{sala}](sala)
+    - cierra la persiana del [{sala}](sala)
+    - baja las persianas del [{sala}](sala)
+    - podrias bajar la persiana del [{sala}](sala)
+    - me gustaria que bajaras la persiana del [{sala}](sala)
+    - desciende la persiana de la [{sala}](sala)
+    - cierra la persiana de la [{sala}](sala)
+    - desciende la persiana del [{sala}](sala)
+    - haz que se baje la persiana del [{sala}](sala)
+    - me puedes bajar la persiana del [{sala}](sala)
+    - oye baja la persiana de la [{sala}](sala)
+    - venga baja la persiana del [{sala}](sala)
+    - necesito que bajes la persiana de la [{sala}](sala)
+    - por favor cierra la persiana de la [{sala}](sala)
+    - baja todas las persianas del [{sala}](sala)
+    - quiero que bajes la persiana de la [{sala}](sala)
+    - haz que se baje la persiana de la [{sala}](sala)
+    - oye baja las persianas del [{sala}](sala)
+    - a ver si puedes bajar la persiana de la [{sala}](sala)
+    - necesito que bajes la persiana del [{sala}](sala)
+    - venga cierra la persiana del [{sala}](sala)
+    - quiero privacidad baja la persiana del [{sala}](sala)
+    - que no entre luz baja la persiana de la [{sala}](sala)
+    - desciende las persianas del [{sala}](sala)
+    - por favor cierra la persiana del [{sala}](sala)
+    - quiero cerrar las persianas del [{sala}](sala)
+    - hazme el favor y baja la persiana del [{sala}](sala)
+
+- intent: parar_persiana
+  examples: |
+    - para
+    - para la persiana
+    - detener la persiana
+    - deten la persiana
+    - por favor para la persiana
+    - para la persiana del [{sala}](sala)
+    - por favor para la persiana de la [{sala}](sala)
+    - quiero que pares la persiana del [{sala}](sala)
+    - deten la persiana del [{sala}](sala)
+    - para la persiana de la [{sala}](sala)
+    - por favor para la persiana del [{sala}](sala)
+    - stop
+    - alto
+    - para ahi
+    - detente
+    - para ya
+    - frena la persiana
+    - frena la persiana del [{sala}](sala)
+    - deten las persianas del [{sala}](sala)
+    - deten la persiana de la [{sala}](sala)
+    - para todas las persianas del [{sala}](sala)
+    - quiero que pares la persiana de la [{sala}](sala)
+    - por favor detente la persiana del [{sala}](sala)
+    - podrias parar la persiana del [{sala}](sala)
+    - haz que se pare la persiana de la [{sala}](sala)
+    - oye para las persianas del [{sala}](sala)
+    - ahi esta bien la persiana de la [{sala}](sala)
+    - necesito que pares la persiana del [{sala}](sala)
+    - me gustaria que pararas la persiana del [{sala}](sala)
+    - deja ahi la persiana del [{sala}](sala)
+    - basta, no muevas mas la persiana del [{sala}](sala)
+    - para ya la persiana de la [{sala}](sala)
+    - quiero parar las persianas del [{sala}](sala)
+    - hazme el favor y para la persiana del [{sala}](sala)
+
+- intent: activar_modo
+  examples: |
+    - activa el modo [{modo}](modo)
+    - por favor activa el modo [{modo}](modo)
+    - quiero que actives el modo [{modo}](modo)
+    - Pon el modo [{modo}](modo)
+    - Ponme el modo [{modo}](modo)
+    - Ponnos el modo [{modo}](modo)
+    - por favor pon el modo [{modo}](modo)
+    - quiero que pongas el modo [{modo}](modo)
+    - habilita el modo [{modo}](modo)
+    - pon en marcha el modo [{modo}](modo)
+    - configura el modo [{modo}](modo)
+    - quiero el modo [{modo}](modo)
+    - establece el modo [{modo}](modo)
+    - por favor habilita el modo [{modo}](modo)
+    - pon el modo [{modo}](modo)
+
+- intent: desactivar_modo
+  examples: |
+    - desactiva el modo [{modo}](modo)
+    - por favor desactiva el modo [{modo}](modo)
+    - quiero que desactives el modo [{modo}](modo)
+    - quita el modo [{modo}](modo)
+    - quitame el modo [{modo}](modo)
+    - por favor quita el modo [{modo}](modo)
+    - quiero que quites el modo [{modo}](modo)
+    - cancela el modo [{modo}](modo)
+    - deshabilita el modo [{modo}](modo)
+    - por favor deshabilita el modo [{modo}](modo)
+    - quiero quitar el modo [{modo}](modo)
+    - para el modo [{modo}](modo)
+    - sal del modo [{modo}](modo)
+    - apaga el modo [{modo}](modo)
+    - por favor sal del modo [{modo}](modo)
+    - deja de estar en modo [{modo}](modo)
+    - ya no quiero el modo [{modo}](modo)
+    - ya no necesito el modo [{modo}](modo)
+    - quiero salir del modo [{modo}](modo)
+
+
+validation:
+
+- intent: encender_luz
+  examples: |
+    - necesito luz en la [{sala}](sala)
+    - pon luz en el [{sala}](sala)
+    - activa la lampara del [{sala}](sala)
+    - ilumina el [{sala}](sala) por favor
+    - quiero que se ilumine el [{sala}](sala)
+    - enciende las luces de la [{sala}](sala)
+    - da luz a la [{sala}](sala)
+    - haz que haya luz en el [{sala}](sala)
+    - prende las luces del [{sala}](sala)
+    - necesito iluminacion en la [{sala}](sala)
+    - activa las lamparas del [{sala}](sala)
+    - por favor enciende las luces de la [{sala}](sala)
+
+- intent: apagar_luz
+  examples: |
+    - deja a oscuras la [{sala}](sala)
+    - oscurece el [{sala}](sala) por favor
+    - desactiva las lamparas del [{sala}](sala)
+    - quita las luces del [{sala}](sala)
+    - no quiero iluminacion en el [{sala}](sala)
+    - deja sin luz la [{sala}](sala)
+    - haz que no haya luz en el [{sala}](sala)
+    - apaga las luces del [{sala}](sala)
+    - quita la iluminacion de la [{sala}](sala)
+    - por favor apaga las luces de la [{sala}](sala)
+
+- intent: activar_enchufe
+  examples: |
+    - quiero que funcione la [{dispositivo}](dispositivo)
+    - activa el [{dispositivo}](dispositivo) por favor
+    - dale al interruptor del [{dispositivo}](dispositivo)
+    - haz que funcione el [{dispositivo}](dispositivo)
+
+- intent: apagar_enchufe
+  examples: |
+    - quiero que pare la [{dispositivo}](dispositivo)
+    - deja de usar el [{dispositivo}](dispositivo)
+    - desactiva el [{dispositivo}](dispositivo) por favor
+    - corta el interruptor del [{dispositivo}](dispositivo)
+    - haz que deje de funcionar el [{dispositivo}](dispositivo)
+    - quita la corriente al [{dispositivo}](dispositivo)
+
+- intent: subir_persiana
+  examples: |
+    - abre las persianas del [{sala}](sala)
+    - alza la persiana de la [{sala}](sala)
+    - abre la persiana del [{sala}](sala) por favor
+    - abre las persianas de la [{sala}](sala)
+    - por favor abre las persianas de la [{sala}](sala)
+    - alza las persianas del [{sala}](sala)
+
+- intent: bajar_persiana
+  examples: |
+    - cierra las persianas del [{sala}](sala)
+    - cierra la persiana del [{sala}](sala) por favor
+    - cierra las persianas de la [{sala}](sala)
+    - por favor cierra las persianas de la [{sala}](sala)
+
+- intent: parar_persiana
+  examples: |
+    - alto ahi
+    - basta
+    - dejala ahi
+    - para ya la persiana
+    - que se detenga
+    - deten la persiana del [{sala}](sala) ahi
+    - frena la persiana de la [{sala}](sala)
+    - para el movimiento de la persiana del [{sala}](sala)
+    - deja la persiana del [{sala}](sala) ahi
+    - stop persiana del [{sala}](sala)
+    - que pare la persiana del [{sala}](sala)
+    - detener persiana de la [{sala}](sala)
+    - para el movimiento del [{sala}](sala)
+
+- intent: activar_modo
+  examples: |
+    - vamos al modo [{modo}](modo)
+    - activa por favor el modo [{modo}](modo)
+    - me gustaria el modo [{modo}](modo)
+    - ejecuta el modo [{modo}](modo)
+    - activa el modo [{modo}](modo) por favor
+    - ponme en modo [{modo}](modo)
+    - quiero modo [{modo}](modo)
+
+- intent: desactivar_modo
+  examples: |
+    - salgamos del modo [{modo}](modo)
+    - desactiva por favor el modo [{modo}](modo)
+    - ya no quiero el modo [{modo}](modo)
+    - termina el modo [{modo}](modo)
+    - desactiva el modo [{modo}](modo) por favor
+

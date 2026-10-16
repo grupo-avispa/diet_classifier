@@ -1,0 +1,220 @@
+# Beispielvorlagen. Die Platzhalter [{sala}](sala), [{dispositivo}](dispositivo) und
+# [{modo}](modo) werden mit den Namen aus data/names.json gefüllt (scripts/generate_data.py).
+# "nlu" -> Training, "validation" -> Validierung (andere Formulierungen).
+version: "3.1"
+
+nlu:
+
+- intent: encender_luz
+  examples: |
+    - schalte das licht in [{sala}](sala) ein
+    - schalte das licht [{sala}](sala) ein
+    - bitte schalte das licht in [{sala}](sala) ein
+    - mach das licht in [{sala}](sala) an
+    - mach das licht [{sala}](sala) an
+    - aktiviere das licht in [{sala}](sala)
+    - ich brauche licht in [{sala}](sala)
+    - beleuchte [{sala}](sala)
+    - kannst du das licht in [{sala}](sala) anmachen
+    - ich möchte licht in [{sala}](sala)
+    - schalte die lichter in [{sala}](sala) ein
+    - hey mach das licht in [{sala}](sala) an
+    - licht an in [{sala}](sala)
+    - mach licht in [{sala}](sala)
+
+- intent: apagar_luz
+  examples: |
+    - schalte das licht in [{sala}](sala) aus
+    - schalte das licht [{sala}](sala) aus
+    - bitte schalte das licht in [{sala}](sala) aus
+    - mach das licht in [{sala}](sala) aus
+    - mach das licht [{sala}](sala) aus
+    - deaktiviere das licht in [{sala}](sala)
+    - ich brauche kein licht mehr in [{sala}](sala)
+    - lösche das licht in [{sala}](sala)
+    - kannst du das licht in [{sala}](sala) ausmachen
+    - ich möchte das licht in [{sala}](sala) aus haben
+    - schalte die lichter in [{sala}](sala) aus
+    - hey mach das licht in [{sala}](sala) aus
+    - licht aus in [{sala}](sala)
+    - dunkel in [{sala}](sala)
+
+- intent: activar_enchufe
+  examples: |
+    - aktiviere die steckdose [{dispositivo}](dispositivo)
+    - bitte aktiviere die steckdose [{dispositivo}](dispositivo)
+    - schalte die steckdose [{dispositivo}](dispositivo) ein
+    - schalte [{dispositivo}](dispositivo) ein
+    - aktiviere [{dispositivo}](dispositivo)
+    - mach [{dispositivo}](dispositivo) an
+    - ich möchte dass [{dispositivo}](dispositivo) läuft
+    - starte [{dispositivo}](dispositivo)
+    - bitte schalte [{dispositivo}](dispositivo) ein
+    - kannst du [{dispositivo}](dispositivo) anmachen
+    - hey aktiviere die steckdose [{dispositivo}](dispositivo)
+    - nimm [{dispositivo}](dispositivo) in betrieb
+    - schalte den strom für [{dispositivo}](dispositivo) ein
+
+- intent: apagar_enchufe
+  examples: |
+    - deaktiviere die steckdose [{dispositivo}](dispositivo)
+    - bitte deaktiviere die steckdose [{dispositivo}](dispositivo)
+    - schalte die steckdose [{dispositivo}](dispositivo) aus
+    - schalte [{dispositivo}](dispositivo) aus
+    - deaktiviere [{dispositivo}](dispositivo)
+    - mach [{dispositivo}](dispositivo) aus
+    - ich möchte dass [{dispositivo}](dispositivo) ausgeschaltet ist
+    - stoppe [{dispositivo}](dispositivo)
+    - bitte schalte [{dispositivo}](dispositivo) aus
+    - kannst du [{dispositivo}](dispositivo) ausmachen
+    - hey deaktiviere die steckdose [{dispositivo}](dispositivo)
+    - nimm [{dispositivo}](dispositivo) außer betrieb
+    - schalte den strom für [{dispositivo}](dispositivo) aus
+
+- intent: subir_persiana
+  examples: |
+    - fahre den rollladen in [{sala}](sala) hoch
+    - fahre die rollläden in [{sala}](sala) hoch
+    - bitte fahre den rollladen in [{sala}](sala) hoch
+    - öffne den rollladen in [{sala}](sala)
+    - öffne die rollläden in [{sala}](sala)
+    - ziehe den rollladen in [{sala}](sala) hoch
+    - hebe die jalousie in [{sala}](sala)
+    - ich möchte den rollladen in [{sala}](sala) offen haben
+    - kannst du den rollladen in [{sala}](sala) öffnen
+    - hey mach die jalousie in [{sala}](sala) hoch
+    - rollladen hoch in [{sala}](sala)
+    - lass den rollladen in [{sala}](sala) hochfahren
+    - rollläden auf in [{sala}](sala)
+
+- intent: bajar_persiana
+  examples: |
+    - fahre den rollladen in [{sala}](sala) runter
+    - fahre die rollläden in [{sala}](sala) runter
+    - bitte fahre den rollladen in [{sala}](sala) runter
+    - schließe den rollladen in [{sala}](sala)
+    - schließe die rollläden in [{sala}](sala)
+    - ziehe den rollladen in [{sala}](sala) herunter
+    - senke die jalousie in [{sala}](sala)
+    - ich möchte den rollladen in [{sala}](sala) geschlossen haben
+    - kannst du den rollladen in [{sala}](sala) schließen
+    - hey mach die jalousie in [{sala}](sala) runter
+    - rollladen runter in [{sala}](sala)
+    - lass den rollladen in [{sala}](sala) herunterfahren
+    - rollläden zu in [{sala}](sala)
+
+- intent: parar_persiana
+  examples: |
+    - stopp
+    - halt
+    - stopp den rollladen
+    - halte den rollladen an
+    - stoppe die rollläden
+    - bitte stopp den rollladen
+    - das reicht stopp den rollladen
+    - hey stopp die jalousie
+    - kannst du den rollladen anhalten
+    - nicht weiter
+    - stopp alles
+    - rollladen stopp
+    - stopp jetzt
+
+- intent: activar_modo
+  examples: |
+    - aktiviere den modus [{modo}](modo)
+    - bitte aktiviere den modus [{modo}](modo)
+    - schalte den modus [{modo}](modo) ein
+    - wechsle in den modus [{modo}](modo)
+    - starte den modus [{modo}](modo)
+    - ich möchte den modus [{modo}](modo)
+    - setze den modus [{modo}](modo)
+    - kannst du den modus [{modo}](modo) aktivieren
+    - hey aktiviere den modus [{modo}](modo)
+    - stelle das haus auf modus [{modo}](modo)
+    - mach den modus [{modo}](modo) an
+    - modus [{modo}](modo) an
+
+- intent: desactivar_modo
+  examples: |
+    - deaktiviere den modus [{modo}](modo)
+    - bitte deaktiviere den modus [{modo}](modo)
+    - schalte den modus [{modo}](modo) aus
+    - beende den modus [{modo}](modo)
+    - verlasse den modus [{modo}](modo)
+    - ich möchte den modus [{modo}](modo) nicht mehr
+    - stoppe den modus [{modo}](modo)
+    - kannst du den modus [{modo}](modo) deaktivieren
+    - hey deaktiviere den modus [{modo}](modo)
+    - breche den modus [{modo}](modo) ab
+    - mach den modus [{modo}](modo) aus
+    - modus [{modo}](modo) aus
+
+validation:
+
+- intent: encender_luz
+  examples: |
+    - gib mir licht in [{sala}](sala)
+    - könntest du bitte das licht in [{sala}](sala) anmachen
+    - ich brauche das licht in [{sala}](sala) an
+    - lass das licht in [{sala}](sala) an
+    - [{sala}](sala) licht an
+    - mach es hell in [{sala}](sala)
+
+- intent: apagar_luz
+  examples: |
+    - kein licht mehr in [{sala}](sala)
+    - könntest du bitte das licht in [{sala}](sala) ausmachen
+    - ich brauche das licht in [{sala}](sala) aus
+    - lass das licht in [{sala}](sala) aus
+    - [{sala}](sala) licht aus
+    - mach es dunkel in [{sala}](sala)
+
+- intent: activar_enchufe
+  examples: |
+    - setze [{dispositivo}](dispositivo) unter strom
+    - könntest du bitte [{dispositivo}](dispositivo) einschalten
+    - ich brauche [{dispositivo}](dispositivo) an
+    - lass [{dispositivo}](dispositivo) laufen
+
+- intent: apagar_enchufe
+  examples: |
+    - nimm [{dispositivo}](dispositivo) vom strom
+    - könntest du bitte [{dispositivo}](dispositivo) ausschalten
+    - ich brauche [{dispositivo}](dispositivo) nicht mehr
+    - kappe den strom von [{dispositivo}](dispositivo)
+
+- intent: subir_persiana
+  examples: |
+    - zieh die jalousie in [{sala}](sala) hoch
+    - könntest du bitte den rollladen in [{sala}](sala) hochfahren
+    - ich brauche den rollladen in [{sala}](sala) offen
+    - rollläden nach oben in [{sala}](sala)
+
+- intent: bajar_persiana
+  examples: |
+    - zieh die jalousie in [{sala}](sala) runter
+    - könntest du bitte den rollladen in [{sala}](sala) runterfahren
+    - ich brauche den rollladen in [{sala}](sala) zu
+    - rollläden nach unten in [{sala}](sala)
+
+- intent: parar_persiana
+  examples: |
+    - stopp hier
+    - könntest du bitte den rollladen stoppen
+    - anhalten
+    - genug stopp die rollläden
+    - alles stopp
+
+- intent: activar_modo
+  examples: |
+    - gehen wir in den modus [{modo}](modo)
+    - aktiviere bitte den modus [{modo}](modo)
+    - ich hätte gern den modus [{modo}](modo)
+    - führe den modus [{modo}](modo) aus
+
+- intent: desactivar_modo
+  examples: |
+    - verlassen wir den modus [{modo}](modo)
+    - deaktiviere bitte den modus [{modo}](modo)
+    - ich bin fertig mit dem modus [{modo}](modo)
+    - beende jetzt den modus [{modo}](modo)

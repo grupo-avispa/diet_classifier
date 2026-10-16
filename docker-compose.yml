@@ -1,0 +1,40 @@
+# DIET inference API (scripts/inference_fastapi.py).
+#
+#   docker compose up -d --build        # build the image and start the API
+#   docker compose logs -f diet-api
+#   docker compose down
+#
+# The trained models are NOT baked into the image (see .dockerignore): ./models is mounted
+# read-only at runtime, so a model can be retrained or replaced without rebuilding.
+# Optional settings go in a .env file next to this one (see .env.example).
+
+services:
+  diet-api:
+    build: .
+    image: diet-classifier:latest
+    container_name: diet-api
+    restart: unless-stopped
+    ports:
+      - "${DIET_PORT:-8000}:8000"
+    volumes:
+      - ${DIET_MODELS_DIR:-./models}:/app/models:ro
+    # DIET_LANGS="es en" loads only those languages (default: every one found in models/).
+    # DIET_DEFAULT_LANG is the language used when a request has no "language" field.
+    command: >
+      sh -c 'exec uv run --frozen scripts/inference_fastapi.py -p 8000
+      ${DIET_LANGS:+--langs ${DIET_LANGS}}
+      ${DIET_DEFAULT_LANG:+--default-lang ${DIET_DEFAULT_LANG}}'
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request as u; u.urlopen('http://localhost:8000/health', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      start_period: 30s
+      retries: 3
+    # GPU (needs the NVIDIA Container Toolkit): uncomment
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]

@@ -1,0 +1,12 @@
+[
+  "EOS",
+  "BOS",
+  "PAD",
+  "O",
+  "B-sala",
+  "I-sala",
+  "B-dispositivo",
+  "I-dispositivo",
+  "B-modo",
+  "I-modo"
+]
